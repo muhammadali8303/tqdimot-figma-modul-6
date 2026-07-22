@@ -39,3 +39,35 @@ opacity: 1;
     border-radius: 16px;
     padding-bottom: 72px;
 }
+.owl-dots{
+    display: none;
+}
+.owl-nav{
+   display: block !important;
+   position: absolute;
+   top: -120px !important;
+   left:1100px;
+
+      
+
+}
+.owl-prev{
+    margin-right: 150px !important;
+    margin-bottom: -63px !important;
+    vertical-align: middle !important;
+
+}
+.owl-prev , .owl-next{
+    background-color: black !important;
+    color: white !important;
+    max-width: 40px !important;
+    height: 40px;
+    width: 100%;
+    border: 3px solid #21231E !important;
+    border-radius: 50% !important;
+   
+  
+}
+.owl-next{
+    vertical-align: middle !important;
+}

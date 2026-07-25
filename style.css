@@ -53,6 +53,13 @@ opacity: 1;
       
 
 }
+.item p{
+    opacity: 0;
+}
+.item:hover p{
+    opacity: 1;
+    transition: all 0.3s linear;
+}
 .owl-prev{
     margin-right: 150px !important;
     margin-bottom: -63px !important;

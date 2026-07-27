@@ -75,8 +75,32 @@ opacity: 1;
     border: 3px solid #21231E !important;
     border-radius: 50% !important;
    
+   
   
 }
 .owl-next{
     vertical-align: middle !important;
 }
+#hero-vidjet-img{
+    max-width: 1824px;
+}
+#car-dropdown{
+    background: #121212 !important;
+    z-index: 100000 !important;
+}
+ @media (max-width:1342px) {
+        .owl-prev , .owl-next{
+            display: none !important;
+        }
+    }
+    @media (max-width:921px) {
+        #hero-vidjet{
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+    }
+     @media (max-width:380px) {
+        #hero-vidjet{
+           
+        }
+    }

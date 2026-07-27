@@ -283,63 +283,93 @@
 
 
     
-    <section class="bg-[#121315] py-[40px]">
-        <div class="max-w-[1280px] w-full mx-auto">
-            <div class="flex items-center gap-[8px]">
-                <img class="max-w-[135px] w-full" src="./buy.images/hero-title-1.svg" alt="">
-                <img class="max-w-[135px] w-full" src="./buy.images/hero-title.2.svg" alt="">
-            </div>
-            <p class="text-[56px] text-[#ffffff] mt-[8px]   font-[600]">2024 Porsche 911 Turbo S</p>
-            <p class="text-[22px] font-[400] text-[#C4C9AE]">Agate Grey Metallic • Coupe • 3,420 Miles</p>
-        
-          <div class="max-w-[1390px] h-[535px] mx-auto w-full flex items-start gap-6 py-[30px]">
-  <!-- Tab Kontentlari (Rasmlar chiqadigan joy) -->
-  <div id="default-tab-content" class="max-w-[1200px] w-full bg-neutral-secondary-soft p-4 rounded-base">
-    <div class="block" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <img class="w-full max-w-[1390px]" id="porsche-1" src="./buy.images/porsche-1.png" alt="Porsche 5">
-    </div>
-    <div class="hidden" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-      <img class="w-full max-w-[1390px]" id="porsche-2" src="./buy.images/posrche-2.svg " alt="Porsche 2">
-    </div>
-    <div class="hidden" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-      <img class="w-full max-w-[1390px]" id="porsche-3" src="./buy.images/porsche-3.svg" alt="Porsche 3">
-    </div>
-    <div class="hidden" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-      <img class="w-full max-w-[1390px]" id="porsche-4" src="./buy.images/porsche-4.png" alt="Porsche 4">
-    </div>
-  </div>
-
-  <!-- Tab Tugmalari (O'ng tomondagi menyu) -->
-  <div class="flex-shrink-0">
-    <ul class="flex flex-col  gap-2 text-sm font-medium text-center" id="default-tab" role="tablist">
-      <li role="presentation">
-        <button class="inline-block justify-between  rounded-t-base border-2 border-brand opacity-100 p-1" id="profile-tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">
-          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/porsche-1.png" alt="Tab 5" class="w-20 h-auto">
-        </button>
-      </li>
-      <li role="presentation">
-        <button class="inline-block justify-between  rounded-t-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition" id="dashboard-tab" data-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
-          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/posrche-2.svg" alt="Tab 2" class="w-20 h-auto">
-        </button>
-      </li>
-      <li role="presentation">
-        <button class="inline-block justify-between  rounded-t-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition" id="settings-tab" data-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
-          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/porsche-3.svg" alt="Tab 3" class="w-20 h-auto">
-        </button>
-      </li>
-      <li role="presentation">
-        <button class="inline-block justify-between  rounded-t-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition" id="contacts-tab" data-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
-          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/porsche-4.png" alt="Tab 4" class="w-20 h-auto">
-        </button>
-      </li>
-    </ul>
-  </div>
-</div>
+<section class="bg-[#121315] py-[40px] px-[16px] md:px-0 overflow-hidden">
+    <div class="max-w-[1280px] w-full mx-auto">
+        <div class="flex items-center gap-[8px]">
+            <img class="max-w-[135px] w-full" src="./buy.images/hero-title-1.svg" alt="">
+            <img class="max-w-[135px] w-full" src="./buy.images/hero-title.2.svg" alt="">
         </div>
+        <p class="text-[32px] sm:text-[42px] md:text-[56px] text-[#ffffff] mt-[8px] font- leading-tight">2024 Porsche 911 Turbo S</p>
+        <p class="text-[16px] sm:text-[22px] font- text-[#C4C9AE] mt-1">Agate Grey Metallic • Coupe • 3,420 Miles</p>
+    
+        <!-- Galereya bloki -->
+        <div class="max-w-[1390px] mx-auto w-full flex flex-col lg:flex-row items-stretch gap-6 py-[30px]">
+            
+            <!-- Katta rasmlar -->
+            <div id="default-tab-content" class="w-full bg-neutral-secondary-soft rounded-base overflow-hidden flex-1 max-w-[1200px]">
+                <div class="block tab-panel" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <img class="w-full h-[250px] sm:h-[400px] lg:h-[535px] object-cover rounded-[16px]" id="porsche-1" src="./buy.images/porsche-1.png" alt="Porsche 1">
+                </div>
+                <div class="hidden tab-panel" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <img class="w-full h-[250px] sm:h-[400px] lg:h-[535px] object-cover rounded-[16px]" id="porsche-2" src="./buy.images/posrche-2.svg" alt="Porsche 2">
+                </div>
+                <div class="hidden tab-panel" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                    <img class="w-full h-[250px] sm:h-[400px] lg:h-[535px] object-cover rounded-[16px]" id="porsche-3" src="./buy.images/porsche-3.svg" alt="Porsche 3">
+                </div>
+                <div class="hidden tab-panel" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                    <img class="w-full h-[250px] sm:h-[400px] lg:h-[535px] object-cover rounded-[16px]" id="porsche-4" src="./buy.images/porsche-4.png" alt="Porsche 4">
+                </div>
+            </div>
 
-        
-        
-    </section>
+            <!-- Tab Tugmalari (Kichik rasmlar) -->
+            <!-- barcha tugmalarga qat'iy w-[150px] berildi, rasmlar kengligi mutlaqo tenglashdi -->
+            <div class="flex-shrink-0 w-full lg:w-auto overflow-x-auto pb-2 lg:pb-0">
+                <ul class="flex flex-row lg:flex-col gap-2 text-sm font-medium text-center min-w-max lg:min-w-0" id="default-tab" role="tablist">
+                    <li role="presentation">
+                        <button onclick="switchTab(event, '#profile')" class="tab-btn inline-block rounded-base border-2 border-[#C1F432] opacity-100 p-1 w-[120px] sm:w-[150px] h-[80px] lg:h-[114px] overflow-hidden bg-transparent" id="profile-tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">
+                            <img class="w-full h-full object-cover rounded-[8px]" src="./buy.images/porsche-1.png" alt="Tab 1">
+                        </button>
+                    </li>
+                    <li role="presentation">
+                        <button onclick="switchTab(event, '#dashboard')" class="tab-btn inline-block rounded-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition w-[120px] sm:w-[150px] h-[80px] lg:h-[114px] overflow-hidden bg-transparent" id="dashboard-tab" data-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                            <img class="w-full h-full object-cover rounded-[8px]" src="./buy.images/posrche-2.svg" alt="Tab 2">
+                        </button>
+                    </li>
+                    <li role="presentation">
+                        <button onclick="switchTab(event, '#settings')" class="tab-btn inline-block rounded-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition w-[120px] sm:w-[150px] h-[80px] lg:h-[114px] overflow-hidden bg-transparent" id="settings-tab" data-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+                            <img class="w-full h-full object-cover rounded-[8px]" src="./buy.images/porsche-3.svg" alt="Tab 3">
+                        </button>
+                    </li>
+                    <li role="presentation">
+                        <button onclick="switchTab(event, '#contacts')" class="tab-btn inline-block rounded-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition w-[120px] sm:w-[150px] h-[80px] lg:h-[114px] overflow-hidden bg-transparent" id="contacts-tab" data-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
+                            <img class="w-full h-full object-cover rounded-[8px]" src="./buy.images/porsche-4.png" alt="Tab 4">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function switchTab(event, targetId) {
+    const panels = document.querySelectorAll('.tab-panel');
+    panels.forEach(panel => {
+        panel.classList.add('hidden');
+        panel.classList.remove('block');
+    });
+
+    const targetPanel = document.querySelector(targetId);
+    if (targetPanel) {
+        targetPanel.classList.remove('hidden');
+        targetPanel.classList.add('block');
+    }
+
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('border-[#C1F432]', 'opacity-100');
+        btn.classList.add('border-transparent', 'opacity-60');
+        btn.setAttribute('aria-selected', 'false');
+    });
+
+    const currentBtn = event.currentTarget;
+    currentBtn.classList.remove('border-transparent', 'opacity-60');
+    currentBtn.classList.add('border-[#C1F432]', 'opacity-100');
+    currentBtn.setAttribute('aria-selected', 'true');
+}
+</script>
+
+
 
 
 

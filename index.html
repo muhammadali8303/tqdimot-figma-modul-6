@@ -15,17 +15,18 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./sctipt.js">
 
 
 
 </head>
 
-<body class="">
+<body class="bg-[#121315]">
     <header class="bg-[#121315] py-[19px] px-[30px]">
         <div class="max-w-[1280px] mx-auto w-full flex justify-between itmes-center">
             <div class="flex  gap-[32px] itmes-center ">
                 <a class="text-[28px] text-[white]  font-[700]" href="">VELOCE</a>
-                <ul class="flex gap-[16px] mt-[10px] max-[696px]:hidden ">
+                <ul class="flex gap-[16px] mt-[10px] max-[696px]:!hidden ">
                     <li class="inline-block group relative"><a
                             class="group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
                             href="">Rent</a>
@@ -340,51 +341,96 @@
                         </span>
                     </div>
                 </div>
-                <img class="mx-auto max-w-[1024px] w-full mt-[16px]" src="./hero/hero img.SVG" alt="">
+                <img id="hero-vidjet-img" class="mx-auto max-w-[1024px]  w-full mt-[16px]" src="./hero/hero img.SVG" alt="">
 
 
-                <div id="hero-vidjet" class=" max-w-[896px]  w-full mx-auto">
-                    <div class="flex gap-[8px] max-[390px]:ml-[50px]">
-                        <button class="hero-vidjet-button1">
-                            Rent
-                        </button>
-                        <button class="hero-vidjet-button2">Buy</button>
-                        <button class="hero-vidjet-button2">Sell</button>
-                    </div>
+              <div id="hero-vidjet" class="max-w-[896px] w-full mx-auto max-[1000px]:px-[16px] h-auto">
+    <!-- Rent, Buy, Sell tugmalari -->
+    <div class="flex gap-[8px] max-[390px]:ml-[50px] max-[1000px]:justify-center">
+        <button class="hero-vidjet-button1">
+            Rent
+        </button>
+        <button class="hero-vidjet-button2"><a href="./buy.html">Buy</a></button>
+        <button class="hero-vidjet-button2">Sell</button>
+    </div>
 
-                    <div class="flex flex-wrap max-[390px]:ml-[70px] gap-[24px]">
-                        <div class=" mt-[16px]">
-                            <p class="text-[16px] font-[400] text-[#C4C9AE]">Location</p>
-                            <div
-                                class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
-                                <img src="./hero/vidjet cion-1.svg" alt="">
-                                <p class="text-[#6B7280]">Beverly Hills, CA</p>
-                            </div>
+    <!-- Inputlar qatori: 1000px dan pastda markazga tekislanadi va tugma bilan parallel chiziqqa keladi -->
+    <div class="flex flex-wrap max-[390px]:ml-[70px] gap-[24px] max-[1000px]:justify-center max-[1000px]:items-end">
+        
+        <!-- Location -->
+        <div class="mt-[16px]">
+            <p class="text-[16px] font-[400] text-[#C4C9AE]">Location</p>
+            <div class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
+                <img src="./hero/vidjet cion-1.svg" alt="">
+                <input 
+                    type="text" 
+                    placeholder="Beverly Hills, CA" 
+                    class="text-[#6B7280] bg-transparent border-none outline-none p-0 w-full"
+                />
+            </div>
+        </div>
 
-                        </div>
-                        <div class="  mt-[16px]">
-                            <p class="text-[16px] font-[400] text-[#C4C9AE]">DATE RANGE</p>
-                            <div
-                                class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
-                                <img src="./hero/vidjet icon-2.svg" alt="">
-                                <p class="text-[#6B7280]">24 Oct - 28 Oct</p>
-                            </div>
-                        </div>
-                        <div class="  mt-[16px]">
-                            <p class="text-[16px] font-[400] text-[#C4C9AE]">Car Brand</p>
-                            <div
-                                class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
-                                <img src="./hero/vidjet icon-3.svg" alt="">
-                                <p class="text-[white] pr-[50px]">Porsche </p>
-                            </div>
-                        </div>
-
-                        <img class="max-w-[197px] mt-[50px] " src="./hero/vidjet-button.svg" alt="">
-                    </div>
+        <!-- DATE RANGE -->
+        <div class="mt-[16px]">
+            <p class="text-[16px] font-[400] text-[#C4C9AE]">DATE RANGE</p>
+            <div class="mt-[16px] relative inline-block w-full max-w-[197px]">
+                <!-- Asosiy tugma bloki -->
+                <div onclick="toggleDropdown(event)" class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] rounded-[12px] mt-[-5px] cursor-pointer bg-transparent items-center">
+                    <img src="./hero/vidjet icon-2.svg" alt="">
+                    <p id="date-display" class="text-[#6B7280]">24 Oct - 28 Oct</p>
                 </div>
+
+                <!-- Tayyor takliflar menyusi (Dropdown) -->
+                <div id="date-dropdown" class="hidden absolute left-0 right-0 mt-[4px] bg-[#1e1e1e] border border-[gray] rounded-[12px] shadow-lg z-50 overflow-hidden">
+                    <div onclick="selectDate('Today')" class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">Today</div>
+                    <div onclick="selectDate('Tomorrow')" class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">Tomorrow</div>
+                    <div onclick="selectDate('This Week')" class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">This Week</div>
+                    <div onclick="selectDate('Next Week')" class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">Next Week</div>
+                    <div onclick="selectDate('Custom Range')" class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px] border-t border-[#333]">Custom Range</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car Brand -->
+        <div class="mt-[16px]">
+            <p class="text-[16px] font-[400] text-[#C4C9AE]">Car Brand</p>
+            <div class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
+                <img src="./hero/vidjet icon-3.svg" alt="">
+                <p class="text-[white] pr-[50px]">Porsche </p>
+            </div>
+        </div>
+
+        <!-- Search Button: 1000px dan past ekranda mt-[50px] o'rniga mt-[16px] bo'lib qolganlar bilan tenglashadi -->
+        <img class="max-w-[197px] mt-[50px] max-[1000px]:mt-[16px]" src="./hero/vidjet-button.svg" alt="">
+    </div>
+</div>
+
+<script>
+// Menyuni ochish va yopish
+function toggleDropdown(event) {
+    event.stopPropagation();
+    const dropdown = document.getElementById('date-dropdown');
+    dropdown.classList.toggle('hidden');
+}
+
+// Taklif tanlanganda matnni yangilash
+function selectDate(value) {
+    document.getElementById('date-display').innerText = value;
+    document.getElementById('date-dropdown').classList.add('hidden');
+}
+
+// Ekranning boshqa joyi bosilganda menyuni yopib qo'yish
+window.onclick = function(event) {
+    const dropdown = document.getElementById('date-dropdown');
+    if (dropdown) {
+        dropdown.classList.add('hidden');
+    }
+}
+</script>
+
         </section>
 
-        <section class="bg-[#161719] ">
+        <section class="bg-[#161719] max-[661px]:mt-[300px]">
             <div class="max-w-[1280px] w-full mx-auto">
                 <div class="flex px-[64px] justify-between py-[60px] max-[400px]:flex-col">
                     <div class="inline-block group relative">
@@ -436,59 +482,52 @@
 
 
 
-        <section class="bg-[#121315] py-[50px] ">
-            <div class="max-w-[1280px] w-full mx-auto ">
-
-                <div>
-                    <p class="text-[16px] font-[400] text-[#C1F432]">CATEGORIES</p>
-                    <p class="text-[16px] font-[400] text-[#ffffff] pb-5">Browse by Category</p>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div
-                                class="max-w-[280px] h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/katigora-card-bg.svg)] bg-no-repeat bg-center bg-cover">
-                                <div class="w-full " id="kategora-card">
-                                    <p class="text-[16px] pt-[295px]   font-[400] text-[#ffffff]">sport</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">42 Vehicles Available</p>
-                                </div>
-                            </div>
+<!-- section tegiga overflow-hidden klassi qo'shildi -->
+<section class="bg-[#121315] py-[140px] md:py-[50px] px-[16px] md:px-0 overflow-hidden">
+    <div class="max-w-[1280px] w-full mx-auto">
+        <div>
+            <p class="text-[14px] md:text-[16px] font-[400] text-[#C1F432] tracking-wider">CATEGORIES</p>
+            <p class="text-[20px] md:text-[24px] font-[400] text-[#ffffff] pb-5 mt-1">Browse by Category</p>
+            
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/katigora-card-bg.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                        <div class="w-full" id="kategora-card-1">
+                            <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">sport</p>
+                            <p class="text-[16px] font-[400] text-[#C4C9AE]">42 Vehicles Available</p>
                         </div>
-                        <div class="item">
-                            <div
-                                class="max-w-[280px] h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-2.svg)] bg-no-repeat bg-center bg-cover">
-                                <div class="w-full " id="kategora-card">
-                                    <p class="text-[16px] pt-[295px]   font-[400] text-[#ffffff]">SUV</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">38 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div
-                                class="max-w-[280px] h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-3.svg)] bg-no-repeat bg-center bg-cover">
-                                <div class="w-full " id="kategora-card">
-                                    <p class="text-[16px] pt-[295px]   font-[400] text-[#ffffff]">Sedan
-                                    </p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">
-                                        24 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div
-                                class="max-w-[280px] h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-4.svg)] bg-no-repeat bg-center bg-cover">
-                                <div class="w-full " id="kategora-card">
-                                    <p class="text-[16px] pt-[295px]   font-[400] text-[#ffffff]">Electric</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">18 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
-
-
+                <div class="item">
+                    <div class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-2.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                        <div class="w-full" id="kategora-card-2">
+                            <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">SUV</p>
+                            <p class="text-[16px] font-[400] text-[#C4C9AE]">38 Vehicles Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-3.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                        <div class="w-full" id="kategora-card-3">
+                            <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">Sedan</p>
+                            <p class="text-[16px] font-[400] text-[#C4C9AE]">24 Vehicles Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-4.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                        <div class="w-full" id="kategora-card-4">
+                            <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">Electric</p>
+                            <p class="text-[16px] font-[400] text-[#C4C9AE]">18 Vehicles Available</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+
         <section>
 
         </section>

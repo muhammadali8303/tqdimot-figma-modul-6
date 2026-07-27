@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./buy.css">
       <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -291,20 +292,20 @@
             <p class="text-[56px] text-[#ffffff] mt-[8px]   font-[600]">2024 Porsche 911 Turbo S</p>
             <p class="text-[22px] font-[400] text-[#C4C9AE]">Agate Grey Metallic • Coupe • 3,420 Miles</p>
         
-          <div class="max-w-[954px] h-[535px] mx-auto w-full flex items-start gap-6 py-[30px]">
+          <div class="max-w-[1390px] h-[535px] mx-auto w-full flex items-start gap-6 py-[30px]">
   <!-- Tab Kontentlari (Rasmlar chiqadigan joy) -->
   <div id="default-tab-content" class="max-w-[1200px] w-full bg-neutral-secondary-soft p-4 rounded-base">
     <div class="block" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <img class="w-full " id="porsche-1" src="./buy.images/porsche-1.png" alt="Porsche 5">
+      <img class="w-full max-w-[1390px]" id="porsche-1" src="./buy.images/porsche-1.png" alt="Porsche 5">
     </div>
     <div class="hidden" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-      <img class="w-full" id="porsche-2" src="./buy.images/posrche-2.svg " alt="Porsche 2">
+      <img class="w-full max-w-[1390px]" id="porsche-2" src="./buy.images/posrche-2.svg " alt="Porsche 2">
     </div>
     <div class="hidden" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-      <img class="w-full" id="porsche-3" src="./buy.images/porsche-3.svg" alt="Porsche 3">
+      <img class="w-full max-w-[1390px]" id="porsche-3" src="./buy.images/porsche-3.svg" alt="Porsche 3">
     </div>
     <div class="hidden" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-      <img class="w-full" porsche src="./buy.images/porsche-4.png" alt="Porsche 4">
+      <img class="w-full max-w-[1390px]" id="porsche-4" src="./buy.images/porsche-4.png" alt="Porsche 4">
     </div>
   </div>
 
@@ -313,22 +314,22 @@
     <ul class="flex flex-col  gap-2 text-sm font-medium text-center" id="default-tab" role="tablist">
       <li role="presentation">
         <button class="inline-block justify-between  rounded-t-base border-2 border-brand opacity-100 p-1" id="profile-tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">
-          <img class="max-w-[170px] w-full h-[114px] object-cover"  src="./buy.images/porsche-1.png" alt="Tab 5" class="w-20 h-auto">
+          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/porsche-1.png" alt="Tab 5" class="w-20 h-auto">
         </button>
       </li>
       <li role="presentation">
         <button class="inline-block justify-between  rounded-t-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition" id="dashboard-tab" data-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
-          <img class="max-w-[170px] w-full h-[114px] object-cover"  src="./buy.images/posrche-2.svg" alt="Tab 2" class="w-20 h-auto">
+          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/posrche-2.svg" alt="Tab 2" class="w-20 h-auto">
         </button>
       </li>
       <li role="presentation">
         <button class="inline-block justify-between  rounded-t-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition" id="settings-tab" data-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
-          <img class="max-w-[170px] w-full h-[114px] object-cover"  src="./buy.images/porsche-3.svg" alt="Tab 3" class="w-20 h-auto">
+          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/porsche-3.svg" alt="Tab 3" class="w-20 h-auto">
         </button>
       </li>
       <li role="presentation">
         <button class="inline-block justify-between  rounded-t-base border-2 border-transparent opacity-60 hover:opacity-100 p-1 transition" id="contacts-tab" data-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
-          <img class="max-w-[170px] w-full h-[114px] object-cover"  src="./buy.images/porsche-4.png" alt="Tab 4" class="w-20 h-auto">
+          <img id="tab-img" class=" w-full h-[114px] object-cover"  src="./buy.images/porsche-4.png" alt="Tab 4" class="w-20 h-auto">
         </button>
       </li>
     </ul>

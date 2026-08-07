@@ -81,108 +81,212 @@
 
                 </div>
                 <!-- Modal toggle -->
-                <button data-modal-target="static-modal" data-modal-toggle="static-modal"
-                    class="text-black bg-[#C1F432] max-[696px]:hidden box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-[8px] text-sm py-[10px] px-[24px] focus:outline-none"
-                    type="button">
-                    List your car </button>
+              
 
+<!-- Modal toggle -->
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none" type="button">
+  List your car
+</button>
 
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- drawer init and show -->
-            <div class="text-center max-[696px]:!block hidden">
-                <button
-                    class="inline-flex items-center justify-center text-white border border-[#C1F432]  shadow-xs font-medium leading-5 rounded-base cursor-pointer text-sm px-4 py-2.5 focus:outline-none"
-                    type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
-                    aria-controls="drawer-navigation">
-                    <img src="./menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+<!-- Main modal -->
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full  md:inset-0 h-[calc(100%-1rem)] max-h-[1000px]">
+    <div class="relative object-cover overflow-hidden p-4 w-full max-w-[700px] max-h-[700px]">
+        <!-- Modal content -->
+        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+            <!-- Modal header -->
+            <div class="flex items-center text-white bg-black justify-between border-b border-default pb-4 md:pb-5">
+                <h3 class="text-lg font-medium text-heading">
+                    Terms of Service
+                </h3>
+                <button type="button" class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                    <span class="sr-only">Close modal</span>
                 </button>
             </div>
+            <!-- Modal body -->
+             <div class="min-h-screen w-full bg-[#101112] flex items-center justify-center px-5">
 
-            <!-- drawer component -->
-            <div id="drawer-navigation"
-                class="fixed bg-black  top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-primary-soft w-80 border-e border-default"
-                tabindex="-1" aria-labelledby="drawer-navigation-label">
-                <div class="border-b border-default pb-4 flex items-center">
+  <div
+    class="w-full max-w-[420px]
+           rounded-2xl
+           border border-[#292b2d]
+           bg-[#151617]
+           p-6 sm:p-8
+           shadow-2xl">
 
-                    <div class="border-b border-default pb-4 flex items-center justify-between w-full">
-                        <a class="text-[28px] text-[white] font-[700]" href="">VELOCE</a>
+    <!-- TITLE -->
+    <div class="mb-7">
 
-                        <button id="close-drawer-btn"
-                            class="text-black hover:text-gray-400 focus:outline-none transition-colors"
-                            aria-label="Close menu">
-                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-                            </svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
+      <h1 class="text-2xl font-semibold text-white">
+        Sign In
+      </h1>
 
+      <p class="mt-2 text-sm text-[#8f918d]">
+        Welcome back! Please enter your details.
+      </p>
 
+    </div>
 
 
-                </div>
+    <!-- FORM -->
+    <form class="space-y-5">
 
-                <ul class="mt-[10px] mr-[50px] text-center ">
-                    <li class="inline-block group relative"><a
-                            class="group-hover:  font-[700] text-[24px] text-[#ffffff] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
-                            href="">Rent</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+      <!-- EMAIL -->
+      <div>
 
-                        </span>
-                    </li> <br> <br>
-                    <li class="inline-block group relative"><a
-                            class="group-hover:font-[700]  font-[700] text-[#ffffff]   text-[24px] group-hover:text-[#FFFFFF] duration-[0.3s]"
-                            href="">buy</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+        <label
+          for="email"
+          class="mb-2 block text-sm font-medium text-[#d8d9d5]">
 
-                        </span>
-                    </li> <br> <br>
-                    <li class="inline-block group relative"><a
-                            class="group-hover:font-[700]  font-[700] text-[#ffffff]  text-[24px] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="">Sell</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+          Email
 
-                        </span>
-                    </li> <br> <br>
-                    <li class="inline-block group relative"><a
-                            class=" group-hover:font-[700]  font-[700] text-[#ffffff]  text-[24px] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="">Brands</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+        </label>
 
-                        </span>
-                    </li> <br> <br>
-                    <li class="inline-block group relative"><a
-                            class=" group-hover:font-[700]  font-[700] text-[#ffffff]  text-[24px] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="">Journal</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+        <input
+          id="email"
+          type="email"
+          placeholder="you@example.com"
+          class="w-full rounded-lg
+                 border border-[#303234]
+                 bg-[#101112]
+                 px-4 py-3
+                 text-sm text-white
+                 placeholder:text-[#666864]
+                 outline-none
+                 transition
+                 focus:border-[#b7e52c]
+                 focus:ring-1
+                 focus:ring-[#b7e52c]">
 
-                        </span>
+      </div>
 
-                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18 17.94 6M18 18 6.06 6" />
-                        </svg>
-                    </li> <br> <br>
-                </ul>
+
+      <!-- PASSWORD -->
+      <div>
+
+        <div class="mb-2 flex items-center justify-between">
+
+          <label
+            for="password"
+            class="text-sm font-medium text-[#d8d9d5]">
+
+            Password
+
+          </label>
+
+          <a
+            href="#"
+            class="text-xs text-[#b7e52c]
+                   hover:text-[#d5ff61]
+                   transition">
+
+            Forgot password?
+
+          </a>
+
+        </div>
+
+
+        <input
+          id="password"
+          type="password"
+          placeholder="••••••••"
+          class="w-full rounded-lg
+                 border border-[#303234]
+                 bg-[#101112]
+                 px-4 py-3
+                 text-sm text-white
+                 placeholder:text-[#666864]
+                 outline-none
+                 transition
+                 focus:border-[#b7e52c]
+                 focus:ring-1
+                 focus:ring-[#b7e52c]">
+
+      </div>
+
+
+      <!-- REMEMBER -->
+      <div class="flex items-center gap-2">
+
+        <input
+          id="remember"
+          type="checkbox"
+          class="h-4 w-4
+                 rounded
+                 border-[#383a3c]
+                 bg-[#101112]
+                 accent-[#b7e52c]">
+
+        <label
+          for="remember"
+          class="text-sm text-[#999b96]">
+
+          Remember me
+
+        </label>
+
+      </div>
+
+
+      <!-- SIGN IN BUTTON -->
+      <button
+        type="submit"
+        class="w-full rounded-lg
+               bg-[#b7e52c]
+               py-3
+               text-sm font-bold
+               text-[#101112]
+               transition
+               hover:bg-[#d0fa54]
+               active:scale-[0.98]">
+
+        Sign In
+
+      </button>
+
+    </form>
+
+
+    <!-- SIGN UP -->
+    <p class="mt-7 text-center text-sm text-[#858783]">
+
+      Don't have an account?
+
+      <a
+        href="#"
+        class="ml-1 font-medium
+               text-[#b7e52c]
+               hover:text-[#d5ff61]">
+
+        Sign Up
+
+      </a>
+
+    </p>
+
+  </div>
+
+</div>
+             
+          
+        </div>
+    </div>
+</div>
+
+
+
+
 
             </div>
+
+
+
+
+
+
+
+        
     </header>
 
 
@@ -190,109 +294,7 @@
 
 
 
-    <!-- Main modal -->
-    <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
-        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center shadow border border-black max-w-[500px] mx-auto items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-
-        <form class="max-w-sm mx-auto p-4">
-            <!-- Sarlavha qismi -->
-            <div class="border-b border-default pb-4 flex items-center justify-between w-full mb-4">
-                <a class="text-[28px] text-[black] font-[700]" href="">VELOCE</a>
-
-                <!-- To'g'rilangan Yopish tugmasi (X) -->
-                <button type="button" onclick="document.getElementById('static-modal').classList.add('hidden')"
-                    class="text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
-                    aria-label="Close menu">
-                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18 17.94 6M18 18 6.06 6" />
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-            </div>
-
-            <!-- Phone number input -->
-            <label for="phone-input" class="block mb-2.5 text-sm font-medium text-heading">Phone number</label>
-            <div class="flex items-center -space-x-px shadow-xs rounded-base">
-                <button id="dropdown-phone-button-3" data-dropdown-toggle="dropdown-phone-3" type="button"
-                    class="inline-flex items-center shrink-0 z-10 text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-s-base text-sm px-4 py-2.5 focus:outline-none">
-                    <svg class="w-4 h-4 me-1.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.00013 14.6666C11.6821 14.6666 14.667 11.6818 14.667 7.99992C14.667 4.31802 11.6821 1.33325 8.00013 1.33325C4.31811 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31811 14.6666 8.00013 14.6666Z"
-                            fill="white" />
-                        <path
-                            d="M7.71167 7.99975H14.6678C14.6678 7.39807 14.5876 6.8152 14.4382 6.26074H7.71167V7.99975Z"
-                            fill="#D80027" />
-                        <path
-                            d="M7.71167 4.52172H13.6894C13.2813 3.85583 12.7596 3.26726 12.1512 2.78271H7.71167V4.52172Z"
-                            fill="#D80027" />
-                        <path
-                            d="M8.00053 14.6667C9.56944 14.6667 11.0115 14.1244 12.1502 13.2175H3.85083C4.98958 14.1244 6.43162 14.6667 8.00053 14.6667Z"
-                            fill="#D80027" />
-                        <path
-                            d="M2.31233 11.4784H13.689C14.0167 10.9438 14.2708 10.3594 14.4379 9.73926H1.56348C1.73059 10.3594 1.98469 10.9438 2.31233 11.4784V11.4784Z"
-                            fill="#D80027" />
-                        <path
-                            d="M4.42123 2.37426H5.02873L4.46365 2.78478L4.6795 3.44902L4.11445 3.03851L3.5494 3.44902L3.73584 2.87519C3.23832 3.28961 2.80224 3.77514 2.44289 4.31614H2.63754L2.27784 4.57745C2.2218 4.67093 2.16806 4.7659 2.11655 4.86227L2.28831 5.3909L1.96786 5.15808C1.8882 5.32684 1.81534 5.49941 1.74985 5.67557L1.93908 6.25802H2.63754L2.07246 6.66853L2.28831 7.33278L1.72326 6.92226L1.38479 7.16818C1.35091 7.4405 1.33325 7.71788 1.33325 7.99939H7.9996C7.9996 4.31781 7.9996 3.88378 7.9996 1.33325C6.68268 1.33325 5.45506 1.71525 4.42123 2.37426V2.37426ZM4.6795 7.33278L4.11445 6.92226L3.5494 7.33278L3.76524 6.66853L3.20017 6.25802H3.89862L4.11445 5.59377L4.33027 6.25802H5.02873L4.46365 6.66853L4.6795 7.33278ZM4.46365 4.72666L4.6795 5.3909L4.11445 4.98039L3.5494 5.3909L3.76524 4.72666L3.20017 4.31614H3.89862L4.11445 3.6519L4.33027 4.31614H5.02873L4.46365 4.72666ZM7.07068 7.33278L6.50563 6.92226L5.94058 7.33278L6.15643 6.66853L5.59135 6.25802H6.28981L6.50563 5.59377L6.72146 6.25802H7.41991L6.85484 6.66853L7.07068 7.33278ZM6.85484 4.72666L7.07068 5.3909L6.50563 4.98039L5.94058 5.3909L6.15643 4.72666L5.59135 4.31614H6.28981L6.50563 3.6519L6.72146 4.31614H7.41991L6.85484 4.72666ZM6.85484 2.78478L7.07068 3.44902L6.50563 3.03851L5.94058 3.44902L6.15643 2.78478L5.59135 2.37426H6.28981L6.50563 1.71002L6.72146 2.37426H7.41991L6.85484 2.78478Z"
-                            fill="#1A47B8" />
-                    </svg>
-                    +1
-                    <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m19 9-7 7-7-7" />
-                    </svg>
-                </button>
-                <div id="dropdown-phone-3"
-                    class="z-10 hidden bg-white border border-default-medium rounded-base shadow-lg w-54">
-                    <!-- Davlatlar ro'yxati -->
-                    <ul class="p-2 text-sm text-body font-medium">
-                        <li><a href="#"
-                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">United
-                                States (+1)</a></li>
-                        <li><a href="#"
-                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded-md">Australia
-                                (+61)</a></li>
-                    </ul>
-                </div>
-                <div class="relative w-full">
-                    <input type="tel" id="phone-input"
-                        class="w-full z-20 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-e-base focus:outline-none focus:ring-1 focus:ring-brand focus:border-brand block px-3 py-2.5 placeholder:text-body"
-                        placeholder="123-456-7890" required />
-                </div>
-            </div>
-
-            <!-- Password input -->
-            <div class="mt-4">
-                <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Your password</label>
-                <input type="password" name="password" id="password" placeholder="••••••••"
-                    class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-                    required />
-            </div>
-
-            <!-- Terms & Conditions -->
-            <div class="flex items-center mt-4 mb-4">
-                <input id="terms" aria-describedby="terms" type="checkbox"
-                    class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft"
-                    required>
-                <label for="terms" class="text-body ms-2 text-sm">I accept the <a
-                        class="font-medium text-fg-brand hover:underline" href="#">Terms and Conditions</a></label>
-            </div>
-
-            <!-- Submit button -->
-            <button type="submit"
-                class="w-full text-white bg-black hover:bg-gray-800 focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Sign
-                Up</button>
-        </form>
-    </div>
-    <!-- Modal body -->
-
-    <!-- Modal footer -->
-
-    </div>
-    </div>
-    </div>
+  
 
 
 
@@ -1357,80 +1359,294 @@ currently showing the strongest market performance...</p>
     
 
 
+    <footer class="w-full bg-[#0d0e0f] text-white border-t border-[#17191a]">
 
-<footer class="bg-neutral-primary-soft text-[white]">
-    <div class="mx-auto w-full max-w-[1280px] p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" class="flex items-center">
-                  
-                  <span class="text-heading self-center text-2xl font-semibold whitespace-nowrap">VELOCE</span>
-              </a>
-          </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Resources</h2>
-                  <ul class="text-body font-medium">
-                      <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
-                      </li>
-                      <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Follow us</h2>
-                  <ul class="text-body font-medium">
-                      <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-                      </li>
-                      <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-                      </li>
-                  </ul>
-              </div>
-              <div>
-                  <h2 class="mb-6 text-sm font-semibold text-heading uppercase">Legal</h2>
-                  <ul class="text-body font-medium">
-                      <li class="mb-4">
-                          <a href="#" class="hover:underline">Privacy Policy</a>
-                      </li>
-                      <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
+  <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
+
+    <!-- MAIN FOOTER -->
+    <div
+      class="grid grid-cols-1
+             sm:grid-cols-2
+             lg:grid-cols-[1.3fr_1fr_1fr_1fr]
+             gap-10 lg:gap-16
+             py-12 sm:py-14 lg:py-[70px]">
+
+      <!-- BRAND -->
+      <div class="max-w-[300px]">
+
+        <a
+          href="#"
+          class="inline-block
+                 text-[30px]
+                 sm:text-[32px]
+                 font-light
+                 tracking-[-1.5px]
+                 text-[#f2f2f2]">
+
+          VELOCE
+
+        </a>
+
+
+        <p
+          class="mt-5
+                 max-w-[280px]
+                 text-[14px]
+                 leading-[1.55]
+                 text-[#aaa99c]">
+
+          Elevating the luxury car rental
+          experience with a curated fleet of
+          the world's most exceptional
+          automobiles.
+
+        </p>
+
       </div>
-      <hr class="my-6 border-default sm:mx-auto lg:my-8" />
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-body sm:text-center">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-          </span>
-          <div class="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="#" class="text-body hover:text-heading">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
-                <span class="sr-only">Facebook page</span>
+
+
+      <!-- FLEET -->
+      <div>
+
+        <h3
+          class="text-[14px]
+                 font-medium
+                 text-[#e2e2dc]
+                 mb-4">
+
+          Fleet
+
+        </h3>
+
+
+        <ul class="space-y-2.5">
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Hypercars
+
             </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/></svg>
-                <span class="sr-only">Discord community</span>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Supercars
+
             </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/></svg>
-            <span class="sr-only">Twitter page</span>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Luxury SUVs
+
             </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/></svg>
-                <span class="sr-only">GitHub account</span>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Classics
+
             </a>
-            <a href="#" class="text-body hover:text-heading ms-5">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 10 10A10.009 10.009 0 0 0 12 2Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.093 20.093 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM10 3.707a8.82 8.82 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.755 45.755 0 0 0 10 3.707Zm-6.358 6.555a8.57 8.57 0 0 1 4.73-5.981 53.99 53.99 0 0 1 3.168 4.941 32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.641 31.641 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM12 20.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 15.113 13a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/></svg>
-                <span class="sr-only">Dribbble account</span>
-            </a>
-          </div>
+          </li>
+
+        </ul>
+
       </div>
+
+
+      <!-- COMPANY -->
+      <div>
+
+        <h3
+          class="text-[14px]
+                 font-medium
+                 text-[#e2e2dc]
+                 mb-4">
+
+          Company
+
+        </h3>
+
+
+        <ul class="space-y-2.5">
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              About Us
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Journal
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Careers
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Contact
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- LEGAL -->
+      <div>
+
+        <h3
+          class="text-[14px]
+                 font-medium
+                 text-[#e2e2dc]
+                 mb-4">
+
+          Legal
+
+        </h3>
+
+
+        <ul class="space-y-2.5">
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Privacy Policy
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Terms of Service
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              Rental Agreement
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[14px]
+                     text-[#aaa99c]
+                     hover:text-white
+                     transition-colors">
+
+              FAQ
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
+
+
+    <!-- COPYRIGHT -->
+    <div
+      class="border-t border-[#17191a]
+             py-6 sm:py-7">
+
+      <p
+        class="text-[8px]
+               sm:text-[9px]
+               font-semibold
+               tracking-[0.18em]
+               text-[#77786f]
+               uppercase">
+
+        © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
+
+      </p>
+
+    </div>
+
+  </div>
+
 </footer>
 
 

@@ -64,7 +64,7 @@ opacity: 1;
     margin-right: 250px !important;
     margin-bottom: -63px !important;
     vertical-align: middle !important;
-    margin-left: 60px !important;
+    margin-left: 10px !important;
 
 }
 .owl-prev , .owl-next{
@@ -81,7 +81,7 @@ opacity: 1;
 }
 .owl-next{
     vertical-align: middle !important;
-    margin-left: 30px !important;
+    margin-left:  !important;
     margin-right: -10px !important;
 }
 #hero-vidjet-img{

@@ -310,141 +310,378 @@
 
 
     <main>
-        <section class=" pt-[47px] bg-[#121315]">
-            <div class="max-w-[1280px] mx-auto w-full">
-                <p class="text-[72px] text-center font-[700] text-[#E3E2E5] max-[832px]:!text-[50px]">Drive the
-                    extraordinary.
-                    <br> <span class="text-[#C1F432]">Rent it. Or own it.</span>
-                </p>
+     <section class="w-full bg-[#101112] text-white overflow-hidden">
 
-                <div class="flex justify-center gap-[65px] mt-[16px]">
-                    <div class="max-w-[90px] w-full inline-block group relative">
-                        <p class="text-[16px] font-[400] text-[white] text-center ">1,200+</p>
-                        <p class="text-[16px] font-[400] text-[#C4C9AE] text-center ">FLEET SIZE</p> <span
-                            class="inline-block absolute top-[60px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+  <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9 py-12 sm:py-16">
 
-                        </span>
+    <!-- TITLE -->
+    <div class="text-center">
 
-                    </div>
-                    <div class="max-w-[119px] w-full inline-block group relative">
-                        <p class="text-[16px] font-[400] text-[white] text-center ">24h</p>
-                        <p class="text-[16px] font-[400] text-[#C4C9AE] text-center ">FAST DELIVERY</p>
-                        <span
-                            class="inline-block absolute top-[60px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+      <h1
+        class="text-[38px] sm:text-[50px] lg:text-[58px]
+               leading-[1.02] font-bold tracking-[-2px]">
 
-                        </span>
-                    </div>
-                    <div class="max-w-[126px] w-full inline-block group relative">
-                        <p class="text-[16px] font-[400] text-[white] text-center ">150k+</p>
-                        <p class="text-[16px] font-[400] text-[#C4C9AE] text-center ">HAPPY CLIENTS</p>
-                        <span
-                            class="inline-block absolute top-[60px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+        <span class="text-[#e8e8e8]">
+          Drive the extraordinary.
+        </span>
 
-                        </span>
-                    </div>
-                </div>
-                <img id="hero-vidjet-img" class="mx-auto max-w-[1024px]  w-full mt-[16px]" src="./hero/hero img.SVG"
-                    alt="">
+        <br>
+
+        <span class="text-[#b7ff1c]">
+          Rent it. Or own it.
+        </span>
+
+      </h1>
 
 
-                <div id="hero-vidjet" class="max-w-[896px] w-full mx-auto max-[1000px]:px-[16px] h-auto">
-                    <!-- Rent, Buy, Sell tugmalari -->
-                    <div class="flex gap-[8px] max-[390px]:ml-[50px] max-[1000px]:justify-center">
-                        <button class="hero-vidjet-button1">
-                            Rent
-                        </button>
-                        <button class="hero-vidjet-button2"><a href="./buy.html">Buy</a></button>
-                        <button class="hero-vidjet-button2">Sell</button>
-                    </div>
+      <!-- STATS -->
+      <div
+        class="mt-6 flex justify-center
+               divide-x divide-[#292b2b]">
 
-                    <!-- Inputlar qatori: 1000px dan pastda markazga tekislanadi va tugma bilan parallel chiziqqa keladi -->
-                    <div
-                        class="flex flex-wrap max-[390px]:ml-[70px] gap-[24px] max-[1000px]:justify-center max-[1000px]:items-end">
+        <div class="px-5 sm:px-9 text-center">
 
-                        <!-- Location -->
-                        <div class="mt-[16px]">
-                            <p class="text-[16px] font-[400] text-[#C4C9AE]">Location</p>
-                            <div
-                                class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
-                                <img src="./hero/vidjet cion-1.svg" alt="">
-                                <input type="text" placeholder="Beverly Hills, CA"
-                                    class="text-[#6B7280] bg-transparent border-none outline-none p-0 w-full" />
-                            </div>
-                        </div>
+          <p class="text-sm">
+            1,200+
+          </p>
 
-                        <!-- DATE RANGE -->
-                        <div class="mt-[16px]">
-                            <p class="text-[16px] font-[400] text-[#C4C9AE]">DATE RANGE</p>
-                            <div class="mt-[16px] relative inline-block w-full max-w-[197px]">
-                                <!-- Asosiy tugma bloki -->
-                                <div onclick="toggleDropdown(event)"
-                                    class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] rounded-[12px] mt-[-5px] cursor-pointer bg-transparent items-center">
-                                    <img src="./hero/vidjet icon-2.svg" alt="">
-                                    <p id="date-display" class="text-[#6B7280]">24 Oct - 28 Oct</p>
-                                </div>
+          <p class="mt-1 text-[10px] text-[#aaa99c]">
+            FLEET SIZE
+          </p>
 
-                                <!-- Tayyor takliflar menyusi (Dropdown) -->
-                                <div id="date-dropdown"
-                                    class="hidden absolute left-0 right-0 mt-[4px] bg-[#1e1e1e] border border-[gray] rounded-[12px] shadow-lg z-50 overflow-hidden">
-                                    <div onclick="selectDate('Today')"
-                                        class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">
-                                        Today</div>
-                                    <div onclick="selectDate('Tomorrow')"
-                                        class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">
-                                        Tomorrow</div>
-                                    <div onclick="selectDate('This Week')"
-                                        class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">
-                                        This Week</div>
-                                    <div onclick="selectDate('Next Week')"
-                                        class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px]">
-                                        Next Week</div>
-                                    <div onclick="selectDate('Custom Range')"
-                                        class="px-[16px] py-[10px] text-[#6B7280] hover:bg-[#2a2a2a] hover:text-white cursor-pointer text-[14px] border-t border-[#333]">
-                                        Custom Range</div>
-                                </div>
-                            </div>
-                        </div>
+        </div>
 
-                        <!-- Car Brand -->
-                        <div class="mt-[16px]">
-                            <p class="text-[16px] font-[400] text-[#C4C9AE]">Car Brand</p>
-                            <div
-                                class="flex gap-[8px] px-[16px] py-[12px] border border-[gray] max-w-[197px] rounded-[12px] mt-[10px]">
-                                <img src="./hero/vidjet icon-3.svg" alt="">
-                                <p class="text-[white] pr-[50px]">Porsche </p>
-                            </div>
-                        </div>
 
-                        <!-- Search Button: 1000px dan past ekranda mt-[50px] o'rniga mt-[16px] bo'lib qolganlar bilan tenglashadi -->
-                        <img class="max-w-[197px] mt-[50px] max-[1000px]:mt-[16px]" src="./hero/vidjet-button.svg"
-                            alt="">
-                    </div>
-                </div>
+        <div class="px-5 sm:px-9 text-center">
 
-                <script>
-                    // Menyuni ochish va yopish
-                    function toggleDropdown(event) {
-                        event.stopPropagation();
-                        const dropdown = document.getElementById('date-dropdown');
-                        dropdown.classList.toggle('hidden');
-                    }
+          <p class="text-sm">
+            24h
+          </p>
 
-                    // Taklif tanlanganda matnni yangilash
-                    function selectDate(value) {
-                        document.getElementById('date-display').innerText = value;
-                        document.getElementById('date-dropdown').classList.add('hidden');
-                    }
+          <p class="mt-1 text-[10px] text-[#aaa99c]">
+            FAST DELIVERY
+          </p>
 
-                    // Ekranning boshqa joyi bosilganda menyuni yopib qo'yish
-                    window.onclick = function (event) {
-                        const dropdown = document.getElementById('date-dropdown');
-                        if (dropdown) {
-                            dropdown.classList.add('hidden');
-                        }
-                    }
-                </script>
+        </div>
 
-        </section>
+
+        <div class="px-5 sm:px-9 text-center">
+
+          <p class="text-sm">
+            150k+
+          </p>
+
+          <p class="mt-1 text-[10px] text-[#aaa99c]">
+            HAPPY CLIENTS
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- IMAGE + WIDGET -->
+    <div
+      class="relative
+             w-full
+             max-w-[1024px]
+             mx-auto
+             mt-10 sm:mt-12">
+
+
+      <!-- SINGLE IMAGE -->
+      <div
+        class="relative
+               w-full
+               h-[280px]
+               sm:h-[400px]
+               lg:h-[500px]
+               overflow-hidden">
+
+        <img
+          src="./hero/hero img.svg"
+          alt="Porsche 911 Turbo S"
+          class="w-full h-full object-cover block">
+
+
+        <!-- IMAGE DARK OVERLAY -->
+        <div
+          class="absolute inset-0
+                 bg-gradient-to-b
+                 from-black/10
+                 via-transparent
+                 to-[#101112]/30
+                 pointer-events-none">
+        </div>
+
+      </div>
+
+
+      <!-- SEARCH WIDGET -->
+      <div
+        class="absolute
+               left-1/2
+               -translate-x-1/2
+               bottom-[-10px]
+               z-20
+               w-[calc(100%-32px)]
+               sm:w-[calc(100%-60px)]
+               lg:w-[740px]
+               rounded-[14px]
+               border border-[#303332]
+               bg-[#181a1b]/95
+               backdrop-blur-xl
+               shadow-[0_20px_60px_rgba(0,0,0,0.45)]
+               p-3 sm:p-4">
+
+
+        <!-- TABS -->
+        <div class="flex items-center gap-1 mb-4">
+
+          <button
+            type="button"
+            class="car-tab active-car-tab
+                   px-5 py-2 rounded-lg
+                   text-[12px] font-semibold
+                   bg-[#b7ff1c] text-[#111]">
+
+           <a href="./index.html">Rent</a>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="car-tab
+                   px-5 py-2 rounded-lg
+                   text-[12px] font-semibold
+                   text-[#aaa99c]
+                   hover:text-white transition">
+
+            <a href="./buy.html">Buy</a>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="car-tab
+                   px-5 py-2 rounded-lg
+                   text-[12px] font-semibold
+                   text-[#aaa99c]
+                   hover:text-white transition">
+
+            Sell
+
+          </button>
+
+        </div>
+
+
+        <!-- FIELDS -->
+        <div
+          class="grid
+                 grid-cols-1
+                 sm:grid-cols-2
+                 lg:grid-cols-[1fr_1fr_1fr_auto]
+                 gap-3">
+
+
+          <!-- LOCATION -->
+          <div>
+
+            <label
+              class="block mb-1.5 text-[10px]
+                     uppercase text-[#aaa99c]">
+
+              Location
+
+            </label>
+
+            <select
+              class="w-full h-[42px]
+                     appearance-none
+                     rounded-lg
+                     border border-[#2b2d2e]
+                     bg-[#141617]
+                     px-3
+                     text-[12px]
+                     text-[#999b95]
+                     outline-none
+                     focus:border-[#b7ff1c]
+                     cursor-pointer">
+
+              <option>Beverly Hills, CA</option>
+              <option>Los Angeles, CA</option>
+              <option>Miami, FL</option>
+              <option>New York, NY</option>
+              <option>Dubai, UAE</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- DATE -->
+          <div>
+
+            <label
+              class="block mb-1.5 text-[10px]
+                     uppercase text-[#aaa99c]">
+
+              Date Range
+
+            </label>
+
+            <input
+              type="date"
+              class="w-full h-[42px]
+                     rounded-lg
+                     border border-[#2b2d2e]
+                     bg-[#141617]
+                     px-3
+                     text-[12px]
+                     text-[#999b95]
+                     outline-none
+                     focus:border-[#b7ff1c]
+                     cursor-pointer">
+
+          </div>
+
+
+          <!-- BRAND -->
+          <div>
+
+            <label
+              class="block mb-1.5 text-[10px]
+                     uppercase text-[#aaa99c]">
+
+              Car Brand
+
+            </label>
+
+            <select
+              class="w-full h-[42px]
+                     appearance-none
+                     rounded-lg
+                     border border-[#2b2d2e]
+                     bg-[#141617]
+                     px-3
+                     text-[12px]
+                     text-[#999b95]
+                     outline-none
+                     focus:border-[#b7ff1c]
+                     cursor-pointer">
+
+              <option>Porsche</option>
+              <option>Ferrari</option>
+              <option>Lamborghini</option>
+              <option>McLaren</option>
+              <option>BMW</option>
+              <option>Mercedes-Benz</option>
+              <option>Aston Martin</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- SEARCH -->
+          <button
+            type="button"
+            class="h-[42px]
+                   self-end
+                   rounded-lg
+                   bg-[#b7ff1c]
+                   px-6
+                   text-[12px]
+                   font-bold
+                   text-[#101112]
+                   flex items-center
+                   justify-center
+                   gap-2
+                   hover:bg-[#caff50]
+                   active:scale-[0.98]
+                   transition">
+
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5">
+
+              <circle
+                cx="11"
+                cy="11"
+                r="7"/>
+
+              <path d="m20 20-4-4"/>
+
+            </svg>
+
+            Search
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- SPACE FOR OVERLAY -->
+    <div class="h-[90px] sm:h-[100px]"></div>
+
+  </div>
+
+
+  <!-- TABS JS -->
+  <script>
+
+    const carTabs =
+      document.querySelectorAll(".car-tab");
+
+    carTabs.forEach(tab => {
+
+      tab.addEventListener("click", () => {
+
+        carTabs.forEach(item => {
+
+          item.classList.remove(
+            "active-car-tab",
+            "bg-[#b7ff1c]",
+            "text-[#111]"
+          );
+
+          item.classList.add(
+            "text-[#aaa99c]"
+          );
+
+        });
+
+
+        tab.classList.add(
+          "active-car-tab",
+          "bg-[#b7ff1c]",
+          "text-[#111]"
+        );
+
+        tab.classList.remove(
+          "text-[#aaa99c]"
+        );
+
+      });
+
+    });
+
+  </script>
+
+</section>
 
         <section class="bg-[#161719] max-[661px]:mt-[300px]">
             <div class="max-w-[1280px] w-full mx-auto">
@@ -1359,26 +1596,32 @@ currently showing the strongest market performance...</p>
     
 
 
-    <footer class="w-full bg-[#0d0e0f] text-white border-t border-[#17191a]">
+
+<footer class="w-full bg-[#0d0e0f] text-white border-t border-[#181a1b]">
 
   <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
 
-    <!-- MAIN FOOTER -->
+    <!-- FOOTER CONTENT -->
     <div
-      class="grid grid-cols-1
-             sm:grid-cols-2
-             lg:grid-cols-[1.3fr_1fr_1fr_1fr]
-             gap-10 lg:gap-16
-             py-12 sm:py-14 lg:py-[70px]">
+      class="grid grid-cols-2
+             lg:grid-cols-[1.35fr_1fr_1fr_1fr]
+             gap-x-8 gap-y-10
+             sm:gap-x-12
+             lg:gap-x-16
+             py-12
+             sm:py-14
+             lg:py-[68px]">
+
 
       <!-- BRAND -->
-      <div class="max-w-[300px]">
+      <div class="col-span-2 lg:col-span-1">
 
         <a
           href="#"
           class="inline-block
-                 text-[30px]
-                 sm:text-[32px]
+                 text-[29px]
+                 sm:text-[31px]
+                 lg:text-[32px]
                  font-light
                  tracking-[-1.5px]
                  text-[#f2f2f2]">
@@ -1389,10 +1632,11 @@ currently showing the strongest market performance...</p>
 
 
         <p
-          class="mt-5
-                 max-w-[280px]
-                 text-[14px]
-                 leading-[1.55]
+          class="mt-4
+                 max-w-[310px]
+                 text-[13px]
+                 sm:text-[14px]
+                 leading-[1.65]
                  text-[#aaa99c]">
 
           Elevating the luxury car rental
@@ -1409,10 +1653,11 @@ currently showing the strongest market performance...</p>
       <div>
 
         <h3
-          class="text-[14px]
+          class="mb-4
+                 text-[13px]
+                 sm:text-[14px]
                  font-medium
-                 text-[#e2e2dc]
-                 mb-4">
+                 text-[#e1e1dc]">
 
           Fleet
 
@@ -1424,10 +1669,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Hypercars
 
@@ -1437,10 +1683,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Supercars
 
@@ -1450,10 +1697,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Luxury SUVs
 
@@ -1463,10 +1711,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Classics
 
@@ -1482,10 +1731,11 @@ currently showing the strongest market performance...</p>
       <div>
 
         <h3
-          class="text-[14px]
+          class="mb-4
+                 text-[13px]
+                 sm:text-[14px]
                  font-medium
-                 text-[#e2e2dc]
-                 mb-4">
+                 text-[#e1e1dc]">
 
           Company
 
@@ -1497,10 +1747,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               About Us
 
@@ -1510,10 +1761,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Journal
 
@@ -1523,10 +1775,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Careers
 
@@ -1536,10 +1789,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Contact
 
@@ -1552,28 +1806,35 @@ currently showing the strongest market performance...</p>
 
 
       <!-- LEGAL -->
-      <div>
+      <div class="col-span-2 lg:col-span-1">
 
         <h3
-          class="text-[14px]
+          class="mb-4
+                 text-[13px]
+                 sm:text-[14px]
                  font-medium
-                 text-[#e2e2dc]
-                 mb-4">
+                 text-[#e1e1dc]">
 
           Legal
 
         </h3>
 
 
-        <ul class="space-y-2.5">
+        <ul
+          class="grid grid-cols-2
+                 gap-x-6
+                 gap-y-2.5
+                 lg:block
+                 lg:space-y-2.5">
 
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Privacy Policy
 
@@ -1583,10 +1844,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Terms of Service
 
@@ -1596,10 +1858,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               Rental Agreement
 
@@ -1609,10 +1872,11 @@ currently showing the strongest market performance...</p>
           <li>
             <a
               href="#"
-              class="text-[14px]
+              class="text-[13px]
+                     sm:text-[14px]
                      text-[#aaa99c]
-                     hover:text-white
-                     transition-colors">
+                     transition-colors
+                     hover:text-white">
 
               FAQ
 
@@ -1628,16 +1892,18 @@ currently showing the strongest market performance...</p>
 
     <!-- COPYRIGHT -->
     <div
-      class="border-t border-[#17191a]
-             py-6 sm:py-7">
+      class="border-t border-[#181a1b]
+             py-5
+             sm:py-6">
 
       <p
         class="text-[8px]
                sm:text-[9px]
                font-semibold
-               tracking-[0.18em]
-               text-[#77786f]
-               uppercase">
+               tracking-[0.16em]
+               sm:tracking-[0.18em]
+               leading-relaxed
+               text-[#70716b]">
 
         © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
 

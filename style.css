@@ -61,7 +61,7 @@ opacity: 1;
     transition: all 0.3s linear;
 }
 .owl-prev{
-    margin-right: 250px !important;
+    margin-right: 150px !important;
     margin-bottom: -63px !important;
     vertical-align: middle !important;
     margin-left: 10px !important;
@@ -73,6 +73,7 @@ opacity: 1;
     max-width: 40px !important;
     height: 40px;
     width: 100%;
+    margin-left: 85px !important;
     border: 3px solid #21231E !important;
     border-radius: 50% !important;
    
@@ -81,8 +82,6 @@ opacity: 1;
 }
 .owl-next{
     vertical-align: middle !important;
-    margin-left:  !important;
-    margin-right: -10px !important;
 }
 #hero-vidjet-img{
     max-width: 1824px;

@@ -1,0 +1,3017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <header class="bg-[#121315] py-[19px] px-[30px]">
+        <div class="max-w-[1280px] mx-auto w-full flex justify-between itmes-center">
+            <div class="flex  gap-[32px] itmes-center ">
+                <a class="text-[28px] text-[white]  font-[700]" href="./index.html">VELOCE</a>
+                <ul class="flex gap-[16px] mt-[10px] max-[696px]:!hidden ">
+                    <li class="inline-block group relative"><a
+                            class="group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
+                            href="./index.html">Rent</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF] duration-[0.3s]"
+                            href="./buy.html">Buy</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+                            href="./sell.html">Sell</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+                            href="">Brands</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+                            href="">Journal</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex gap-[40px] ">
+
+                <div class=" ">
+                    <div class="flex gap-[8px] max-[696px]:hidden ">
+                        <img class="pt-[12px]" src="./headericon-1.svg" alt="">
+                        <img class="pt-[12px]" src="./headericon-2.svg" alt="">
+                        <img class="pt-[12px]" src="./headericon-3.svg" alt="">
+                    </div>
+
+                </div>
+                <!-- Modal toggle -->
+              
+
+<!-- Modal toggle -->
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none" type="button">
+  List your car
+</button>
+
+<!-- Main modal -->
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full  md:inset-0 h-[calc(100%-1rem)] max-h-[1000px]">
+    <div class="relative object-cover overflow-hidden p-4 w-full max-w-[700px] max-h-[700px]">
+        <!-- Modal content -->
+        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+            <!-- Modal header -->
+            <div class="flex items-center text-white bg-black justify-between border-b border-default pb-4 md:pb-5">
+                <h3 class="text-lg font-medium text-heading">
+                    VELOCE
+                </h3>
+                <button type="button" class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+             <div class="min-h-screen w-full bg-[#101112] flex items-center justify-center px-5">
+
+  <div
+    class="w-full max-w-[420px]
+           rounded-2xl
+           border border-[#292b2d]
+           bg-[#151617]
+           p-6 sm:p-8
+           shadow-2xl">
+
+    <!-- TITLE -->
+    <div class="mb-7">
+
+      <h1 class="text-2xl font-semibold text-white">
+        Sign In
+      </h1>
+
+      <p class="mt-2 text-sm text-[#8f918d]">
+        Welcome back! Please enter your details.
+      </p>
+
+    </div>
+
+
+    <!-- FORM -->
+    <form class="space-y-5">
+
+      <!-- EMAIL -->
+      <div>
+
+        <label
+          for="email"
+          class="mb-2 block text-sm font-medium text-[#d8d9d5]">
+
+          Email
+
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="you@example.com"
+          class="w-full rounded-lg
+                 border border-[#303234]
+                 bg-[#101112]
+                 px-4 py-3
+                 text-sm text-white
+                 placeholder:text-[#666864]
+                 outline-none
+                 transition
+                 focus:border-[#b7e52c]
+                 focus:ring-1
+                 focus:ring-[#b7e52c]">
+
+      </div>
+
+
+      <!-- PASSWORD -->
+      <div>
+
+        <div class="mb-2 flex items-center justify-between">
+
+          <label
+            for="password"
+            class="text-sm font-medium text-[#d8d9d5]">
+
+            Password
+
+          </label>
+
+          <a
+            href="#"
+            class="text-xs text-[#b7e52c]
+                   hover:text-[#d5ff61]
+                   transition">
+
+            Forgot password?
+
+          </a>
+
+        </div>
+
+
+        <input
+          id="password"
+          type="password"
+          placeholder="••••••••"
+          class="w-full rounded-lg
+                 border border-[#303234]
+                 bg-[#101112]
+                 px-4 py-3
+                 text-sm text-white
+                 placeholder:text-[#666864]
+                 outline-none
+                 transition
+                 focus:border-[#b7e52c]
+                 focus:ring-1
+                 focus:ring-[#b7e52c]">
+
+      </div>
+
+
+      <!-- REMEMBER -->
+      <div class="flex items-center gap-2">
+
+        <input
+          id="remember"
+          type="checkbox"
+          class="h-4 w-4
+                 rounded
+                 border-[#383a3c]
+                 bg-[#101112]
+                 accent-[#b7e52c]">
+
+        <label
+          for="remember"
+          class="text-sm text-[#999b96]">
+
+          Remember me
+
+        </label>
+
+      </div>
+
+
+      <!-- SIGN IN BUTTON -->
+      <button
+        type="submit"
+        class="w-full rounded-lg
+               bg-[#b7e52c]
+               py-3
+               text-sm font-bold
+               text-[#101112]
+               transition
+               hover:bg-[#d0fa54]
+               active:scale-[0.98]">
+
+        Sign In
+
+      </button>
+
+    </form>
+
+
+    <!-- SIGN UP -->
+    <p class="mt-7 text-center text-sm text-[#858783]">
+
+      Don't have an account?
+
+      <a
+        href="#"
+        class="ml-1 font-medium
+               text-[#b7e52c]
+               hover:text-[#d5ff61]">
+
+        Sign Up
+
+      </a>
+
+    </p>
+
+  </div>
+
+</div>
+             
+          
+        </div>
+    </div>
+</div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        
+    </header>
+<main>
+    <section id="veloceFleet" class="min-h-screen bg-[#101112] text-white py-8">
+  <div class="max-w-[1280px] mx-auto px-5">
+
+    <div class="grid grid-cols-1 lg:grid-cols-[268px_minmax(0,1fr)] gap-6">
+
+      <!-- FILTER SIDEBAR -->
+      <aside class="lg:border-r lg:border-[#252628] lg:pr-6">
+
+        <h2 class="text-[28px] font-semibold">Filters</h2>
+        <p class="text-[13px] text-[#999] mt-2">Refine your search</p>
+
+        <!-- SEARCH -->
+        <div class="mt-8">
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-2">
+            SEARCH
+          </label>
+
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[#bdbdb5] text-xl">⌕</span>
+
+            <input id="vfSearch"
+              type="text"
+              placeholder="Model, keyword..."
+              class="w-full h-[42px] rounded-lg bg-[#292a2c]
+                     border border-transparent
+                     focus:border-[#baff19]
+                     outline-none pl-10 pr-3
+                     text-[13px] placeholder:text-[#6f7175]">
+          </div>
+        </div>
+
+        <!-- PRICE -->
+        <div class="mt-8">
+
+          <div class="flex justify-between items-center">
+            <label class="text-[10px] tracking-[1.5px] font-bold text-[#aaa]">
+              PRICE RANGE
+            </label>
+
+            <span id="vfPriceText"
+              class="text-[#baff19] text-[13px] font-bold">
+              $120k - $950k
+            </span>
+          </div>
+
+          <div class="relative h-6 mt-4">
+
+            <div class="absolute top-[9px] left-0 right-0 h-[4px]
+                        bg-[#41482e] rounded-full"></div>
+
+            <div id="vfProgress"
+              class="absolute top-[9px] left-0 h-[4px]
+                     bg-[#baff19] rounded-full"></div>
+
+            <input id="vfPrice"
+              type="range"
+              min="120"
+              max="950"
+              value="950"
+              step="10"
+              class="vf-range absolute inset-0 w-full">
+          </div>
+        </div>
+
+        <!-- BRANDS -->
+        <div class="mt-8">
+
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-3">
+            BRANDS
+          </label>
+
+          <div class="space-y-3">
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Porsche" class="vf-brand">
+                <span class="vf-check"></span>
+                Porsche
+              </span>
+              <span>124</span>
+            </label>
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Ferrari" class="vf-brand">
+                <span class="vf-check"></span>
+                Ferrari
+              </span>
+              <span>86</span>
+            </label>
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Lamborghini" class="vf-brand">
+                <span class="vf-check"></span>
+                Lamborghini
+              </span>
+              <span>52</span>
+            </label>
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Aston Martin" class="vf-brand">
+                <span class="vf-check"></span>
+                Aston Martin
+              </span>
+              <span>34</span>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- BODY -->
+        <div class="mt-8">
+
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-3">
+            BODY TYPE
+          </label>
+
+          <div class="grid grid-cols-3 gap-2">
+
+            <button data-body="Coupe" class="vf-body active">
+              <b>▣</b>
+              <span>Coupe</span>
+            </button>
+
+            <button data-body="Convertible" class="vf-body">
+              <b>◇</b>
+              <span>Convertible</span>
+            </button>
+
+            <button data-body="Sedan" class="vf-body">
+              <b>▥</b>
+              <span>Sedan</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- TRANSMISSION -->
+        <div class="mt-7">
+
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-3">
+            TRANSMISSION
+          </label>
+
+          <div class="flex gap-2">
+
+            <button data-trans="Automatic" class="vf-trans">
+              Automatic
+            </button>
+
+            <button data-trans="Manual" class="vf-trans active">
+              Manual
+            </button>
+
+          </div>
+        </div>
+
+      </aside>
+
+
+      <!-- CONTENT -->
+      <main class="min-w-0">
+
+        <!-- BREADCRUMB -->
+        <div class="flex gap-3 text-[13px] mb-5">
+          <span class="text-[#999]">Catalog</span>
+          <span class="text-[#555]">/</span>
+          <b>Premium Fleet</b>
+        </div>
+
+        <!-- TITLE -->
+        <h1 class="text-[40px] md:text-[44px] font-semibold
+                   tracking-[-1.8px] leading-none">
+          PREMIUM FLEET
+        </h1>
+
+        <!-- TOP CONTROLS -->
+        <div class="flex flex-wrap justify-between items-center gap-4 mt-7 mb-6">
+
+          <div class="flex flex-wrap items-center gap-2">
+
+            <span id="vfBodyTag"
+              class="px-3 py-1.5 rounded-full
+                     bg-[#292a2c] border border-[#38393a]
+                     text-[13px]">
+              Coupe ×
+            </span>
+
+            <span id="vfBrandTag"
+              class="hidden px-3 py-1.5 rounded-full
+                     bg-[#292a2c] border border-[#38393a]
+                     text-[13px]">
+            </span>
+
+            <button id="vfClear"
+              class="text-[#baff19] text-[13px]
+                     font-semibold underline ml-1">
+              Clear all
+            </button>
+
+          </div>
+
+          <div class="flex items-center gap-3">
+
+            <!-- VIEW -->
+            <div class="flex h-[38px] rounded-lg overflow-hidden bg-[#292a2c]">
+
+              <button id="vfGrid"
+                class="w-10 bg-[#383a38] text-[#baff19] text-xl">
+                ▦
+              </button>
+
+              <button id="vfList"
+                class="w-10 text-[#999] text-lg">
+                ☷
+              </button>
+
+            </div>
+
+            <!-- SORT -->
+            <div class="relative">
+
+              <select id="vfSort"
+                class="appearance-none h-[38px] min-w-[175px]
+                       rounded-lg bg-[#292a2c]
+                       border border-[#292a2c]
+                       hover:border-[#555]
+                       pl-4 pr-9 outline-none
+                       text-[13px] cursor-pointer">
+
+                <option value="new">Sort by: Newest First</option>
+                <option value="low">Price: Low First</option>
+                <option value="high">Price: High First</option>
+                <option value="power">Power: Highest First</option>
+
+              </select>
+
+              <span class="absolute right-3 top-1/2
+                           -translate-y-1/2 pointer-events-none
+                           text-[#aaa]">
+                ⌄
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARDS -->
+        <div id="vfCards"
+          class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+
+  <style>
+    .vf-range{
+      appearance:none;
+      -webkit-appearance:none;
+      background:transparent;
+      cursor:pointer;
+    }
+
+    .vf-range::-webkit-slider-runnable-track{
+      height:4px;
+      background:transparent;
+    }
+
+    .vf-range::-webkit-slider-thumb{
+      -webkit-appearance:none;
+      width:15px;
+      height:15px;
+      margin-top:-5.5px;
+      border-radius:50%;
+      background:#baff19;
+      border:0;
+    }
+
+    .vf-range::-moz-range-thumb{
+      width:15px;
+      height:15px;
+      border-radius:50%;
+      background:#baff19;
+      border:0;
+    }
+
+    .vf-brand-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      color:#ccc;
+      font-size:13px;
+      cursor:pointer;
+    }
+
+    .vf-brand{
+      position:absolute;
+      opacity:0;
+    }
+
+    .vf-check{
+      width:16px;
+      height:16px;
+      border:1px solid #41443d;
+      border-radius:4px;
+      background:#292a2c;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .vf-brand:checked + .vf-check{
+      background:#baff19;
+      border-color:#baff19;
+    }
+
+    .vf-brand:checked + .vf-check::after{
+      content:"✓";
+      color:#111;
+      font-size:11px;
+      font-weight:bold;
+    }
+
+    .vf-body{
+      height:64px;
+      border:1px solid #292a2c;
+      border-radius:9px;
+      background:transparent;
+      color:#aaa;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:3px;
+      font-size:10px;
+      cursor:pointer;
+      transition:.15s;
+    }
+
+    .vf-body:hover{
+      border-color:#555;
+      color:white;
+    }
+
+    .vf-body.active{
+      background:#202814;
+      border-color:#baff19;
+      color:#baff19;
+    }
+
+    .vf-trans{
+      padding:9px 16px;
+      border:0;
+      border-radius:999px;
+      background:#292a2c;
+      color:#aaa;
+      font-size:12px;
+      cursor:pointer;
+    }
+
+    .vf-trans.active{
+      background:#baff19;
+      color:#111;
+      font-weight:700;
+    }
+  </style>
+
+
+  <script>
+  (() => {
+
+    const brands = {
+      Porsche: {
+        models:["911 GT3 RS","718 Cayman","911 Carrera","911 Turbo S","Panamera","Taycan"],
+        img:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=65"
+      },
+      Ferrari: {
+        models:["SF90 Stradale","Roma","296 GTB","F8 Tributo","812 Superfast","Purosangue"],
+        img:"https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=700&q=65"
+      },
+      Lamborghini: {
+        models:["Revuelto","Huracan EVO","Aventador","Urus S","Huracan STO","Urus SE"],
+        img:"https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=700&q=65"
+      },
+      "Aston Martin": {
+        models:["DB12","Vantage","DBS","DBX707","Rapide","Vantage Roadster"],
+        img:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=700&q=65"
+      }
+    };
+
+    const bodies=["Coupe","Convertible","Sedan"];
+    const transmissions=["Manual","Automatic"];
+
+    const data=[];
+
+    /*
+      HAR BIR BRAND + BODY + TRANSMISSION
+      UCHUN 2 TA CARD AVTOMATIK YARATILADI.
+      SHUNING UCHUN HECH QAYSI FILTER BO'SH QOLMAYDI.
+    */
+    Object.entries(brands).forEach(([brand,info],bi)=>{
+
+      bodies.forEach((body,bodyIndex)=>{
+
+        transmissions.forEach((trans,transIndex)=>{
+
+          for(let i=0;i<2;i++){
+
+            const modelIndex =
+              (bodyIndex*2+transIndex+i)%info.models.length;
+
+            const base =
+              120 + bi*70 + bodyIndex*35 + transIndex*25 + i*20;
+
+            data.push({
+              name:info.models[modelIndex],
+              brand,
+              body,
+              trans,
+              price:Math.min(base,920),
+              year:2024-i,
+              miles:i ? "1,800 mi" : "600 mi",
+              hp:390 + bi*120 + bodyIndex*35 + transIndex*80 + i*25,
+              mph:175 + bi*8 + transIndex*15,
+              img:info.img
+            });
+
+          }
+
+        });
+
+      });
+
+    });
+
+
+    let state={
+      body:"Coupe",
+      trans:"Manual",
+      price:950,
+      search:"",
+      view:"grid"
+    };
+
+
+    const $=id=>document.getElementById(id);
+
+    const cards=$("vfCards");
+    const search=$("vfSearch");
+    const price=$("vfPrice");
+    const priceText=$("vfPriceText");
+    const progress=$("vfProgress");
+    const sort=$("vfSort");
+
+
+    function render(){
+
+      const selectedBrands=
+        [...document.querySelectorAll(".vf-brand:checked")]
+        .map(x=>x.value);
+
+      let result=data.filter(car=>{
+
+        const text=
+          `${car.name} ${car.brand}`.toLowerCase();
+
+        return (
+          car.body===state.body &&
+          car.trans===state.trans &&
+          car.price<=state.price &&
+          (!selectedBrands.length ||
+           selectedBrands.includes(car.brand)) &&
+          text.includes(state.search.toLowerCase())
+        );
+
+      });
+
+
+      if(sort.value==="low")
+        result.sort((a,b)=>a.price-b.price);
+
+      if(sort.value==="high")
+        result.sort((a,b)=>b.price-a.price);
+
+      if(sort.value==="power")
+        result.sort((a,b)=>b.hp-a.hp);
+
+      if(sort.value==="new")
+        result.sort((a,b)=>b.year-a.year);
+
+
+      cards.className=
+        state.view==="grid"
+        ? "grid sm:grid-cols-2 xl:grid-cols-3 gap-5"
+        : "grid grid-cols-1 gap-4";
+
+
+      cards.innerHTML=result.map(car=>`
+
+        <article class="
+          bg-[#1c1d1e]
+          border border-[#292a2b]
+          rounded-xl overflow-hidden
+          group
+        ">
+
+          <div class="
+            relative
+            ${state.view==="list"?"h-[220px]":"h-[232px]"}
+          ">
+
+            <img
+              src="${car.img}"
+              loading="lazy"
+              alt="${car.name}"
+              class="w-full h-full object-cover
+                     group-hover:scale-[1.02]
+                     transition duration-300"
+            >
+
+            ${
+              car.name==="911 GT3 RS"
+              ? `
+                <span class="
+                  absolute left-4 top-4
+                  bg-[#baff19] text-[#111]
+                  px-2 py-1 rounded-sm
+                  text-[9px] font-bold
+                ">
+                  ⚙ VELOCE VERIFIED
+                </span>
+              `
+              :""
+            }
+
+            <button class="
+              absolute right-4 top-4
+              text-[27px] text-white
+              hover:text-[#baff19]
+            ">
+              ♡
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between gap-3">
+
+              <h3 class="
+                text-[20px] font-semibold
+                leading-7
+              ">
+                ${car.name}
+              </h3>
+
+              <strong class="
+                text-[#baff19]
+                text-[20px]
+                whitespace-nowrap
+              ">
+                $${car.price},000
+              </strong>
+
+            </div>
+
+
+            <p class="text-[13px] text-[#aaa]">
+              ${car.year} • ${car.miles}
+            </p>
+
+
+            <div class="
+              grid grid-cols-3
+              gap-3 mt-8
+              text-[12px] text-[#aaa]
+            ">
+
+              <span>ϟ ${car.hp}<br>hp</span>
+
+              <span>◷ ${car.mph}<br>mph</span>
+
+              <span>⚙ ${car.trans}</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      `).join("");
+    }
+
+
+    /* SEARCH */
+
+    search.addEventListener("input",e=>{
+      state.search=e.target.value;
+      render();
+    });
+
+
+    /* PRICE */
+
+    price.addEventListener("input",e=>{
+
+      state.price=Number(e.target.value);
+
+      priceText.textContent=
+        `$120k - $${state.price}k`;
+
+      const percent=
+        ((state.price-120)/(950-120))*100;
+
+      progress.style.width=
+        `${percent}%`;
+
+      render();
+    });
+
+
+    /* BRAND */
+
+    document.querySelectorAll(".vf-brand")
+      .forEach(input=>{
+
+      input.addEventListener("change",()=>{
+
+        const selected=
+          [...document.querySelectorAll(".vf-brand:checked")];
+
+        const tag=$("vfBrandTag");
+
+        if(selected.length){
+
+          tag.classList.remove("hidden");
+
+          tag.textContent=
+            selected.map(x=>x.value).join(", ")+" ×";
+
+        }else{
+
+          tag.classList.add("hidden");
+
+        }
+
+        render();
+
+      });
+
+    });
+
+
+    /* BODY */
+
+    document.querySelectorAll(".vf-body")
+      .forEach(button=>{
+
+      button.addEventListener("click",()=>{
+
+        state.body=button.dataset.body;
+
+        document.querySelectorAll(".vf-body")
+          .forEach(x=>x.classList.remove("active"));
+
+        button.classList.add("active");
+
+        $("vfBodyTag").textContent=
+          `${state.body} ×`;
+
+        render();
+
+      });
+
+    });
+
+
+    /* TRANSMISSION */
+
+    document.querySelectorAll(".vf-trans")
+      .forEach(button=>{
+
+      button.addEventListener("click",()=>{
+
+        state.trans=button.dataset.trans;
+
+        document.querySelectorAll(".vf-trans")
+          .forEach(x=>x.classList.remove("active"));
+
+        button.classList.add("active");
+
+        render();
+
+      });
+
+    });
+
+
+    /* SORT */
+
+    sort.addEventListener("change",render);
+
+
+    /* GRID */
+
+    $("vfGrid").onclick=()=>{
+
+      state.view="grid";
+
+      $("vfGrid").className=
+        "w-10 bg-[#383a38] text-[#baff19] text-xl";
+
+      $("vfList").className=
+        "w-10 text-[#999] text-lg";
+
+      render();
+
+    };
+
+
+    /* LIST */
+
+    $("vfList").onclick=()=>{
+
+      state.view="list";
+
+      $("vfList").className=
+        "w-10 bg-[#383a38] text-[#baff19] text-lg";
+
+      $("vfGrid").className=
+        "w-10 text-[#999] text-xl";
+
+      render();
+
+    };
+
+
+    /* CLEAR */
+
+    $("vfClear").onclick=()=>{
+
+      state={
+        body:"Coupe",
+        trans:"Manual",
+        price:950,
+        search:"",
+        view:"grid"
+      };
+
+      search.value="";
+      price.value=950;
+
+      priceText.textContent="$120k - $950k";
+      progress.style.width="100%";
+
+      document.querySelectorAll(".vf-brand")
+        .forEach(x=>x.checked=false);
+
+      document.querySelectorAll(".vf-body")
+        .forEach(x=>x.classList.remove("active"));
+
+      document.querySelector('[data-body="Coupe"]')
+        .classList.add("active");
+
+      document.querySelectorAll(".vf-trans")
+        .forEach(x=>x.classList.remove("active"));
+
+      document.querySelector('[data-trans="Manual"]')
+        .classList.add("active");
+
+      $("vfBodyTag").textContent="Coupe ×";
+      $("vfBrandTag").classList.add("hidden");
+
+      render();
+    };
+
+
+    /* START */
+
+    progress.style.width="100%";
+    render();
+
+  })();
+  </script>
+
+</section>
+
+    <section class="w-full bg-[#101112] py-8 px-4">
+
+  <div class="max-w-[1280px] mx-auto">
+
+    <!-- CAR -->
+    <div
+      class="group overflow-hidden rounded-2xl
+             border border-[#2a2b2c]
+             bg-[#1b1c1d]
+             shadow-[0_0_30px_rgba(0,0,0,.15)]"
+    >
+
+      <div class="flex flex-col md:flex-row">
+
+        <!-- IMAGE -->
+        <div class="relative w-full md:w-[353px] lg:w-[353px]
+                    h-[260px] md:h-[333px] shrink-0 overflow-hidden">
+
+          <img
+            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80"
+            alt="DBS Volante"
+            class="w-full h-full object-cover
+                   transition duration-500
+                   group-hover:scale-[1.03]"
+          >
+
+          <div class="absolute inset-0
+                      bg-gradient-to-t from-black/30 to-transparent">
+          </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="flex-1 p-6 md:p-7 lg:p-8">
+
+          <!-- TITLE + PRICE -->
+          <div class="flex flex-col sm:flex-row
+                      sm:items-start sm:justify-between gap-3">
+
+            <div>
+
+              <h2 class="text-[32px] md:text-[40px]
+                         lg:text-[42px]
+                         leading-none font-semibold
+                         tracking-[-1.5px]">
+                DBS Volante
+              </h2>
+
+              <p class="mt-4 text-[17px] md:text-[19px]
+                        text-[#b6b6aa]">
+                2023 • 1,200 mi • Tungsten Silver
+              </p>
+
+            </div>
+
+            <div class="text-[#baff19]
+                        text-[36px] md:text-[42px]
+                        font-bold whitespace-nowrap">
+              $425,000
+            </div>
+
+          </div>
+
+
+          <!-- DESCRIPTION -->
+          <p class="mt-7 max-w-[720px]
+                    text-[16px] md:text-[17px]
+                    leading-7 text-[#92948a]">
+
+            Experience ultimate grand touring with this meticulously
+            maintained DBS. Featuring a twin-turbo V12 engine and
+            handcrafted leather interior, it...
+
+          </p>
+
+
+          <!-- BOTTOM -->
+          <div class="mt-10 pt-5
+                      border-t border-[#252627]
+                      flex flex-col lg:flex-row
+                      lg:items-center
+                      lg:justify-between gap-6">
+
+            <!-- SPECS -->
+            <div class="flex flex-wrap gap-x-8 gap-y-4
+                        text-[#c5c6bb] text-[15px]">
+
+              <span class="flex items-center gap-2">
+                <b class="text-xl text-[#ddd]">ϟ</b>
+                715 hp
+              </span>
+
+              <span class="flex items-center gap-2">
+                <b class="text-xl text-[#ddd]">◷</b>
+                3.4s
+              </span>
+
+              <span class="flex items-center gap-2">
+                <b class="text-xl text-[#ddd]">⛽</b>
+                V12 Petrol
+              </span>
+
+            </div>
+
+
+            <!-- BUTTON -->
+            <button
+              id="dbsInquire"
+              type="button"
+              class="h-[50px] px-8
+                     rounded-md
+                     bg-white text-[#26340e]
+                     font-bold text-[16px]
+                     hover:bg-[#baff19]
+                     active:scale-[.98]
+                     transition duration-200
+                     lg:min-w-[171px]"
+            >
+              Inquire Now
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div
+    id="dbsModal"
+    class="fixed inset-0 z-[999]
+           hidden items-center justify-center
+           bg-black/75 backdrop-blur-sm
+           px-4"
+  >
+
+    <div
+      id="dbsModalBox"
+      class="relative w-full max-w-[420px]
+             rounded-2xl
+             border border-[#303233]
+             bg-[#18191a]
+             p-6 md:p-8
+             shadow-[0_20px_80px_rgba(0,0,0,.5)]
+             scale-95 opacity-0
+             transition duration-200"
+    >
+
+      <!-- CLOSE -->
+      <button
+        id="dbsClose"
+        type="button"
+        class="absolute right-5 top-4
+               text-[#777] text-2xl
+               hover:text-white transition"
+      >
+        ×
+      </button>
+
+
+      <!-- LOGIN FORM -->
+      <div id="dbsForm">
+
+        <div class="mb-7">
+
+          <div class="w-12 h-12 mb-4
+                      flex items-center justify-center
+                      rounded-xl
+                      bg-[#baff19]/10
+                      text-[#baff19]
+                      text-2xl">
+            ◉
+          </div>
+
+          <h3 class="text-2xl font-semibold">
+            Sign in
+          </h3>
+
+          <p class="mt-2 text-sm text-[#85877f]">
+            Enter your login and password to continue.
+          </p>
+
+        </div>
+
+
+        <!-- LOGIN -->
+        <label class="block mb-2
+                      text-xs font-semibold
+                      tracking-wide text-[#aaa]">
+          LOGIN
+        </label>
+
+        <input
+          id="dbsLogin"
+          type="text"
+          autocomplete="username"
+          placeholder="Enter your login"
+          class="w-full h-[48px] mb-5
+                 rounded-lg
+                 bg-[#272829]
+                 border border-[#333536]
+                 px-4 text-white
+                 outline-none
+                 placeholder:text-[#666]
+                 focus:border-[#baff19]
+                 transition"
+        >
+
+        <!-- PASSWORD -->
+        <label class="block mb-2
+                      text-xs font-semibold
+                      tracking-wide text-[#aaa]">
+          PASSWORD
+        </label>
+
+        <div class="relative">
+
+          <input
+            id="dbsPassword"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter your password"
+            class="w-full h-[48px]
+                   rounded-lg
+                   bg-[#272829]
+                   border border-[#333536]
+                   px-4 pr-12 text-white
+                   outline-none
+                   placeholder:text-[#666]
+                   focus:border-[#baff19]
+                   transition"
+          >
+
+          <button
+            id="dbsShowPass"
+            type="button"
+            class="absolute right-3 top-1/2
+                   -translate-y-1/2
+                   text-[#777] hover:text-white"
+          >
+            ◉
+          </button>
+
+        </div>
+
+
+        <!-- ERROR -->
+        <p
+          id="dbsError"
+          class="hidden mt-3
+                 text-sm text-red-400"
+        ></p>
+
+
+        <!-- SUBMIT -->
+        <button
+          id="dbsSubmit"
+          type="button"
+          class="w-full h-[50px]
+                 mt-6
+                 rounded-lg
+                 bg-[#baff19]
+                 text-[#111]
+                 font-bold
+                 hover:bg-[#c8ff4a]
+                 active:scale-[.99]
+                 transition"
+        >
+          Sign in
+        </button>
+
+      </div>
+
+
+      <!-- SUCCESS -->
+      <div
+        id="dbsSuccess"
+        class="hidden min-h-[260px]
+               flex-col items-center
+               justify-center text-center"
+      >
+
+        <div
+          class="w-20 h-20
+                 flex items-center justify-center
+                 rounded-full
+                 bg-[#baff19]
+                 text-[#111]
+                 text-5xl font-bold
+                 shadow-[0_0_35px_rgba(186,255,25,.25)]
+                 animate-pulse"
+        >
+          ✓
+        </div>
+
+        <h3 class="mt-6 text-2xl font-semibold">
+          Siz ro‘yxatdan o‘tdingiz!
+        </h3>
+
+        <p class="mt-2 text-sm text-[#888]">
+          Muvaffaqiyatli tasdiqlandi.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JS ================= -->
+
+  <script>
+    (() => {
+
+      const openBtn = document.getElementById("dbsInquire");
+      const modal = document.getElementById("dbsModal");
+      const box = document.getElementById("dbsModalBox");
+      const closeBtn = document.getElementById("dbsClose");
+
+      const form = document.getElementById("dbsForm");
+      const success = document.getElementById("dbsSuccess");
+
+      const login = document.getElementById("dbsLogin");
+      const password = document.getElementById("dbsPassword");
+
+      const submit = document.getElementById("dbsSubmit");
+      const error = document.getElementById("dbsError");
+
+      const showPass = document.getElementById("dbsShowPass");
+
+      let closeTimer;
+
+
+      /* OPEN */
+
+      function openModal() {
+
+        clearTimeout(closeTimer);
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+
+        requestAnimationFrame(() => {
+          box.classList.remove("scale-95", "opacity-0");
+          box.classList.add("scale-100", "opacity-100");
+        });
+
+        login.focus();
+      }
+
+
+      /* CLOSE */
+
+      function closeModal() {
+
+        box.classList.remove("scale-100", "opacity-100");
+        box.classList.add("scale-95", "opacity-0");
+
+        setTimeout(() => {
+
+          modal.classList.remove("flex");
+          modal.classList.add("hidden");
+
+          resetForm();
+
+        }, 200);
+      }
+
+
+      /* RESET */
+
+      function resetForm() {
+
+        form.classList.remove("hidden");
+
+        success.classList.add("hidden");
+        success.classList.remove("flex");
+
+        login.value = "";
+        password.value = "";
+
+        error.textContent = "";
+        error.classList.add("hidden");
+
+        password.type = "password";
+      }
+
+
+      /* OPEN BUTTON */
+
+      openBtn.addEventListener("click", openModal);
+
+
+      /* CLOSE BUTTON */
+
+      closeBtn.addEventListener("click", closeModal);
+
+
+      /* CLICK OUTSIDE */
+
+      modal.addEventListener("click", (e) => {
+
+        if (e.target === modal) {
+          closeModal();
+        }
+
+      });
+
+
+      /* ESC */
+
+      document.addEventListener("keydown", (e) => {
+
+        if (
+          e.key === "Escape" &&
+          !modal.classList.contains("hidden")
+        ) {
+          closeModal();
+        }
+
+        if (
+          e.key === "Enter" &&
+          !modal.classList.contains("hidden") &&
+          document.activeElement !== submit
+        ) {
+          submit.click();
+        }
+
+      });
+
+
+      /* SHOW PASSWORD */
+
+      showPass.addEventListener("click", () => {
+
+        if (password.type === "password") {
+
+          password.type = "text";
+          showPass.textContent = "◉";
+
+        } else {
+
+          password.type = "password";
+          showPass.textContent = "◉";
+
+        }
+
+      });
+
+
+      /* SIGN IN */
+
+      submit.addEventListener("click", () => {
+
+        const user = login.value.trim();
+        const pass = password.value.trim();
+
+
+        if (!user || !pass) {
+
+          error.textContent =
+            "Iltimos, login va parolni kiriting.";
+
+          error.classList.remove("hidden");
+
+          if (!user) {
+            login.focus();
+          } else {
+            password.focus();
+          }
+
+          return;
+        }
+
+
+        if (pass.length < 4) {
+
+          error.textContent =
+            "Parol kamida 4 ta belgidan iborat bo‘lishi kerak.";
+
+          error.classList.remove("hidden");
+
+          password.focus();
+
+          return;
+        }
+
+
+        /* SUCCESS */
+
+        error.classList.add("hidden");
+
+        form.classList.add("hidden");
+
+        success.classList.remove("hidden");
+        success.classList.add("flex");
+
+
+        /* 2 SECOND AFTER AUTO CLOSE */
+
+        closeTimer = setTimeout(() => {
+          closeModal();
+        }, 2000);
+
+      });
+
+    })();
+  </script>
+
+</section>
+
+<section id="vfPaginationSection" class="w-full bg-[#101112] py-10 px-4">
+
+  <div class="max-w-[1280px] mx-auto">
+
+    <!-- TOP -->
+    <div class="flex flex-col sm:flex-row
+                justify-between items-start sm:items-center
+                gap-4 mb-6">
+
+      <div>
+        <p class="text-[#777] text-xs tracking-[1.5px] uppercase">
+          Premium collection
+        </p>
+
+        <h2 class="text-white text-2xl md:text-3xl
+                   font-semibold mt-1">
+          Featured Vehicles
+        </h2>
+      </div>
+
+      <!-- SEARCH + SORT -->
+      <div class="flex flex-wrap gap-2">
+
+        <div class="relative">
+
+          <span class="absolute left-3 top-1/2
+                       -translate-y-1/2 text-[#777]">
+            ⌕
+          </span>
+
+          <input
+            id="vfCardSearch"
+            type="text"
+            placeholder="Search..."
+            class="w-[170px] h-[38px]
+                   bg-[#1b1c1d]
+                   border border-[#28292a]
+                   rounded-lg
+                   pl-9 pr-3
+                   text-sm text-white
+                   outline-none
+                   focus:border-[#baff19]
+                   placeholder:text-[#666]"
+          >
+
+        </div>
+
+        <select
+          id="vfCardSort"
+          class="h-[38px]
+                 bg-[#1b1c1d]
+                 border border-[#28292a]
+                 rounded-lg
+                 px-3
+                 text-sm text-[#aaa]
+                 outline-none
+                 focus:border-[#baff19]"
+        >
+          <option value="new">Newest</option>
+          <option value="low">Price: Low</option>
+          <option value="high">Price: High</option>
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <!-- SKELETON -->
+    <div
+      id="vfSkeleton"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+    >
+
+      <div class="vf-skeleton-card">
+        <div class="vf-sk-img"></div>
+        <div class="vf-sk-line w-[65%]"></div>
+        <div class="vf-sk-line w-[42%]"></div>
+
+        <div class="flex gap-2 mt-4">
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+        </div>
+      </div>
+
+      <div class="vf-skeleton-card">
+        <div class="vf-sk-img"></div>
+        <div class="vf-sk-line w-[65%]"></div>
+        <div class="vf-sk-line w-[42%]"></div>
+
+        <div class="flex gap-2 mt-4">
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+        </div>
+      </div>
+
+      <div class="vf-skeleton-card">
+        <div class="vf-sk-img"></div>
+        <div class="vf-sk-line w-[65%]"></div>
+        <div class="vf-sk-line w-[42%]"></div>
+
+        <div class="flex gap-2 mt-4">
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- CARDS -->
+    <div
+      id="vfCardGrid"
+      class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+    ></div>
+
+
+    <!-- EMPTY -->
+    <div
+      id="vfEmpty"
+      class="hidden py-20 text-center"
+    >
+      <div class="text-4xl mb-3">⌕</div>
+
+      <h3 class="text-white text-lg font-semibold">
+        No vehicles found
+      </h3>
+
+      <p class="text-[#777] text-sm mt-2">
+        Try another search.
+      </p>
+    </div>
+
+
+    <!-- PAGINATION -->
+    <div
+      id="vfPagination"
+      class="flex justify-center items-center
+             gap-1.5 mt-12"
+    ></div>
+
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div
+    id="vfDetailsModal"
+    class="fixed inset-0 z-[999]
+           hidden items-center justify-center
+           bg-black/75 backdrop-blur-sm
+           px-4"
+  >
+
+    <div
+      id="vfDetailsBox"
+      class="relative
+             w-full max-w-[650px]
+             bg-[#191a1b]
+             border border-[#303132]
+             rounded-2xl
+             overflow-hidden
+             shadow-[0_30px_100px_rgba(0,0,0,.6)]
+             scale-95 opacity-0
+             transition duration-200"
+    >
+
+      <button
+        id="vfModalClose"
+        class="absolute z-10 right-4 top-3
+               w-9 h-9
+               rounded-full
+               bg-black/50
+               text-white text-2xl
+               hover:bg-[#baff19]
+               hover:text-black
+               transition"
+      >
+        ×
+      </button>
+
+      <img
+        id="vfModalImage"
+        class="w-full h-[260px] object-cover"
+        src=""
+        alt=""
+      >
+
+      <div class="p-6">
+
+        <div class="flex justify-between gap-4">
+
+          <div>
+            <h3
+              id="vfModalName"
+              class="text-2xl font-semibold text-white"
+            ></h3>
+
+            <p
+              id="vfModalMeta"
+              class="text-[#92948b] mt-2"
+            ></p>
+          </div>
+
+          <strong
+            id="vfModalPrice"
+            class="text-[#baff19] text-2xl whitespace-nowrap"
+          ></strong>
+
+        </div>
+
+        <div
+          id="vfModalSpecs"
+          class="grid grid-cols-3 gap-3
+                 mt-7 pt-5
+                 border-t border-[#292a2b]
+                 text-[#aaa] text-sm"
+        ></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <style>
+
+    /* ================= SKELETON ================= */
+
+    .vf-skeleton-card{
+      height:278px;
+      padding:12px;
+      border-radius:10px;
+      background:#191a1b;
+      border:1px solid #202122;
+    }
+
+    .vf-sk-img{
+      width:100%;
+      height:165px;
+      border-radius:6px;
+      background:
+        linear-gradient(
+          90deg,
+          #202122 0%,
+          #292a2b 50%,
+          #202122 100%
+        );
+      background-size:200% 100%;
+      animation:vfShimmer 1.5s infinite;
+    }
+
+    .vf-sk-line{
+      height:10px;
+      border-radius:5px;
+      background:#222324;
+      margin-top:13px;
+      animation:vfPulse 1.3s infinite;
+    }
+
+    .vf-sk-small{
+      width:52px;
+      height:22px;
+      border-radius:4px;
+      background:#222324;
+      animation:vfPulse 1.3s infinite;
+    }
+
+    @keyframes vfShimmer{
+      0%{background-position:200% 0}
+      100%{background-position:-200% 0}
+    }
+
+    @keyframes vfPulse{
+      0%,100%{opacity:.5}
+      50%{opacity:1}
+    }
+
+
+    /* ================= PAGINATION ================= */
+
+    .vf-page{
+      width:30px;
+      height:30px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:4px;
+      color:#aaa;
+      font-size:12px;
+      cursor:pointer;
+      transition:.15s;
+    }
+
+    .vf-page:hover{
+      background:#242526;
+      color:white;
+    }
+
+    .vf-page.active{
+      background:#baff19;
+      color:#111;
+      font-weight:700;
+    }
+
+    .vf-page.arrow{
+      border:1px solid #292a2b;
+      background:#171819;
+      color:#999;
+      font-size:16px;
+    }
+
+    .vf-page.arrow:hover{
+      border-color:#baff19;
+      color:#baff19;
+    }
+
+    .vf-page.disabled{
+      opacity:.3;
+      pointer-events:none;
+    }
+
+
+    /* ================= CARD ================= */
+
+    .vf-car-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:10px;
+      background:#1b1c1d;
+      border:1px solid #242526;
+      transition:
+        transform .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+    }
+
+    .vf-car-card:hover{
+      transform:translateY(-3px);
+      border-color:#383a3b;
+      box-shadow:0 15px 40px rgba(0,0,0,.22);
+    }
+
+    .vf-card-image{
+      position:relative;
+      height:165px;
+      overflow:hidden;
+    }
+
+    .vf-card-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .35s ease;
+    }
+
+    .vf-car-card:hover .vf-card-image img{
+      transform:scale(1.035);
+    }
+
+    .vf-heart{
+      position:absolute;
+      right:10px;
+      top:10px;
+      width:31px;
+      height:31px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:rgba(0,0,0,.45);
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+      transition:.15s;
+    }
+
+    .vf-heart:hover{
+      background:#baff19;
+      color:#111;
+    }
+
+    .vf-heart.liked{
+      background:#baff19;
+      color:#111;
+    }
+
+  </style>
+
+
+  <script>
+  (() => {
+
+    /* ================= DATA ================= */
+
+    const cars = [
+
+      {
+        name:"DBS Volante",
+        year:2023,
+        miles:"1,200 mi",
+        color:"Tungsten Silver",
+        price:425000,
+        hp:715,
+        time:"3.4s",
+        engine:"V12 Petrol",
+        image:"https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"911 GT3 RS",
+        year:2024,
+        miles:"2,400 mi",
+        color:"Silver",
+        price:345000,
+        hp:518,
+        time:"3.2s",
+        engine:"Flat-6",
+        image:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"SF90 Stradale",
+        year:2023,
+        miles:"500 mi",
+        color:"Black",
+        price:789000,
+        hp:986,
+        time:"2.5s",
+        engine:"V8 Hybrid",
+        image:"https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Revuelto",
+        year:2024,
+        miles:"New",
+        color:"Purple",
+        price:920000,
+        hp:1001,
+        time:"2.5s",
+        engine:"V12 Hybrid",
+        image:"https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"DB12",
+        year:2024,
+        miles:"600 mi",
+        color:"Emerald Black",
+        price:285000,
+        hp:671,
+        time:"3.6s",
+        engine:"V8 Twin Turbo",
+        image:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"718 Cayman",
+        year:2024,
+        miles:"1,200 mi",
+        color:"White",
+        price:128000,
+        hp:394,
+        time:"4.3s",
+        engine:"Flat-4",
+        image:"https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Vantage",
+        year:2024,
+        miles:"900 mi",
+        color:"Midnight Blue",
+        price:210000,
+        hp:656,
+        time:"3.5s",
+        engine:"V8 Twin Turbo",
+        image:"https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"812 Superfast",
+        year:2023,
+        miles:"1,100 mi",
+        color:"Rosso Corsa",
+        price:490000,
+        hp:789,
+        time:"2.9s",
+        engine:"V12 Petrol",
+        image:"https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Huracan STO",
+        year:2024,
+        miles:"600 mi",
+        color:"Grey",
+        price:335000,
+        hp:631,
+        time:"3.0s",
+        engine:"V10 Petrol",
+        image:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Panamera Turbo",
+        year:2024,
+        miles:"700 mi",
+        color:"Black",
+        price:197000,
+        hp:620,
+        time:"3.1s",
+        engine:"V8 Hybrid",
+        image:"https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Roma Spider",
+        year:2024,
+        miles:"400 mi",
+        color:"Red",
+        price:285000,
+        hp:612,
+        time:"3.4s",
+        engine:"V8 Twin Turbo",
+        image:"https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"DBS Superleggera",
+        year:2023,
+        miles:"900 mi",
+        color:"Black",
+        price:315000,
+        hp:715,
+        time:"3.4s",
+        engine:"V12 Petrol",
+        image:"https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=75"
+      }
+
+    ];
+
+
+    /* ================= STATE ================= */
+
+    let currentPage = 1;
+
+    const perPage = 3;
+
+
+    /* ================= ELEMENTS ================= */
+
+    const grid =
+      document.getElementById("vfCardGrid");
+
+    const skeleton =
+      document.getElementById("vfSkeleton");
+
+    const pagination =
+      document.getElementById("vfPagination");
+
+    const empty =
+      document.getElementById("vfEmpty");
+
+    const search =
+      document.getElementById("vfCardSearch");
+
+    const sort =
+      document.getElementById("vfCardSort");
+
+    const modal =
+      document.getElementById("vfDetailsModal");
+
+    const modalBox =
+      document.getElementById("vfDetailsBox");
+
+
+    /* ================= RENDER ================= */
+
+    function render(){
+
+      let result = [...cars];
+
+      const query =
+        search.value.trim().toLowerCase();
+
+
+      /* SEARCH */
+
+      if(query){
+
+        result = result.filter(car =>
+          `${car.name} ${car.color} ${car.engine}`
+            .toLowerCase()
+            .includes(query)
+        );
+
+      }
+
+
+      /* SORT */
+
+      if(sort.value === "low"){
+
+        result.sort(
+          (a,b) => a.price - b.price
+        );
+
+      }
+
+      if(sort.value === "high"){
+
+        result.sort(
+          (a,b) => b.price - a.price
+        );
+
+      }
+
+      if(sort.value === "new"){
+
+        result.sort(
+          (a,b) => b.year - a.year
+        );
+
+      }
+
+
+      const totalPages =
+        Math.max(
+          1,
+          Math.ceil(result.length / perPage)
+        );
+
+
+      if(currentPage > totalPages)
+        currentPage = totalPages;
+
+
+      const start =
+        (currentPage - 1) * perPage;
+
+      const pageCars =
+        result.slice(
+          start,
+          start + perPage
+        );
+
+
+      /* EMPTY */
+
+      if(!pageCars.length){
+
+        grid.classList.add("hidden");
+        empty.classList.remove("hidden");
+        pagination.innerHTML="";
+
+        return;
+
+      }
+
+
+      empty.classList.add("hidden");
+      grid.classList.remove("hidden");
+
+
+      /* CARDS */
+
+      grid.innerHTML =
+        pageCars.map((car,index)=>`
+
+          <article
+            class="vf-car-card"
+            data-index="${cars.indexOf(car)}"
+          >
+
+            <div class="vf-card-image">
+
+              <img
+                src="${car.image}"
+                alt="${car.name}"
+                loading="lazy"
+              >
+
+              <button
+                class="vf-heart"
+                data-heart="${cars.indexOf(car)}"
+                aria-label="Favorite"
+              >
+                ♡
+              </button>
+
+            </div>
+
+
+            <div class="p-4">
+
+              <div class="flex justify-between
+                          items-start gap-2">
+
+                <div>
+
+                  <h3
+                    class="text-white
+                           text-[18px]
+                           font-semibold"
+                  >
+                    ${car.name}
+                  </h3>
+
+                  <p class="text-[#8f9089]
+                            text-xs mt-1">
+                    ${car.year} • ${car.miles}
+                  </p>
+
+                </div>
+
+                <strong
+                  class="text-[#baff19]
+                         text-[17px]
+                         whitespace-nowrap"
+                >
+                  $${car.price.toLocaleString()}
+                </strong>
+
+              </div>
+
+
+              <div
+                class="grid grid-cols-3
+                       gap-2 mt-5
+                       pt-4
+                       border-t border-[#292a2b]"
+              >
+
+                <span class="text-xs text-[#aaa]">
+                  ϟ ${car.hp}<br>
+                  <small>hp</small>
+                </span>
+
+                <span class="text-xs text-[#aaa]">
+                  ◷ ${car.time}<br>
+                  <small>0-60</small>
+                </span>
+
+                <span class="text-xs text-[#aaa]">
+                  ⚙ ${car.engine}
+                </span>
+
+              </div>
+
+
+              <button
+                data-details="${cars.indexOf(car)}"
+                class="vf-details
+                       w-full h-9 mt-4
+                       rounded-md
+                       bg-[#252627]
+                       hover:bg-[#baff19]
+                       hover:text-[#111]
+                       text-[#ccc]
+                       text-xs font-semibold
+                       transition"
+              >
+                View Details
+              </button>
+
+            </div>
+
+          </article>
+
+        `).join("");
+
+
+      renderPagination(totalPages);
+
+      attachCardEvents();
+
+    }
+
+
+    /* ================= PAGINATION ================= */
+
+    function renderPagination(total){
+
+      if(total <= 1){
+
+        pagination.innerHTML="";
+
+        return;
+
+      }
+
+
+      let html = `
+
+        <button
+          class="vf-page arrow
+                 ${currentPage===1 ? "disabled":""}"
+          data-page="${currentPage-1}"
+        >
+          ‹
+        </button>
+
+      `;
+
+
+      const pages=[];
+
+
+      if(total <= 7){
+
+        for(let i=1;i<=total;i++)
+          pages.push(i);
+
+      }else{
+
+        pages.push(1,2,3);
+
+        if(currentPage > 5)
+          pages.push("...");
+
+        const from =
+          Math.max(4,currentPage-1);
+
+        const to =
+          Math.min(total-1,currentPage+1);
+
+        for(let i=from;i<=to;i++){
+
+          if(!pages.includes(i))
+            pages.push(i);
+
+        }
+
+        if(currentPage < total-4)
+          pages.push("...");
+
+        pages.push(total);
+
+      }
+
+
+      html += pages.map(page => {
+
+        if(page==="...")
+          return `
+            <span class="vf-page">
+              ...
+            </span>
+          `;
+
+        return `
+          <button
+            class="vf-page
+                   ${page===currentPage ? "active":""}"
+            data-page="${page}"
+          >
+            ${page}
+          </button>
+        `;
+
+      }).join("");
+
+
+      html += `
+
+        <button
+          class="vf-page arrow
+                 ${currentPage===total ? "disabled":""}"
+          data-page="${currentPage+1}"
+        >
+          ›
+        </button>
+
+      `;
+
+
+      pagination.innerHTML=html;
+
+
+      pagination
+        .querySelectorAll("[data-page]")
+        .forEach(btn=>{
+
+          btn.addEventListener("click",()=>{
+
+            currentPage =
+              Number(btn.dataset.page);
+
+            render();
+
+            document
+              .getElementById("vfPaginationSection")
+              .scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+              });
+
+          });
+
+        });
+
+    }
+
+
+    /* ================= CARD EVENTS ================= */
+
+    function attachCardEvents(){
+
+      /* FAVORITE */
+
+      grid
+        .querySelectorAll("[data-heart]")
+        .forEach(btn=>{
+
+          btn.addEventListener("click",(e)=>{
+
+            e.stopPropagation();
+
+            btn.classList.toggle("liked");
+
+            btn.textContent =
+              btn.classList.contains("liked")
+              ? "♥"
+              : "♡";
+
+          });
+
+        });
+
+
+      /* DETAILS */
+
+      grid
+        .querySelectorAll("[data-details]")
+        .forEach(btn=>{
+
+          btn.addEventListener("click",()=>{
+
+            const car =
+              cars[
+                Number(btn.dataset.details)
+              ];
+
+            openModal(car);
+
+          });
+
+        });
+
+    }
+
+
+    /* ================= MODAL ================= */
+
+    function openModal(car){
+
+      document.getElementById("vfModalImage").src =
+        car.image;
+
+      document.getElementById("vfModalName")
+        .textContent = car.name;
+
+      document.getElementById("vfModalMeta")
+        .textContent =
+          `${car.year} • ${car.miles} • ${car.color}`;
+
+      document.getElementById("vfModalPrice")
+        .textContent =
+          `$${car.price.toLocaleString()}`;
+
+      document.getElementById("vfModalSpecs")
+        .innerHTML = `
+
+          <span>ϟ ${car.hp} hp</span>
+          <span>◷ ${car.time}</span>
+          <span>⚙ ${car.engine}</span>
+
+        `;
+
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      requestAnimationFrame(()=>{
+
+        modalBox.classList.remove(
+          "scale-95",
+          "opacity-0"
+        );
+
+        modalBox.classList.add(
+          "scale-100",
+          "opacity-100"
+        );
+
+      });
+
+    }
+
+
+    function closeModal(){
+
+      modalBox.classList.remove(
+        "scale-100",
+        "opacity-100"
+      );
+
+      modalBox.classList.add(
+        "scale-95",
+        "opacity-0"
+      );
+
+      setTimeout(()=>{
+
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+
+      },180);
+
+    }
+
+
+    document
+      .getElementById("vfModalClose")
+      .addEventListener("click",closeModal);
+
+
+    modal.addEventListener("click",e=>{
+
+      if(e.target===modal)
+        closeModal();
+
+    });
+
+
+    document.addEventListener("keydown",e=>{
+
+      if(
+        e.key==="Escape" &&
+        !modal.classList.contains("hidden")
+      ){
+        closeModal();
+      }
+
+    });
+
+
+    /* ================= SEARCH ================= */
+
+    search.addEventListener("input",()=>{
+
+      currentPage=1;
+
+      render();
+
+    });
+
+
+    /* ================= SORT ================= */
+
+    sort.addEventListener("change",()=>{
+
+      currentPage=1;
+
+      render();
+
+    });
+
+
+    /* ================= INITIAL LOAD ================= */
+
+    setTimeout(()=>{
+
+      skeleton.classList.add("hidden");
+      grid.classList.remove("hidden");
+
+      render();
+
+    },650);
+
+  })();
+  </script>
+
+</section>
+
+</main>
+
+
+
+
+
+
+
+<footer class="w-full bg-[#0d0e0f] text-white border-t border-[#181a1b]">
+
+  <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
+
+    <!-- FOOTER CONTENT -->
+    <div
+      class="grid grid-cols-2
+             lg:grid-cols-[1.35fr_1fr_1fr_1fr]
+             gap-x-8 gap-y-10
+             sm:gap-x-12
+             lg:gap-x-16
+             py-12
+             sm:py-14
+             lg:py-[68px]">
+
+
+      <!-- BRAND -->
+      <div class="col-span-2 lg:col-span-1">
+
+        <a
+          href="#"
+          class="inline-block
+                 text-[29px]
+                 sm:text-[31px]
+                 lg:text-[32px]
+                 font-light
+                 tracking-[-1.5px]
+                 text-[#f2f2f2]">
+
+          VELOCE
+
+        </a>
+
+
+        <p
+          class="mt-4
+                 max-w-[310px]
+                 text-[13px]
+                 sm:text-[14px]
+                 leading-[1.65]
+                 text-[#aaa99c]">
+
+          Elevating the luxury car rental
+          experience with a curated fleet of
+          the world's most exceptional
+          automobiles.
+
+        </p>
+
+      </div>
+
+
+      <!-- FLEET -->
+      <div>
+
+        <h3
+          class="mb-4
+                 text-[13px]
+                 sm:text-[14px]
+                 font-medium
+                 text-[#e1e1dc]">
+
+          Fleet
+
+        </h3>
+
+
+        <ul class="space-y-2.5">
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Hypercars
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Supercars
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Luxury SUVs
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Classics
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- COMPANY -->
+      <div>
+
+        <h3
+          class="mb-4
+                 text-[13px]
+                 sm:text-[14px]
+                 font-medium
+                 text-[#e1e1dc]">
+
+          Company
+
+        </h3>
+
+
+        <ul class="space-y-2.5">
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              About Us
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Journal
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Careers
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Contact
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- LEGAL -->
+      <div class="col-span-2 lg:col-span-1">
+
+        <h3
+          class="mb-4
+                 text-[13px]
+                 sm:text-[14px]
+                 font-medium
+                 text-[#e1e1dc]">
+
+          Legal
+
+        </h3>
+
+
+        <ul
+          class="grid grid-cols-2
+                 gap-x-6
+                 gap-y-2.5
+                 lg:block
+                 lg:space-y-2.5">
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Privacy Policy
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Terms of Service
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              Rental Agreement
+
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
+                     sm:text-[14px]
+                     text-[#aaa99c]
+                     transition-colors
+                     hover:text-white">
+
+              FAQ
+
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div
+      class="border-t border-[#181a1b]
+             py-5
+             sm:py-6">
+
+      <p
+        class="text-[8px]
+               sm:text-[9px]
+               font-semibold
+               tracking-[0.16em]
+               sm:tracking-[0.18em]
+               leading-relaxed
+               text-[#70716b]">
+
+        © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src='https://cdn.jotfor.ms/agent/embedjs/019f8d4e1708700088b66f9a2c31e4a95d69/embed.js'>
+    </script>
+</body>
+</html>

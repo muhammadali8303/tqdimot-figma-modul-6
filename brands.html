@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELOCE — Your Garage</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background:#101112; color:#e8e8e8; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    button, input { font: inherit; }
+    .neon { color:#b8f522; }
+    .panel { background:#1b1c1e; border:1px solid #292a2c; }
+    .muted { color:#b4b5a6; }
+    .soft { color:#8d8f88; }
+    .line { border-color:#27282a; }
+    .green-border { border-color:#b8f522; }
+    .green-bg { background:#b8f522; }
+    .thumb { object-fit:cover; width:100%; height:100%; }
+    .no-scroll { overflow:hidden; }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER OLIB TASHLANDI — shu yerga ozingiz qo'shasiz -->
+
+      <header class="bg-[#121315] py-[19px] px-[30px] max-[696px]:px-[16px] max-[420px]:px-[12px]">
+        <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center gap-3">
+            <div class="flex gap-[32px] items-center min-w-0">
+                <a class="text-[28px] text-[white] font-[700] max-[420px]:text-[24px] shrink-0" href="./index.html">VELOCE</a>
+                <ul class="flex gap-[16px] mt-[10px] max-[696px]:!hidden ">
+                    <li class="inline-block group relative"><a
+                            class="group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
+                            href="./index.html">Rent</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF] duration-[0.3s]"
+                            href="./buy.html">Buy</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+                            href="./sell.html">Sell</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+                            href="./brands.html">Brands</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                    <li class="inline-block group relative"><a
+                            class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+                            href="">Journal</a>
+                        <span
+                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-[40px] max-[696px]:gap-[8px] shrink-0">
+
+                <div class=" ">
+                    <div class="flex gap-[8px] max-[696px]:hidden ">
+                        <img class="pt-[12px]" src="./headericon-1.svg" alt="">
+                        <img class="pt-[12px]" src="./headericon-2.svg" alt="">
+                        <img class="pt-[12px]" src="./headericon-3.svg" alt="">
+                    </div>
+
+                </div>
+                <!-- Modal toggle -->
+              
+
+<!-- Mobile Menu Button -->
+<button
+    id="mobile-menu-btn"
+    type="button"
+    aria-label="Open menu"
+    class="hidden max-[696px]:flex items-center justify-center w-[42px] h-[42px] shrink-0 rounded-[8px] border border-[#303332] text-white hover:bg-[#1f2022] transition">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        width="22" height="22" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+</button>
+
+<!-- Modal toggle -->
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none whitespace-nowrap max-[696px]:px-[16px] max-[696px]:py-[9px] max-[420px]:px-[12px] max-[420px]:text-[12px]" type="button">
+  List your car
+</button>
+
+<!-- Main modal -->
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full  md:inset-0 h-[calc(100%-1rem)] max-h-[1000px]">
+    <div class="relative object-cover overflow-hidden p-4 w-full max-w-[700px] max-h-[700px]">
+        <!-- Modal content -->
+        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+            <!-- Modal header -->
+            <div class="flex items-center text-white bg-black justify-between border-b border-default pb-4 md:pb-5">
+                <h3 class="text-lg font-medium text-heading">
+                    VELOCE
+                </h3>
+                <button type="button" class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+             <div class="min-h-screen w-full bg-[#101112] flex items-center justify-center px-5">
+
+  <div
+    class="w-full max-w-[420px]
+           rounded-2xl
+           border border-[#292b2d]
+           bg-[#151617]
+           p-6 sm:p-8
+           shadow-2xl">
+
+    <!-- TITLE -->
+    <div class="mb-7">
+
+      <h1 class="text-2xl font-semibold text-white">
+        Sign In
+      </h1>
+
+      <p class="mt-2 text-sm text-[#8f918d]">
+        Welcome back! Please enter your details.
+      </p>
+
+    </div>
+
+
+    <!-- FORM -->
+    <form class="space-y-5">
+
+      <!-- EMAIL -->
+      <div>
+
+        <label
+          for="email"
+          class="mb-2 block text-sm font-medium text-[#d8d9d5]">
+
+          Email
+
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="you@example.com"
+          class="w-full rounded-lg
+                 border border-[#303234]
+                 bg-[#101112]
+                 px-4 py-3
+                 text-sm text-white
+                 placeholder:text-[#666864]
+                 outline-none
+                 transition
+                 focus:border-[#b7e52c]
+                 focus:ring-1
+                 focus:ring-[#b7e52c]">
+
+      </div>
+
+
+      <!-- PASSWORD -->
+      <div>
+
+        <div class="mb-2 flex items-center justify-between">
+
+          <label
+            for="password"
+            class="text-sm font-medium text-[#d8d9d5]">
+
+            Password
+
+          </label>
+
+          <a
+            href="#"
+            class="text-xs text-[#b7e52c]
+                   hover:text-[#d5ff61]
+                   transition">
+
+            Forgot password?
+
+          </a>
+
+        </div>
+
+
+        <input
+          id="password"
+          type="password"
+          placeholder="••••••••"
+          class="w-full rounded-lg
+                 border border-[#303234]
+                 bg-[#101112]
+                 px-4 py-3
+                 text-sm text-white
+                 placeholder:text-[#666864]
+                 outline-none
+                 transition
+                 focus:border-[#b7e52c]
+                 focus:ring-1
+                 focus:ring-[#b7e52c]">
+
+      </div>
+
+
+      <!-- REMEMBER -->
+      <div class="flex items-center gap-2">
+
+        <input
+          id="remember"
+          type="checkbox"
+          class="h-4 w-4
+                 rounded
+                 border-[#383a3c]
+                 bg-[#101112]
+                 accent-[#b7e52c]">
+
+        <label
+          for="remember"
+          class="text-sm text-[#999b96]">
+
+          Remember me
+
+        </label>
+
+      </div>
+
+
+      <!-- SIGN IN BUTTON -->
+      <button
+        type="submit"
+        class="w-full rounded-lg
+               bg-[#b7e52c]
+               py-3
+               text-sm font-bold
+               text-[#101112]
+               transition
+               hover:bg-[#d0fa54]
+               active:scale-[0.98]">
+
+        Sign In
+
+      </button>
+
+    </form>
+
+
+    <!-- SIGN UP -->
+    <p class="mt-7 text-center text-sm text-[#858783]">
+
+      Don't have an account?
+
+      <a
+        href="#"
+        class="ml-1 font-medium
+               text-[#b7e52c]
+               hover:text-[#d5ff61]">
+
+        Sign Up
+
+      </a>
+
+    </p>
+
+  </div>
+
+</div>
+             
+          
+        </div>
+    </div>
+</div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        
+    </header>
+
+
+<!-- MOBILE SIDE MENU -->
+<div id="mobile-menu-overlay"
+    class="fixed inset-0 z-[60] bg-black/50 opacity-0 invisible transition-all duration-300 max-[696px]:block hidden">
+</div>
+
+<aside id="mobile-side-menu"
+    class="fixed top-0 left-0 z-[70] h-screen w-[300px] max-w-[85%] bg-[#121315] border-r border-[#292b2d] shadow-2xl -translate-x-full transition-transform duration-300 ease-in-out">
+
+    <div class="flex h-full flex-col">
+
+        <!-- Drawer Header -->
+        <div class="flex items-center justify-between px-[24px] py-[22px] border-b border-[#292b2d]">
+            <a href="./index.html" class="text-[26px] text-white font-[700]">
+                VELOCE
+            </a>
+
+            <button
+                id="mobile-menu-close"
+                type="button"
+                aria-label="Close menu"
+                class="flex items-center justify-center w-[40px] h-[40px] rounded-[8px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="22" height="22" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 6l12 12M18 6L6 18"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Drawer Navigation -->
+        <nav class="flex flex-col px-[18px] py-[24px] gap-[6px]">
+
+            <a href="./index.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Rent</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href="./buy.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Buy</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href="./sell.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Sell</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href="./brands.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Brands</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href=""
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Journal</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+        </nav>
+
+        <!-- Drawer Bottom -->
+        <div class="mt-auto px-[24px] py-[24px] border-t border-[#292b2d]">
+            <p class="text-[10px] tracking-[0.18em] text-[#70716b]">
+                VELOCE LUXURY AUTOMOTIVE
+            </p>
+        </div>
+
+    </div>
+</aside>
+
+  <main class="mx-auto max-w-[1280px] px-5 py-10 sm:px-7 lg:px-9">
+    <!-- STEPS -->
+    <section class="mx-auto mb-14 max-w-[620px]">
+      <div class="flex items-center">
+        <div class="step-node active">1</div><div class="step-line active"></div>
+        <div class="step-node">2</div><div class="step-line"></div>
+        <div class="step-node">3</div><div class="step-line"></div>
+        <div class="step-node">4</div>
+      </div>
+      <div class="mt-2 grid grid-cols-4 text-center text-[10px] tracking-[.12em] text-[#9b9c91]">
+        <span class="text-white">CART</span><span>DETAILS</span><span>PAYMENT</span><span>SUCCESS</span>
+      </div>
+    </section>
+
+    <style>
+      .step-node{height:36px;width:36px;border:1px solid #4a4b43;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c7c8bd;font-size:13px;flex:none}
+      .step-node.active{background:#b8f522;color:#101112;border-color:#b8f522}
+      .step-line{height:1px;background:#2b2c2d;flex:1}.step-line.active{background:#b8f522}
+    </style>
+
+    <h1 class="mb-9 text-[38px] font-medium tracking-[-1.5px] sm:text-[48px]">Your garage <span class="align-middle text-[16px] tracking-normal text-[#b8b9aa]">(3 cars)</span></h1>
+
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_312px]">
+      <!-- LEFT -->
+      <section class="min-w-0">
+        <div id="cars" class="space-y-5">
+  <!-- Lamborghini -->
+  <article class="panel rounded-xl p-5">
+    <div class="flex flex-col gap-5 sm:flex-row">
+      <div class="h-[150px] w-full shrink-0 overflow-hidden rounded-md sm:h-[136px] sm:w-[190px]">
+        <img class="thumb" src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80" alt="Lamborghini Revuelto">
+      </div>
+      <div class="min-w-0 flex-1">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <div class="text-[9px] font-semibold tracking-[.14em] neon">SUPERCAR CLASS</div>
+            <h3 class="mt-1 text-[25px] font-medium tracking-[-.5px] sm:text-[26px]">Lamborghini Revuelto</h3>
+            <div class="mt-1 text-[13px] muted">⌖ Los Angeles, CA</div>
+          </div>
+          <button onclick="removeCar(0)" class="shrink-0 text-xl text-[#d4d5c9] hover:text-[#b8f522]">♜</button>
+        </div>
+        <div class="mt-7 grid grid-cols-1 gap-4 min-[420px]:grid-cols-2 sm:grid-cols-3">
+          <div><div class="text-[8px] text-[#8e9087]">PERIOD</div><div class="mt-1 text-[12px]">Oct 14 - Oct 17 ✎</div></div>
+          <div><div class="text-[8px] text-[#8e9087]">DAYS</div><div class="mt-1 flex items-center gap-2"><button onclick="changeDays(0,-1)" class="h-5 w-5 rounded-full border border-[#42433c]">−</button><b id="days0">3</b><button onclick="changeDays(0,1)" class="h-5 w-5 rounded-full border border-[#42433c]">+</button></div></div>
+          <div><div class="text-[8px] text-[#8e9087]">ADD-ONS</div><div class="mt-1"><span class="inline-block h-3 w-7 rounded-full bg-[#b8f522] align-middle"></span> Full Insurance</div></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Porsche -->
+  <article class="panel rounded-xl p-5">
+    <div class="flex flex-col gap-5 sm:flex-row">
+      <div class="h-[150px] w-full shrink-0 overflow-hidden rounded-md sm:h-[136px] sm:w-[190px]">
+        <img class="thumb" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Porsche 911 GT3 RS">
+      </div>
+      <div class="min-w-0 flex-1">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <div class="text-[9px] font-semibold tracking-[.14em] neon">TRACK LEGEND</div>
+            <h3 class="mt-1 text-[25px] font-medium tracking-[-.5px] sm:text-[26px]">Porsche 911 GT3 RS</h3>
+            <div class="mt-1 text-[13px] muted">⌖ Beverly Hills, CA</div>
+          </div>
+          <button onclick="removeCar(1)" class="shrink-0 text-xl text-[#d4d5c9] hover:text-[#b8f522]">♜</button>
+        </div>
+        <div class="mt-7 grid grid-cols-1 gap-4 min-[420px]:grid-cols-2 sm:grid-cols-3">
+          <div><div class="text-[8px] text-[#8e9087]">PERIOD</div><div class="mt-1 text-[12px]">Oct 14 - Oct 15 ✎</div></div>
+          <div><div class="text-[8px] text-[#8e9087]">DAYS</div><div class="mt-1 flex items-center gap-2"><button onclick="changeDays(1,-1)" class="h-5 w-5 rounded-full border border-[#42433c]">−</button><b id="days1">1</b><button onclick="changeDays(1,1)" class="h-5 w-5 rounded-full border border-[#42433c]">+</button></div></div>
+          <div><div class="text-[8px] text-[#8e9087]">ADD-ONS</div><div class="mt-1 text-[#777970]">None</div></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Ferrari -->
+  <article class="panel rounded-xl p-5">
+    <div class="flex flex-col gap-5 sm:flex-row">
+      <div class="h-[150px] w-full shrink-0 overflow-hidden rounded-md sm:h-[136px] sm:w-[190px]">
+        <img class="thumb" src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=900&q=80" alt="Ferrari SF90 Stradale">
+      </div>
+      <div class="min-w-0 flex-1">
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <div class="text-[9px] font-semibold tracking-[.14em] neon">HYBRID BEAST</div>
+            <h3 class="mt-1 text-[25px] font-medium tracking-[-.5px] sm:text-[26px]">Ferrari SF90 Stradale</h3>
+            <div class="mt-1 text-[13px] muted">⌖ Santa Monica, CA</div>
+          </div>
+          <button onclick="removeCar(2)" class="shrink-0 text-xl text-[#d4d5c9] hover:text-[#b8f522]">♜</button>
+        </div>
+        <div class="mt-7 grid grid-cols-1 gap-4 min-[420px]:grid-cols-2 sm:grid-cols-3">
+          <div><div class="text-[8px] text-[#8e9087]">PERIOD</div><div class="mt-1 text-[12px]">Oct 16 - Oct 18 ✎</div></div>
+          <div><div class="text-[8px] text-[#8e9087]">DAYS</div><div class="mt-1 flex items-center gap-2"><button onclick="changeDays(2,-1)" class="h-5 w-5 rounded-full border border-[#42433c]">−</button><b id="days2">2</b><button onclick="changeDays(2,1)" class="h-5 w-5 rounded-full border border-[#42433c]">+</button></div></div>
+          <div><div class="text-[8px] text-[#8e9087]">ADD-ONS</div><div class="mt-1"><span class="inline-block h-3 w-7 rounded-full bg-[#b8f522] align-middle"></span> Full Insurance</div></div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+        <div class="mt-5 border-t border-[#202123] pt-7">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 class="text-[17px]">Promotional Code</h2>
+              <p class="mt-1 text-[13px] text-[#a6a79c]">Enter your luxury membership or voucher code.</p>
+            </div>
+            <div class="flex w-full max-w-[330px] gap-3">
+              <input id="promo" placeholder="VELOCE-2024" class="min-w-0 flex-1 rounded-md border border-[#4a4b43] bg-[#1b1c1e] px-4 py-3 text-[13px] outline-none focus:border-[#b8f522]">
+              <button id="applyPromo" class="rounded-md border border-[#b8f522] px-5 text-[13px] font-semibold text-[#b8f522] hover:bg-[#b8f522] hover:text-black">Apply</button>
+            </div>
+          </div>
+          <p id="promoMsg" class="mt-3 text-[12px] text-[#b8f522]"></p>
+        </div>
+
+        <section class="mt-8">
+          <div class="mb-5 flex items-center justify-between">
+            <h2 class="text-[19px]">Complete your trip</h2>
+            <div class="flex gap-2">
+              <button id="prev" class="h-9 w-9 rounded-full border border-[#4b4c42] text-lg hover:border-[#b8f522]">‹</button>
+              <button id="next" class="h-9 w-9 rounded-full border border-[#4b4c42] text-lg hover:border-[#b8f522]">›</button>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div id="extras" class="flex gap-5"></div>
+          </div>
+        </section>
+      </section>
+
+      <!-- SUMMARY -->
+      <aside class="h-fit rounded-2xl border border-[#2a2b2d] bg-[#1b1c1e] p-6 lg:sticky lg:top-[24px]">
+        <h2 class="text-[21px]">Order Summary</h2>
+        <div class="mt-7 space-y-5 text-[14px]">
+          <div class="flex justify-between"><span class="text-[#b4b5a6]">Base Rental (6 days)</span><span id="baseTotal">$6,200</span></div>
+          <div class="flex justify-between"><span class="text-[#b4b5a6]">Add-ons</span><span id="addonsTotal">$540</span></div>
+          <div class="flex justify-between"><span class="text-[#b4b5a6]">Service Fee</span><span>$210</span></div>
+          <div class="flex justify-between"><span class="text-[#b4b5a6]">VAT (7%)</span><span id="vat">$438</span></div>
+        </div>
+        <div class="my-6 border-t border-[#36373a]"></div>
+        <div class="text-[10px] uppercase tracking-[.12em] text-[#999a91]">Total amount</div>
+        <div id="total" class="mt-1 text-[32px]">$7,388</div>
+        <div class="mt-[-4px] text-right text-[9px] text-[#999a91]">Incl. all taxes</div>
+        <button id="checkout" class="mt-6 w-full rounded-xl bg-[#b8f522] py-4 text-[14px] font-bold text-black transition hover:brightness-110">Proceed to checkout →</button>
+        <div class="mt-6 flex justify-center gap-5 text-xl text-[#9d9e97]">◉ ▣ ▤ ▧</div>
+        <div class="mt-5 rounded-lg bg-[#262729] p-4">
+          <div class="flex gap-3">
+            <span class="text-[#b8f522]">⬢</span>
+            <div><b class="text-[12px]">Veloce Secure Checkout</b><p class="mt-1 text-[10px] leading-4 text-[#999b93]">Your transaction is protected by bank-level 256-bit SSL encryption and fraud prevention protocols.</p></div>
+          </div>
+        </div>
+        <div class="mt-5 text-center text-[10px] font-bold tracking-[.08em] text-[#b8f522]">✦ VELOCE VERIFIED PLATINUM</div>
+        <p class="mt-10 text-[10px] text-[#aaaB9f]">Free cancellation until 48 hours before pick-up. <u>Terms apply</u>.</p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkoutModal" class="invisible fixed inset-0 z-[80] flex items-center justify-center bg-black/70 p-4 opacity-0 transition-all">
+    <div class="w-full max-w-md rounded-2xl border border-[#303234] bg-[#171819] p-6 shadow-2xl">
+      <div class="flex items-center justify-between"><h3 class="text-xl">Checkout</h3><button id="closeCheckout" class="text-2xl text-[#aaa]">×</button></div>
+      <p class="mt-2 text-sm text-[#8e9088]">Review your booking before payment.</p>
+      <div class="mt-6 rounded-xl bg-[#202123] p-4 text-sm">
+        <div class="flex justify-between"><span>Total</span><b id="checkoutTotal">$7,388</b></div>
+      </div>
+      <button id="confirmPayment" class="mt-5 w-full rounded-lg bg-[#b8f522] py-3 font-bold text-black">Confirm payment</button>
+      <p id="paymentMsg" class="mt-3 text-center text-xs text-[#b8f522]"></p>
+    </div>
+  </div>
+
+<script>
+const cars = [
+  {brand:'SUPERCAR CLASS', name:'Lamborghini Revuelto', location:'Los Angeles, CA', period:'Oct 14 - Oct 17', days:3, price:3100, addon:180, image:'https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80', insurance:true},
+  {brand:'TRACK LEGEND', name:'Porsche 911 GT3 RS', location:'Beverly Hills, CA', period:'Oct 14 - Oct 15', days:1, price:1900, addon:0, image:'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80', insurance:false},
+  {brand:'HYBRID BEAST', name:'Ferrari SF90 Stradale', location:'Santa Monica, CA', period:'Oct 16 - Oct 18', days:2, price:1200, addon:360, image:'https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=900&q=80', insurance:true}
+];
+
+const extras = [
+  {name:'Chauffeur Service', desc:'Professional driving for ultimate relaxation.', price:250, image:'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=800&q=80'},
+  {name:'Welcome Hamper', desc:'Champagne, truffles, and artisan treats.', price:180, image:'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80'},
+  {name:'Cinematic Drone Kit', desc:'Capture your journey from the sky.', price:120, image:'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80'},
+  {name:'Airport VIP', desc:'Private terminal pickup and drop-off.', price:300, image:'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80'}
+];
+
+function money(n){ return '$' + n.toLocaleString('en-US'); }
+
+function removeCar(i){
+  cars.splice(i,1);
+  const cards=document.querySelectorAll('#cars > article');
+  if(cards[i]) cards[i].remove();
+  updateTotals();
+}
+function changeDays(i,delta){
+  if (!cars[i]) return;
+  cars[i].days=Math.max(1,cars[i].days+delta);
+  const el=document.getElementById('days'+i);
+  if(el) el.textContent=cars[i].days;
+  updateTotals();
+}
+
+let promoDiscount = 0;
+
+function updateTotals(){
+  const base = cars.reduce((s,c)=>s+c.price*c.days/3,0);
+  const addons = cars.reduce((s,c)=>s+c.addon*(c.days/Math.max(c.days,1)),0);
+  const service = 210;
+  const subtotal = Math.max(0,base+addons+service-promoDiscount);
+  const vat = Math.round(subtotal*0.07);
+  const total = subtotal+vat;
+  document.getElementById('baseTotal').textContent=money(Math.round(base));
+  document.getElementById('addonsTotal').textContent=money(Math.round(addons));
+  document.getElementById('vat').textContent=money(vat);
+  document.getElementById('total').textContent=money(Math.round(total));
+  document.getElementById('checkoutTotal').textContent=money(Math.round(total));
+}
+
+/* ---------- CHEKSIZ (INFINITE) OWL-STYLE CAROUSEL ---------- */
+const track = document.getElementById('extras');
+
+// Uzluksiz aylanish uchun ro'yxatni uch marta chizamiz (klon qatorlar)
+const loopExtras = [...extras, ...extras, ...extras];
+track.innerHTML = loopExtras.map(e=>`
+  <article class="panel w-[250px] shrink-0 rounded-xl p-3 sm:w-[calc((100% - 40px)/3)]">
+    <div class="h-[118px] overflow-hidden rounded-lg"><img class="thumb" src="${e.image}" alt="${e.name}"></div>
+    <h3 class="mt-3 text-[14px] font-bold">${e.name}</h3>
+    <p class="mt-1 line-clamp-2 text-[12px] text-[#b0b1a6]">${e.desc}</p>
+    <div class="mt-3 neon font-bold">${money(e.price)}${e.name==='Welcome Hamper'?'':' / day'}</div>
+  </article>`).join('');
+
+// Karta kengligini DOMdan real hisoblaymiz (fixed son emas), aks holda
+// desktopda kartalar kengligi o'zgarganda joylashuv siljib, bo'sh joy chiqadi
+function cardStep(){
+  const first = track.children[0];
+  if(!first) return 270;
+  const rect = first.getBoundingClientRect();
+  const style = getComputedStyle(track);
+  const gap = parseFloat(style.columnGap || style.gap) || 20;
+  return rect.width + gap;
+}
+
+// O'rtadagi to'plamdan boshlaymiz, shunda ikkala tomonga ham cheksiz yurish mumkin
+let carouselIndex = extras.length;
+let isAnimating = false;
+
+function setTrack(animate){
+  track.style.transition = animate ? 'transform 300ms ease' : 'none';
+  track.style.transform = `translateX(-${carouselIndex*cardStep()}px)`;
+}
+setTrack(false);
+
+// Aylanish tugagach, agar chekka klon zonasiga yetib kelgan bo'lsak,
+// animatsiyasiz o'rtadagi ekvivalent kartaga sakraymiz — shu narsa
+// oldin ishlamay, oxirida "qotib qolish"ga sabab bo'lgan edi.
+track.addEventListener('transitionend', () => {
+  isAnimating = false;
+  if (carouselIndex >= extras.length * 2){
+    carouselIndex -= extras.length;
+    setTrack(false);
+  } else if (carouselIndex < 0){
+    carouselIndex += extras.length;
+    setTrack(false);
+  }
+});
+
+document.getElementById('next').onclick = () => {
+  if (isAnimating) return;
+  isAnimating = true;
+  carouselIndex++;
+  setTrack(true);
+};
+
+document.getElementById('prev').onclick = () => {
+  if (isAnimating) return;
+  isAnimating = true;
+  carouselIndex--;
+  setTrack(true);
+};
+
+// Ekran o'lchami o'zgarsa (masalan resize/rotate) pozitsiyani qayta hisoblaymiz
+window.addEventListener('resize', () => setTrack(false));
+/* -------------------------------------------------------------- */
+
+document.getElementById('applyPromo').onclick=()=>{
+  const value=document.getElementById('promo').value.trim().toUpperCase();
+  if(value==='VELOCE-2024'){promoDiscount=250;document.getElementById('promoMsg').textContent='Promo code applied — $250 discount.'}
+  else {promoDiscount=0;document.getElementById('promoMsg').textContent=value?'Invalid promo code.':'Enter a promo code.'}
+  updateTotals();
+};
+
+function openModal(id){const el=document.getElementById(id);el.classList.remove('invisible','opacity-0')}
+function closeModal(id){const el=document.getElementById(id);el.classList.add('invisible','opacity-0')}
+document.getElementById('checkout').onclick=()=>openModal('checkoutModal');
+document.getElementById('closeCheckout').onclick=()=>closeModal('checkoutModal');
+document.getElementById('confirmPayment').onclick=()=>{document.getElementById('paymentMsg').textContent='Payment confirmed. Booking successful!'};
+
+document.getElementById('checkoutModal').addEventListener('click', e => { if(e.target.id==='checkoutModal') closeModal('checkoutModal'); });
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal('checkoutModal'); });
+
+updateTotals();
+</script>
+
+<script>
+    (() => {
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-side-menu');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const closeBtn = document.getElementById('mobile-menu-close');
+
+        if (!menuBtn || !menu || !overlay || !closeBtn) return;
+
+        function openMenu() {
+            menu.classList.remove('-translate-x-full');
+            overlay.classList.remove('opacity-0', 'invisible');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeMenu() {
+            menu.classList.add('-translate-x-full');
+            overlay.classList.add('opacity-0', 'invisible');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        menuBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeMenu();
+            }
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    })();
+</script>
+
+</body>
+</html>

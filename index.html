@@ -27,13 +27,77 @@ img { content-visibility: auto; }
 section, footer { contain: layout paint; }
 </style>
 
+
+<style id="mobile-responsive-fixes">
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    @media (max-width: 696px) {
+        /* Keep header controls together and prevent accidental overflow. */
+        header > div {
+            min-width: 0;
+        }
+
+        header > div > div:first-child {
+            min-width: 0;
+        }
+
+        /* Search widget stays inside the viewport. */
+        section {
+            max-width: 100%;
+        }
+
+        /* Prevent long card/content rows from forcing horizontal scrolling. */
+        .owl-carousel,
+        .cards {
+            max-width: 100%;
+        }
+
+        input,
+        select,
+        button {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 420px) {
+        /* Very small phones: keep VELOCE + controls comfortably inside 100%. */
+        header {
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+        }
+
+        header > div {
+            gap: 6px !important;
+        }
+
+        header > div > div:last-child {
+            gap: 6px !important;
+        }
+
+        /* The List your car button must never be wider than its available space. */
+        header button[data-modal-target="default-modal"] {
+            min-width: 0;
+            flex-shrink: 1;
+        }
+
+        /* Search controls stack cleanly on narrow screens. */
+        #default-modal input,
+        #default-modal select {
+            width: 100%;
+        }
+    }
+</style>
+
 </head>
 
 <body class="bg-[#121315]">
-    <header class="bg-[#121315] py-[19px] px-[30px]">
-        <div class="max-w-[1280px] mx-auto w-full flex justify-between itmes-center">
-            <div class="flex  gap-[32px] itmes-center ">
-                <a class="text-[28px] text-[white]  font-[700]" href="./index.html">VELOCE</a>
+    <header class="bg-[#121315] py-[19px] px-[30px] max-[696px]:px-[16px] max-[420px]:px-[12px]">
+        <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center gap-3">
+            <div class="flex gap-[32px] items-center min-w-0">
+                <a class="text-[28px] text-[white] font-[700] max-[420px]:text-[24px] shrink-0" href="./index.html">VELOCE</a>
                 <ul class="flex gap-[16px] mt-[10px] max-[696px]:!hidden ">
                     <li class="inline-block group relative"><a
                             class="group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
@@ -61,7 +125,7 @@ section, footer { contain: layout paint; }
                     </li>
                     <li class="inline-block group relative"><a
                             class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="">Brands</a>
+                            href="./brands.html">Brands</a>
                         <span
                             class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
@@ -78,7 +142,7 @@ section, footer { contain: layout paint; }
                 </ul>
             </div>
 
-            <div class="flex gap-[40px] ">
+            <div class="flex items-center gap-[40px] max-[696px]:gap-[8px] shrink-0">
 
                 <div class=" ">
                     <div class="flex gap-[8px] max-[696px]:hidden ">
@@ -91,8 +155,22 @@ section, footer { contain: layout paint; }
                 <!-- Modal toggle -->
               
 
+<!-- Mobile Menu Button -->
+<button
+    id="mobile-menu-btn"
+    type="button"
+    aria-label="Open menu"
+    class="hidden max-[696px]:flex items-center justify-center w-[42px] h-[42px] shrink-0 rounded-[8px] border border-[#303332] text-white hover:bg-[#1f2022] transition">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        width="22" height="22" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+</button>
+
 <!-- Modal toggle -->
-<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none" type="button">
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none whitespace-nowrap max-[696px]:px-[16px] max-[696px]:py-[9px] max-[420px]:px-[12px] max-[420px]:text-[12px]" type="button">
   List your car
 </button>
 
@@ -296,6 +374,84 @@ section, footer { contain: layout paint; }
 
         
     </header>
+
+
+<!-- MOBILE SIDE MENU -->
+<div id="mobile-menu-overlay"
+    class="fixed inset-0 z-[60] bg-black/50 opacity-0 invisible transition-all duration-300 max-[696px]:block hidden">
+</div>
+
+<aside id="mobile-side-menu"
+    class="fixed top-0 left-0 z-[70] h-screen w-[300px] max-w-[85%] bg-[#121315] border-r border-[#292b2d] shadow-2xl -translate-x-full transition-transform duration-300 ease-in-out">
+
+    <div class="flex h-full flex-col">
+
+        <!-- Drawer Header -->
+        <div class="flex items-center justify-between px-[24px] py-[22px] border-b border-[#292b2d]">
+            <a href="./index.html" class="text-[26px] text-white font-[700]">
+                VELOCE
+            </a>
+
+            <button
+                id="mobile-menu-close"
+                type="button"
+                aria-label="Close menu"
+                class="flex items-center justify-center w-[40px] h-[40px] rounded-[8px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="22" height="22" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 6l12 12M18 6L6 18"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Drawer Navigation -->
+        <nav class="flex flex-col px-[18px] py-[24px] gap-[6px]">
+
+            <a href="./index.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Rent</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href="./buy.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Buy</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href="./sell.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Sell</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href="./brands.html"
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Brands</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+            <a href=""
+                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+                <span>Journal</span>
+                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+            </a>
+
+        </nav>
+
+        <!-- Drawer Bottom -->
+        <div class="mt-auto px-[24px] py-[24px] border-t border-[#292b2d]">
+            <p class="text-[10px] tracking-[0.18em] text-[#70716b]">
+                VELOCE LUXURY AUTOMOTIVE
+            </p>
+        </div>
+
+    </div>
+</aside>
+
+
 
 
 
@@ -1399,24 +1555,26 @@ section, footer { contain: layout paint; }
             </div>
         </section>
 
-      <section class="deals-section" id="deals-section" aria-labelledby="deals-heading">
+   
+
+           <section class="deals-section" id="deals-section" aria-labelledby="deals-heading">
   <style>
     #deals-section {
-      --bg-void: #0a0908;
-      --bg-card: #15130f;
-      --bg-card-hi: #1b1812;
-      --hairline: rgba(201, 161, 90, 0.16);
-      --gold: #c9a15a;
-      --gold-hi: #ecd39a;
-      --text-hi: #f4efe4;
-      --text-mid: #b3aa99;
-      --text-lo: #756c5d;
-      --ember: #e2542f;
+      --bg-void: #0b0d0d;
+      --bg-card: #151817;
+      --bg-card-hi: #1b1f1d;
+      --hairline: rgba(193, 244, 50, 0.16);
+      --gold: #c1f432;
+      --gold-hi: #c1f432;
+      --text-hi: #f3f5f0;
+      --text-mid: #aeb5ad;
+      --text-lo: #707872;
+      --ember: #c1f432;
 
       font-family: 'DS-Body', 'Inter', system-ui, -apple-system, sans-serif;
       background:
-        radial-gradient(ellipse 900px 500px at 12% -10%, rgba(201,161,90,0.10), transparent 60%),
-        radial-gradient(ellipse 700px 500px at 100% 10%, rgba(201,161,90,0.06), transparent 55%),
+        radial-gradient(ellipse 900px 500px at 12% -10%, rgba(193,244,50,0.08), transparent 60%),
+        radial-gradient(ellipse 700px 500px at 100% 10%, rgba(193,244,50,0.045), transparent 55%),
         var(--bg-void);
       color: var(--text-hi);
       padding: clamp(48px, 7vw, 96px) clamp(20px, 4vw, 48px);
@@ -1511,14 +1669,14 @@ section, footer { contain: layout paint; }
     #deals-section .ds-countdown-master .ds-dot {
       width: 7px; height: 7px; border-radius: 50%;
       background: var(--ember);
-      box-shadow: 0 0 0 0 rgba(226,84,47,0.6);
+      box-shadow: 0 0 0 0 rgba(193,244,50,0.45);
       animation: ds-pulse 1.6s ease-out infinite;
     }
 
     @keyframes ds-pulse {
-      0% { box-shadow: 0 0 0 0 rgba(226,84,47,0.55); }
-      70% { box-shadow: 0 0 0 8px rgba(226,84,47,0); }
-      100% { box-shadow: 0 0 0 0 rgba(226,84,47,0); }
+      0% { box-shadow: 0 0 0 0 rgba(193,244,50,0.45); }
+      70% { box-shadow: 0 0 0 8px rgba(193,244,50,0); }
+      100% { box-shadow: 0 0 0 0 rgba(193,244,50,0); }
     }
 
     #deals-section .ds-countdown-master .ds-label {
@@ -1562,8 +1720,8 @@ section, footer { contain: layout paint; }
 
     #deals-section .ds-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(201,161,90,0.45);
-      box-shadow: 0 24px 48px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,161,90,0.08);
+      border-color: rgba(193,244,50,0.45);
+      box-shadow: 0 24px 48px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(193,244,50,0.08);
     }
 
     #deals-section .ds-media {
@@ -1602,7 +1760,7 @@ section, footer { contain: layout paint; }
       gap: 6px;
       background: rgba(10,9,8,0.72);
       backdrop-filter: blur(6px);
-      border: 1px solid rgba(201,161,90,0.35);
+      border: 1px solid rgba(193,244,50,0.35);
       color: var(--gold-hi);
       font-size: 11.5px;
       font-weight: 700;
@@ -1619,7 +1777,7 @@ section, footer { contain: layout paint; }
       top: 12px; right: 12px;
       z-index: 3;
       background: var(--ember);
-      color: #fff5ee;
+      color: #0b0d0d;
       font-size: 11px;
       font-weight: 700;
       padding: 6px 10px;
@@ -1695,7 +1853,7 @@ section, footer { contain: layout paint; }
       padding: 13px 16px;
       border-radius: 10px;
       background: var(--gold-hi);
-      color: #171308;
+      color: #0b0d0d;
       font-weight: 700;
       font-size: 13.5px;
       letter-spacing: 0.02em;
@@ -1827,7 +1985,7 @@ section, footer { contain: layout paint; }
       padding: 13px 16px;
       border-radius: 10px;
       background: var(--gold-hi);
-      color: #171308;
+      color: #0b0d0d;
       font-weight: 700;
       font-size: 14px;
       margin-top: 6px;
@@ -2691,6 +2849,44 @@ currently showing the strongest market performance...</p>
 
     </script>
 
+
+
+<script>
+    // VELOCE mobile side menu
+    (() => {
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-side-menu');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const closeBtn = document.getElementById('mobile-menu-close');
+
+        if (!menuBtn || !menu || !overlay || !closeBtn) return;
+
+        const openMenu = () => {
+            menu.classList.remove('-translate-x-full');
+            overlay.classList.remove('opacity-0', 'invisible');
+            document.body.classList.add('overflow-hidden');
+        };
+
+        const closeMenu = () => {
+            menu.classList.add('-translate-x-full');
+            overlay.classList.add('opacity-0', 'invisible');
+            document.body.classList.remove('overflow-hidden');
+        };
+
+        menuBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeMenu();
+        });
+
+        // Link bosilganda menyu yopiladi.
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    })();
+</script>
 
 </body>
 

@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>buy</title>
-    <link rel="stylesheet" href="./buy.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style id="performance-only">
-/* Performance-only: no visual design values changed. */
-img[loading="lazy"] { content-visibility: auto; }
-</style>
 </head>
-
 <body>
-      <header class="bg-[#121315] py-[19px] px-[30px] max-[696px]:px-[16px] max-[420px]:px-[12px]">
+       <header class="bg-[#121315] py-[19px] px-[30px] max-[696px]:px-[16px] max-[420px]:px-[12px]">
         <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center gap-3">
             <div class="flex gap-[32px] items-center min-w-0">
                 <a class="text-[28px] text-[white] font-[700] max-[420px]:text-[24px] shrink-0" href="./index.html">VELOCE</a>
@@ -30,7 +23,7 @@ img[loading="lazy"] { content-visibility: auto; }
                     </li>
                     <li class="inline-block group relative"><a
                             class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF] duration-[0.3s]"
-                            href="./buy.html">Buy</a>
+                            href="./buy.html">katalog</a>
                         <span
                             class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
@@ -38,7 +31,7 @@ img[loading="lazy"] { content-visibility: auto; }
                     </li>
                     <li class="inline-block group relative"><a
                             class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="./sell.html">Sell</a>
+                            href="">Sell</a>
                         <span
                             class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
@@ -46,7 +39,7 @@ img[loading="lazy"] { content-visibility: auto; }
                     </li>
                     <li class="inline-block group relative"><a
                             class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="./brands.html">Brands</a>
+                            href="">Brands</a>
                         <span
                             class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
@@ -371,1612 +364,2453 @@ img[loading="lazy"] { content-visibility: auto; }
 
     </div>
 </aside>
-
-
-
-
-
-
-
-
-
-    <section class="min-h-screen bg-[#101112] text-white px-4 sm:px-6 lg:px-9 py-6 font-sans">
-
-        <div class="w-full max-w-[1280px] mx-auto">
-
-            <!-- HEADER -->
-            <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-5 mb-7">
-
-                <div class="min-w-0">
-
-                    <div class="flex flex-wrap gap-2 mb-3">
-
-                        <span class="rounded-sm border border-[#5b5535] bg-[#29291d]
-                    px-2 py-1 text-[9px] sm:text-[10px]
-                    font-bold tracking-wider text-[#d7bd5c]">
-                            🛡 VELOCE VERIFIED
-                        </span>
-
-                        <span class="rounded-sm border border-[#5d7217] bg-[#26320c]
-                    px-2 py-1 text-[9px] sm:text-[10px]
-                    font-bold tracking-wider text-[#b7eb29]">
-                            AVAILABLE NOW
-                        </span>
-
-                    </div>
-
-                    <h2 id="carTitle" class="text-3xl sm:text-4xl md:text-5xl
-                font-semibold tracking-tight leading-tight">
-
-                        2024 Porsche 911 Turbo S
-
-                    </h2>
-
-                    <p id="carInfo" class="mt-2 text-sm sm:text-base text-[#aaa99f]">
-
-                        Agate Grey Metallic
-                        <span class="mx-1">•</span>
-                        Coupe
-                        <span class="mx-1">•</span>
-                        3,420 Miles
-
-                    </p>
-
-                </div>
-
-
-                <!-- ACTIONS -->
-                <div class="flex items-center gap-2 lg:mt-8">
-
-                    <!-- SHARE -->
-                    <button onclick="shareCar()" class="h-11 w-11 rounded-lg border border-[#292b2d]
-                bg-[#151718] flex items-center justify-center
-                text-gray-300 hover:bg-[#252728] transition">
-
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-
-                            <circle cx="18" cy="5" r="2" />
-                            <circle cx="6" cy="12" r="2" />
-                            <circle cx="18" cy="19" r="2" />
-                            <path d="m8 13 8 4M8 11l8-4" />
-
-                        </svg>
-
-                    </button>
-
-
-                    <!-- LIKE -->
-                    <button id="likeButton" onclick="toggleLike()" class="h-11 w-11 rounded-lg border border-[#292b2d]
-                bg-[#151718] flex items-center justify-center
-                text-gray-300 hover:bg-[#252728] transition">
-
-                        <svg id="heartIcon" class="w-5 h-5 transition-all duration-200" fill="none"
-                            stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-
-                            <path
-                                d="M20.8 8.8c0 5.5-8.8 10.2-8.8 10.2S3.2 14.3 3.2 8.8A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z" />
-
-                        </svg>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- MAIN GALLERY -->
-            <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_140px] gap-4 sm:gap-5">
-
-                <!-- MAIN IMAGE -->
-                <div class="relative h-[300px] sm:h-[400px] md:h-[500px]
-            lg:h-[440px] xl:h-[520px]
-            overflow-hidden rounded-xl
-            border border-[#242729] bg-black">
-
-                    <img id="mainCarImage"
-                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_Turbo_S_(992,_2024)_(54870181847).jpg"
-                        alt="Porsche 911 Turbo S" class="absolute inset-0 h-full w-full
-                object-cover transition-opacity duration-300" loading="lazy" decoding="async">
-
-                    <div class="absolute inset-0
-                bg-gradient-to-t from-black/70
-                via-black/10 to-black/20
-                pointer-events-none">
-                    </div>
-
-
-                    <!-- BOTTOM BUTTONS -->
-                    <div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
-
-                        <button class="flex items-center gap-2 rounded-md
-                    border border-white/10 bg-[#101112]/90
-                    px-3 sm:px-4 py-2
-                    text-[9px] sm:text-[10px]
-                    font-bold tracking-wider backdrop-blur
-                    hover:bg-[#252728] transition">
-
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8"
-                                viewBox="0 0 24 24">
-
-                                <path d="M3 12c2.5-5 5.5-7.5 9-7.5S18.5 7 21 12c-2.5 5-5.5 7.5-9 7.5S5.5 17 3 12Z" />
-                                <circle cx="12" cy="12" r="2.5" />
-
-                            </svg>
-
-                            360 VIEW
-
-                        </button>
-
-
-                        <button class="flex items-center gap-2 rounded-md
-                    border border-white/10 bg-[#101112]/90
-                    px-3 sm:px-4 py-2
-                    text-[9px] sm:text-[10px]
-                    font-bold tracking-wider backdrop-blur
-                    hover:bg-[#252728] transition">
-
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8"
-                                viewBox="0 0 24 24">
-
-                                <circle cx="12" cy="12" r="9" />
-                                <path d="m10 8 5 4-5 4V8Z" />
-
-                            </svg>
-
-                            VIDEO TOUR
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <!-- TABS -->
-                <div id="carTabs" class="grid grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-4">
-                </div>
-
-            </div>
-
-
-            <!-- MOBILE MORE -->
-            <button onclick="openGallery()" class="mt-4 lg:hidden w-full h-14 rounded-xl
-        border border-[#2c2e30] bg-[#1b1c1d]
-        flex items-center justify-center
-        hover:bg-[#27292a] transition">
-
-                <span class="text-xs font-bold tracking-widest text-[#c9c9c2]">
-                    +12 MORE PHOTOS
-                </span>
-
+<main>
+    <section id="veloceFleet" class="min-h-screen bg-[#101112] text-white py-8">
+  <div class="max-w-[1280px] mx-auto px-5">
+
+    <div class="grid grid-cols-1 lg:grid-cols-[268px_minmax(0,1fr)] gap-6">
+
+      <!-- FILTER SIDEBAR -->
+      <aside class="lg:border-r lg:border-[#252628] lg:pr-6">
+
+        <h2 class="text-[28px] font-semibold">Filters</h2>
+        <p class="text-[13px] text-[#999] mt-2">Refine your search</p>
+
+        <!-- SEARCH -->
+        <div class="mt-8">
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-2">
+            SEARCH
+          </label>
+
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-[#bdbdb5] text-xl">⌕</span>
+
+            <input id="vfSearch"
+              type="text"
+              placeholder="Model, keyword..."
+              class="w-full h-[42px] rounded-lg bg-[#292a2c]
+                     border border-transparent
+                     focus:border-[#baff19]
+                     outline-none pl-10 pr-3
+                     text-[13px] placeholder:text-[#6f7175]">
+          </div>
+        </div>
+
+        <!-- PRICE -->
+        <div class="mt-8">
+
+          <div class="flex justify-between items-center">
+            <label class="text-[10px] tracking-[1.5px] font-bold text-[#aaa]">
+              PRICE RANGE
+            </label>
+
+            <span id="vfPriceText"
+              class="text-[#baff19] text-[13px] font-bold">
+              $120k - $950k
+            </span>
+          </div>
+
+          <div class="relative h-6 mt-4">
+
+            <div class="absolute top-[9px] left-0 right-0 h-[4px]
+                        bg-[#41482e] rounded-full"></div>
+
+            <div id="vfProgress"
+              class="absolute top-[9px] left-0 h-[4px]
+                     bg-[#baff19] rounded-full"></div>
+
+            <input id="vfPrice"
+              type="range"
+              min="120"
+              max="950"
+              value="950"
+              step="10"
+              class="vf-range absolute inset-0 w-full">
+          </div>
+        </div>
+
+        <!-- BRANDS -->
+        <div class="mt-8">
+
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-3">
+            BRANDS
+          </label>
+
+          <div class="space-y-3">
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Porsche" class="vf-brand">
+                <span class="vf-check"></span>
+                Porsche
+              </span>
+              <span>124</span>
+            </label>
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Ferrari" class="vf-brand">
+                <span class="vf-check"></span>
+                Ferrari
+              </span>
+              <span>86</span>
+            </label>
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Lamborghini" class="vf-brand">
+                <span class="vf-check"></span>
+                Lamborghini
+              </span>
+              <span>52</span>
+            </label>
+
+            <label class="vf-brand-row">
+              <span class="flex items-center gap-2">
+                <input type="checkbox" value="Aston Martin" class="vf-brand">
+                <span class="vf-check"></span>
+                Aston Martin
+              </span>
+              <span>34</span>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- BODY -->
+        <div class="mt-8">
+
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-3">
+            BODY TYPE
+          </label>
+
+          <div class="grid grid-cols-3 gap-2">
+
+            <button data-body="Coupe" class="vf-body active">
+              <b>▣</b>
+              <span>Coupe</span>
             </button>
 
+            <button data-body="Convertible" class="vf-body">
+              <b>◇</b>
+              <span>Convertible</span>
+            </button>
 
-            <!-- ================= MODAL ================= -->
+            <button data-body="Sedan" class="vf-body">
+              <b>▥</b>
+              <span>Sedan</span>
+            </button>
 
-            <div id="galleryModal" class="fixed inset-0 z-[9999] hidden
-        items-center justify-center
-        bg-black/85 backdrop-blur-md p-3 sm:p-6">
+          </div>
+        </div>
 
-                <div class="relative w-full max-w-6xl max-h-[92vh]
-            overflow-y-auto rounded-2xl
-            border border-[#303233]
-            bg-[#171819] shadow-2xl">
+        <!-- TRANSMISSION -->
+        <div class="mt-7">
 
-                    <!-- MODAL HEADER -->
-                    <div class="sticky top-0 z-20
-                flex items-center justify-between
-                border-b border-[#292b2c]
-                bg-[#171819]/95 backdrop-blur
-                px-4 sm:px-6 py-4">
+          <label class="block text-[10px] tracking-[1.5px] font-bold text-[#aaa] mb-3">
+            TRANSMISSION
+          </label>
 
-                        <div>
+          <div class="flex gap-2">
 
-                            <h3 class="text-lg sm:text-xl font-semibold">
-                                Porsche Collection
-                            </h3>
+            <button data-trans="Automatic" class="vf-trans">
+              Automatic
+            </button>
 
-                            <p class="text-xs text-gray-500 mt-1">
-                                12 different Porsche models
-                            </p>
+            <button data-trans="Manual" class="vf-trans active">
+              Manual
+            </button>
 
-                        </div>
+          </div>
+        </div>
 
-                        <button onclick="closeGallery()" class="h-10 w-10 rounded-lg
-                    flex items-center justify-center
-                    text-gray-400 hover:bg-[#292b2c]
-                    hover:text-white transition">
-
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8"
-                                viewBox="0 0 24 24">
-
-                                <path d="M6 6l12 12M18 6 6 18" />
-
-                            </svg>
-
-                        </button>
-
-                    </div>
+      </aside>
 
 
-                    <!-- 12 PORSCHE -->
-                    <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
-                gap-3 sm:gap-4 p-4 sm:p-6">
-                    </div>
+      <!-- CONTENT -->
+      <main class="min-w-0">
 
-                </div>
+        <!-- BREADCRUMB -->
+        <div class="flex gap-3 text-[13px] mb-5">
+          <span class="text-[#999]">Catalog</span>
+          <span class="text-[#555]">/</span>
+          <b>Premium Fleet</b>
+        </div>
 
-            </div>
+        <!-- TITLE -->
+        <h1 class="text-[40px] md:text-[44px] font-semibold
+                   tracking-[-1.8px] leading-none">
+          PREMIUM FLEET
+        </h1>
 
+        <!-- TOP CONTROLS -->
+        <div class="flex flex-wrap justify-between items-center gap-4 mt-7 mb-6">
 
-            <!-- ================= JAVASCRIPT ================= -->
+          <div class="flex flex-wrap items-center gap-2">
 
-            <script>
-
-                const cars = [
-
-                    {
-                        name: "2024 Porsche 911 Turbo S",
-                        color: "Agate Grey Metallic",
-                        type: "Coupe",
-                        miles: "3,420 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_Turbo_S_(992,_2024)_(54870181847).jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche 911 GT3 RS",
-                        color: "Shark Blue",
-                        type: "Coupe",
-                        miles: "1,850 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_GT3_RS_-_03.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche 718 Cayman GT4",
-                        color: "Arctic Grey",
-                        type: "Coupe",
-                        miles: "4,120 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/2024_Porsche_718_Cayman_GT4.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche Taycan Turbo S",
-                        color: "Frozen Blue",
-                        type: "Electric Sedan",
-                        miles: "5,230 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Taycan_Turbo_S.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche Panamera Turbo",
-                        color: "Jet Black Metallic",
-                        type: "Sedan",
-                        miles: "3,750 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Panamera_Turbo.JPG"
-                    },
-
-                    {
-                        name: "2024 Porsche Cayenne Turbo GT",
-                        color: "Volcano Grey",
-                        type: "SUV",
-                        miles: "6,120 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Cayenne_Turbo_GT.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche Macan GTS",
-                        color: "Gentian Blue",
-                        type: "SUV",
-                        miles: "4,860 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_Macan_GTS.jpg"
-                    },
-
-                    {
-                        name: "2023 Porsche 911 Dakar",
-                        color: "Rallye Red",
-                        type: "Off-Road Coupe",
-                        miles: "1,420 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/2023_Porsche_911_Dakar.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche 911 Carrera",
-                        color: "Guards Red",
-                        type: "Coupe",
-                        miles: "2,640 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_Turbo_S_1.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche 718 Cayman",
-                        color: "GT Silver Metallic",
-                        type: "Coupe",
-                        miles: "3,180 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_718_Cayman_GT4_4.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche 911 Turbo S",
-                        color: "Black Metallic",
-                        type: "Coupe",
-                        miles: "2,920 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_Turbo_S_001.jpg"
-                    },
-
-                    {
-                        name: "2024 Porsche 911 GT3 RS",
-                        color: "White",
-                        type: "Track Coupe",
-                        miles: "980 Miles",
-                        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche_911_GT3_RS_-_01.jpg"
-                    }
-
-                ];
-
-
-                /* ================= CREATE TABS ================= */
-
-                const tabs = document.getElementById("carTabs");
-
-                cars.slice(0, 3).forEach((car, index) => {
-
-                    const button = document.createElement("button");
-
-                    button.className =
-                        "car-tab group relative h-20 sm:h-24 lg:h-[95px] " +
-                        "overflow-hidden rounded-xl border-2 " +
-                        (index === 0
-                            ? "border-[#a8d52a]"
-                            : "border-transparent") +
-                        " bg-[#18191a]";
-
-                    button.onclick = () => changeCar(index);
-
-                    button.innerHTML = `
-                <img
-                    src="${car.image}"
-                    alt="${car.name}"
-                    class="w-full h-full object-cover
-                    group-hover:scale-105
-                    transition duration-300" loading="lazy" decoding="async">
-            `;
-
-                    tabs.appendChild(button);
-
-                });
-
-
-                /* ================= DESKTOP MORE ================= */
-
-                const moreButton = document.createElement("button");
-
-                moreButton.className =
-                    "hidden lg:flex h-[95px] rounded-xl " +
-                    "border border-[#2c2e30] bg-[#1b1c1d] " +
-                    "items-center justify-center hover:bg-[#27292a] transition";
-
-                moreButton.innerHTML = `
-            <span class="text-[11px] font-bold tracking-widest text-[#c9c9c2]">
-                +12 MORE
+            <span id="vfBodyTag"
+              class="px-3 py-1.5 rounded-full
+                     bg-[#292a2c] border border-[#38393a]
+                     text-[13px]">
+              Coupe ×
             </span>
-        `;
 
-                moreButton.onclick = openGallery;
+            <span id="vfBrandTag"
+              class="hidden px-3 py-1.5 rounded-full
+                     bg-[#292a2c] border border-[#38393a]
+                     text-[13px]">
+            </span>
+
+            <button id="vfClear"
+              class="text-[#baff19] text-[13px]
+                     font-semibold underline ml-1">
+              Clear all
+            </button>
+
+          </div>
+
+          <div class="flex items-center gap-3">
+
+            <!-- VIEW -->
+            <div class="flex h-[38px] rounded-lg overflow-hidden bg-[#292a2c]">
+
+              <button id="vfGrid"
+                class="w-10 bg-[#383a38] text-[#baff19] text-xl">
+                ▦
+              </button>
+
+              <button id="vfList"
+                class="w-10 text-[#999] text-lg">
+                ☷
+              </button>
+
+            </div>
+
+            <!-- SORT -->
+            <div class="relative">
+
+              <select id="vfSort"
+                class="appearance-none h-[38px] min-w-[175px]
+                       rounded-lg bg-[#292a2c]
+                       border border-[#292a2c]
+                       hover:border-[#555]
+                       pl-4 pr-9 outline-none
+                       text-[13px] cursor-pointer">
+
+                <option value="new">Sort by: Newest First</option>
+                <option value="low">Price: Low First</option>
+                <option value="high">Price: High First</option>
+                <option value="power">Power: Highest First</option>
+
+              </select>
+
+              <span class="absolute right-3 top-1/2
+                           -translate-y-1/2 pointer-events-none
+                           text-[#aaa]">
+                ⌄
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARDS -->
+        <div id="vfCards"
+          class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+
+  <style>
+    .vf-range{
+      appearance:none;
+      -webkit-appearance:none;
+      background:transparent;
+      cursor:pointer;
+    }
+
+    .vf-range::-webkit-slider-runnable-track{
+      height:4px;
+      background:transparent;
+    }
+
+    .vf-range::-webkit-slider-thumb{
+      -webkit-appearance:none;
+      width:15px;
+      height:15px;
+      margin-top:-5.5px;
+      border-radius:50%;
+      background:#baff19;
+      border:0;
+    }
+
+    .vf-range::-moz-range-thumb{
+      width:15px;
+      height:15px;
+      border-radius:50%;
+      background:#baff19;
+      border:0;
+    }
+
+    .vf-brand-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      color:#ccc;
+      font-size:13px;
+      cursor:pointer;
+    }
+
+    .vf-brand{
+      position:absolute;
+      opacity:0;
+    }
+
+    .vf-check{
+      width:16px;
+      height:16px;
+      border:1px solid #41443d;
+      border-radius:4px;
+      background:#292a2c;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .vf-brand:checked + .vf-check{
+      background:#baff19;
+      border-color:#baff19;
+    }
+
+    .vf-brand:checked + .vf-check::after{
+      content:"✓";
+      color:#111;
+      font-size:11px;
+      font-weight:bold;
+    }
+
+    .vf-body{
+      height:64px;
+      border:1px solid #292a2c;
+      border-radius:9px;
+      background:transparent;
+      color:#aaa;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:3px;
+      font-size:10px;
+      cursor:pointer;
+      transition:.15s;
+    }
+
+    .vf-body:hover{
+      border-color:#555;
+      color:white;
+    }
+
+    .vf-body.active{
+      background:#202814;
+      border-color:#baff19;
+      color:#baff19;
+    }
+
+    .vf-trans{
+      padding:9px 16px;
+      border:0;
+      border-radius:999px;
+      background:#292a2c;
+      color:#aaa;
+      font-size:12px;
+      cursor:pointer;
+    }
+
+    .vf-trans.active{
+      background:#baff19;
+      color:#111;
+      font-weight:700;
+    }
+  </style>
+
+
+  <script>
+  (() => {
+
+    const brands = {
+      Porsche: {
+        models:["911 GT3 RS","718 Cayman","911 Carrera","911 Turbo S","Panamera","Taycan"],
+        img:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=65"
+      },
+      Ferrari: {
+        models:["SF90 Stradale","Roma","296 GTB","F8 Tributo","812 Superfast","Purosangue"],
+        img:"https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=700&q=65"
+      },
+      Lamborghini: {
+        models:["Revuelto","Huracan EVO","Aventador","Urus S","Huracan STO","Urus SE"],
+        img:"https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=700&q=65"
+      },
+      "Aston Martin": {
+        models:["DB12","Vantage","DBS","DBX707","Rapide","Vantage Roadster"],
+        img:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=700&q=65"
+      }
+    };
+
+    const bodies=["Coupe","Convertible","Sedan"];
+    const transmissions=["Manual","Automatic"];
+
+    const data=[];
+
+    /*
+      HAR BIR BRAND + BODY + TRANSMISSION
+      UCHUN 2 TA CARD AVTOMATIK YARATILADI.
+      SHUNING UCHUN HECH QAYSI FILTER BO'SH QOLMAYDI.
+    */
+    Object.entries(brands).forEach(([brand,info],bi)=>{
+
+      bodies.forEach((body,bodyIndex)=>{
+
+        transmissions.forEach((trans,transIndex)=>{
+
+          for(let i=0;i<2;i++){
+
+            const modelIndex =
+              (bodyIndex*2+transIndex+i)%info.models.length;
+
+            const base =
+              120 + bi*70 + bodyIndex*35 + transIndex*25 + i*20;
+
+            data.push({
+              name:info.models[modelIndex],
+              brand,
+              body,
+              trans,
+              price:Math.min(base,920),
+              year:2024-i,
+              miles:i ? "1,800 mi" : "600 mi",
+              hp:390 + bi*120 + bodyIndex*35 + transIndex*80 + i*25,
+              mph:175 + bi*8 + transIndex*15,
+              img:info.img
+            });
+
+          }
+
+        });
+
+      });
+
+    });
+
+
+    let state={
+      body:"Coupe",
+      trans:"Manual",
+      price:950,
+      search:"",
+      view:"grid"
+    };
+
+
+    const $=id=>document.getElementById(id);
+
+    const cards=$("vfCards");
+    const search=$("vfSearch");
+    const price=$("vfPrice");
+    const priceText=$("vfPriceText");
+    const progress=$("vfProgress");
+    const sort=$("vfSort");
+
+
+    function render(){
+
+      const selectedBrands=
+        [...document.querySelectorAll(".vf-brand:checked")]
+        .map(x=>x.value);
+
+      let result=data.filter(car=>{
+
+        const text=
+          `${car.name} ${car.brand}`.toLowerCase();
+
+        return (
+          car.body===state.body &&
+          car.trans===state.trans &&
+          car.price<=state.price &&
+          (!selectedBrands.length ||
+           selectedBrands.includes(car.brand)) &&
+          text.includes(state.search.toLowerCase())
+        );
+
+      });
+
+
+      if(sort.value==="low")
+        result.sort((a,b)=>a.price-b.price);
+
+      if(sort.value==="high")
+        result.sort((a,b)=>b.price-a.price);
+
+      if(sort.value==="power")
+        result.sort((a,b)=>b.hp-a.hp);
+
+      if(sort.value==="new")
+        result.sort((a,b)=>b.year-a.year);
+
+
+      cards.className=
+        state.view==="grid"
+        ? "grid sm:grid-cols-2 xl:grid-cols-3 gap-5"
+        : "grid grid-cols-1 gap-4";
+
+
+      cards.innerHTML=result.map(car=>`
+
+        <article class="
+          bg-[#1c1d1e]
+          border border-[#292a2b]
+          rounded-xl overflow-hidden
+          group
+        ">
+
+          <div class="
+            relative
+            ${state.view==="list"?"h-[220px]":"h-[232px]"}
+          ">
+
+            <img
+              src="${car.img}"
+              loading="lazy"
+              alt="${car.name}"
+              class="w-full h-full object-cover
+                     group-hover:scale-[1.02]
+                     transition duration-300"
+            >
+
+            ${
+              car.name==="911 GT3 RS"
+              ? `
+                <span class="
+                  absolute left-4 top-4
+                  bg-[#baff19] text-[#111]
+                  px-2 py-1 rounded-sm
+                  text-[9px] font-bold
+                ">
+                  ⚙ VELOCE VERIFIED
+                </span>
+              `
+              :""
+            }
 
-                tabs.appendChild(moreButton);
+            <button class="
+              absolute right-4 top-4
+              text-[27px] text-white
+              hover:text-[#baff19]
+            ">
+              ♡
+            </button>
 
+          </div>
 
-                /* ================= GALLERY ================= */
 
-                const gallery = document.getElementById("galleryGrid");
+          <div class="p-4">
 
-                cars.forEach((car, index) => {
+            <div class="flex justify-between gap-3">
 
-                    const card = document.createElement("button");
+              <h3 class="
+                text-[20px] font-semibold
+                leading-7
+              ">
+                ${car.name}
+              </h3>
 
-                    card.className =
-                        "group text-left overflow-hidden rounded-xl " +
-                        "border border-[#303233] bg-[#111213] " +
-                        "hover:border-[#a8d52a] transition";
+              <strong class="
+                text-[#baff19]
+                text-[20px]
+                whitespace-nowrap
+              ">
+                $${car.price},000
+              </strong>
 
-                    card.onclick = () => changeCarFromGallery(index);
+            </div>
 
-                    card.innerHTML = `
 
-                <div class="aspect-[16/10] overflow-hidden">
+            <p class="text-[13px] text-[#aaa]">
+              ${car.year} • ${car.miles}
+            </p>
 
-                    <img
-                        src="${car.image}"
-                        alt="${car.name}"
-                        class="w-full h-full object-cover
-                        group-hover:scale-105
-                        transition duration-500" loading="lazy" decoding="async">
 
-                </div>
+            <div class="
+              grid grid-cols-3
+              gap-3 mt-8
+              text-[12px] text-[#aaa]
+            ">
 
-                <div class="p-3">
+              <span>ϟ ${car.hp}<br>hp</span>
 
-                    <h4 class="font-semibold text-sm text-white">
-                        ${car.name}
-                    </h4>
+              <span>◷ ${car.mph}<br>mph</span>
 
-                    <p class="text-xs text-gray-500 mt-1">
-                        ${car.color}
-                        <span class="mx-1">•</span>
-                        ${car.type}
-                    </p>
+              <span>⚙ ${car.trans}</span>
 
-                    <p class="text-[11px] text-gray-600 mt-1">
-                        ${car.miles}
-                    </p>
+            </div>
 
-                </div>
+          </div>
 
-            `;
+        </article>
 
-                    gallery.appendChild(card);
+      `).join("");
+    }
 
-                });
 
+    /* SEARCH */
 
-                /* ================= CHANGE CAR ================= */
+    search.addEventListener("input",e=>{
+      state.search=e.target.value;
+      render();
+    });
 
-                function changeCar(index) {
 
-                    const car = cars[index];
+    /* PRICE */
 
-                    const image =
-                        document.getElementById("mainCarImage");
+    price.addEventListener("input",e=>{
 
-                    const title =
-                        document.getElementById("carTitle");
+      state.price=Number(e.target.value);
 
-                    const info =
-                        document.getElementById("carInfo");
+      priceText.textContent=
+        `$120k - $${state.price}k`;
 
+      const percent=
+        ((state.price-120)/(950-120))*100;
 
-                    image.style.opacity = "0";
+      progress.style.width=
+        `${percent}%`;
 
-                    setTimeout(() => {
+      render();
+    });
 
-                        image.src = car.image;
-                        image.alt = car.name;
 
-                        image.onload = () => {
-                            image.style.opacity = "1";
-                        };
+    /* BRAND */
 
-                    }, 150);
+    document.querySelectorAll(".vf-brand")
+      .forEach(input=>{
 
+      input.addEventListener("change",()=>{
 
-                    title.textContent = car.name;
+        const selected=
+          [...document.querySelectorAll(".vf-brand:checked")];
 
+        const tag=$("vfBrandTag");
 
-                    info.innerHTML = `
-                ${car.color}
-                <span class="mx-1">•</span>
-                ${car.type}
-                <span class="mx-1">•</span>
-                ${car.miles}
-            `;
+        if(selected.length){
 
+          tag.classList.remove("hidden");
 
-                    document
-                        .querySelectorAll(".car-tab")
-                        .forEach((tab, i) => {
+          tag.textContent=
+            selected.map(x=>x.value).join(", ")+" ×";
 
-                            if (i === index) {
+        }else{
 
-                                tab.classList.remove(
-                                    "border-transparent"
-                                );
+          tag.classList.add("hidden");
 
-                                tab.classList.add(
-                                    "border-[#a8d52a]"
-                                );
+        }
 
-                            } else {
+        render();
 
-                                tab.classList.remove(
-                                    "border-[#a8d52a]"
-                                );
+      });
 
-                                tab.classList.add(
-                                    "border-transparent"
-                                );
+    });
 
-                            }
 
-                        });
+    /* BODY */
 
-                }
+    document.querySelectorAll(".vf-body")
+      .forEach(button=>{
 
+      button.addEventListener("click",()=>{
 
-                /* ================= GALLERY SELECT ================= */
+        state.body=button.dataset.body;
 
-                function changeCarFromGallery(index) {
+        document.querySelectorAll(".vf-body")
+          .forEach(x=>x.classList.remove("active"));
 
-                    changeCar(index);
+        button.classList.add("active");
 
-                    closeGallery();
+        $("vfBodyTag").textContent=
+          `${state.body} ×`;
 
-                }
+        render();
 
+      });
 
-                /* ================= OPEN ================= */
+    });
 
-                function openGallery() {
 
-                    const modal =
-                        document.getElementById("galleryModal");
+    /* TRANSMISSION */
 
-                    modal.classList.remove("hidden");
+    document.querySelectorAll(".vf-trans")
+      .forEach(button=>{
 
-                    modal.classList.add("flex");
+      button.addEventListener("click",()=>{
 
-                    document.body.style.overflow = "hidden";
+        state.trans=button.dataset.trans;
 
-                }
+        document.querySelectorAll(".vf-trans")
+          .forEach(x=>x.classList.remove("active"));
 
+        button.classList.add("active");
 
-                /* ================= CLOSE ================= */
+        render();
 
-                function closeGallery() {
+      });
 
-                    const modal =
-                        document.getElementById("galleryModal");
+    });
 
-                    modal.classList.add("hidden");
 
-                    modal.classList.remove("flex");
+    /* SORT */
 
-                    document.body.style.overflow = "";
+    sort.addEventListener("change",render);
 
-                }
 
+    /* GRID */
 
-                /* ================= LIKE ================= */
+    $("vfGrid").onclick=()=>{
 
-                let liked = false;
+      state.view="grid";
 
-                function toggleLike() {
+      $("vfGrid").className=
+        "w-10 bg-[#383a38] text-[#baff19] text-xl";
 
-                    liked = !liked;
+      $("vfList").className=
+        "w-10 text-[#999] text-lg";
 
-                    const button =
-                        document.getElementById("likeButton");
+      render();
 
-                    const heart =
-                        document.getElementById("heartIcon");
+    };
 
 
-                    if (liked) {
+    /* LIST */
 
-                        button.classList.remove(
-                            "text-gray-300"
-                        );
+    $("vfList").onclick=()=>{
 
-                        button.classList.add(
-                            "text-red-500",
-                            "border-red-500/40",
-                            "bg-red-500/10"
-                        );
+      state.view="list";
 
-                        heart.setAttribute(
-                            "fill",
-                            "currentColor"
-                        );
+      $("vfList").className=
+        "w-10 bg-[#383a38] text-[#baff19] text-lg";
 
-                        heart.classList.add(
-                            "scale-110"
-                        );
+      $("vfGrid").className=
+        "w-10 text-[#999] text-xl";
 
-                    } else {
+      render();
 
-                        button.classList.remove(
-                            "text-red-500",
-                            "border-red-500/40",
-                            "bg-red-500/10"
-                        );
+    };
 
-                        button.classList.add(
-                            "text-gray-300"
-                        );
 
-                        heart.setAttribute(
-                            "fill",
-                            "none"
-                        );
+    /* CLEAR */
 
-                        heart.classList.remove(
-                            "scale-110"
-                        );
+    $("vfClear").onclick=()=>{
 
-                    }
+      state={
+        body:"Coupe",
+        trans:"Manual",
+        price:950,
+        search:"",
+        view:"grid"
+      };
 
-                }
+      search.value="";
+      price.value=950;
 
+      priceText.textContent="$120k - $950k";
+      progress.style.width="100%";
 
-                /* ================= SHARE ================= */
+      document.querySelectorAll(".vf-brand")
+        .forEach(x=>x.checked=false);
 
-                function shareCar() {
+      document.querySelectorAll(".vf-body")
+        .forEach(x=>x.classList.remove("active"));
 
-                    const title =
-                        document.getElementById("carTitle").textContent;
+      document.querySelector('[data-body="Coupe"]')
+        .classList.add("active");
 
-                    if (navigator.share) {
+      document.querySelectorAll(".vf-trans")
+        .forEach(x=>x.classList.remove("active"));
 
-                        navigator.share({
-                            title: title,
-                            text: "Check out " + title
-                        });
+      document.querySelector('[data-trans="Manual"]')
+        .classList.add("active");
 
-                    } else {
+      $("vfBodyTag").textContent="Coupe ×";
+      $("vfBrandTag").classList.add("hidden");
 
-                        navigator.clipboard.writeText(
-                            window.location.href
-                        );
+      render();
+    };
 
-                        alert("Link copied!");
 
-                    }
+    /* START */
 
-                }
+    progress.style.width="100%";
+    render();
 
+  })();
+  </script>
 
-                /* ================= ESC ================= */
+</section>
 
-                document.addEventListener(
-                    "keydown",
-                    (event) => {
+    <section class="w-full bg-[#101112] py-8 px-4">
 
-                        if (event.key === "Escape") {
-                            closeGallery();
-                        }
+  <div class="max-w-[1280px] mx-auto">
 
-                    }
-                );
+    <!-- CAR -->
+    <div
+      class="group overflow-hidden rounded-2xl
+             border border-[#2a2b2c]
+             bg-[#1b1c1d]
+             shadow-[0_0_30px_rgba(0,0,0,.15)]"
+    >
 
+      <div class="flex flex-col md:flex-row">
 
-                /* ================= OUTSIDE CLICK ================= */
+        <!-- IMAGE -->
+        <div class="relative w-full md:w-[353px] lg:w-[353px]
+                    h-[260px] md:h-[333px] shrink-0 overflow-hidden">
 
-                document
-                    .getElementById("galleryModal")
-                    .addEventListener(
-                        "click",
-                        function (event) {
+          <img
+            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80"
+            alt="DBS Volante"
+            class="w-full h-full object-cover
+                   transition duration-500
+                   group-hover:scale-[1.03]"
+          >
 
-                            if (event.target === this) {
-                                closeGallery();
-                            }
-
-                        }
-                    );
-
-            </script>
+          <div class="absolute inset-0
+                      bg-gradient-to-t from-black/30 to-transparent">
+          </div>
 
         </div>
 
-    </section>
 
-    <section class="bg-[#0b0b0b] text-white p-4 md:p-10" style="font-family:'Inter',sans-serif;">
-        <style>
-            .accent {
-                color: #c6f135;
-            }
+        <!-- CONTENT -->
+        <div class="flex-1 p-6 md:p-7 lg:p-8">
 
-            .accent-bg {
-                background: #c6f135;
-            }
+          <!-- TITLE + PRICE -->
+          <div class="flex flex-col sm:flex-row
+                      sm:items-start sm:justify-between gap-3">
 
-            .tab-active {
-                color: #c6f135;
-                border-bottom: 2px solid #c6f135;
-            }
+            <div>
 
-            .tab-inactive {
-                color: #8a8a8a;
-                border-bottom: 2px solid transparent;
-            }
+              <h2 class="text-[32px] md:text-[40px]
+                         lg:text-[42px]
+                         leading-none font-semibold
+                         tracking-[-1.5px]">
+                DBS Volante
+              </h2>
 
-            .card {
-                background: #141414;
-                border: 1px solid #232323;
-            }
-        </style>
+              <p class="mt-4 text-[17px] md:text-[19px]
+                        text-[#b6b6aa]">
+                2023 • 1,200 mi • Tungsten Silver
+              </p>
 
-        <div id="listing-view" class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-            <!-- LEFT COLUMN -->
-            <div class="lg:col-span-2 flex flex-col gap-6">
-
-                <!-- Stat chips -->
-                <div class="grid grid-cols-3 sm:grid-cols-6 gap-3">
-                    <div class="card rounded-xl p-3 flex flex-col gap-1">
-                        <div class="flex items-center gap-1 text-[10px] tracking-wider text-gray-400 font-semibold">
-                            <svg class="w-3 h-3 accent" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 8v4l3 3M12 3a9 9 0 100 18 9 9 0 000-18z" />
-                            </svg>
-                            0-60 MPH
-                        </div>
-                        <div class="font-bold text-lg">2.6s</div>
-                    </div>
-                    <div class="card rounded-xl p-3 flex flex-col gap-1">
-                        <div class="flex items-center gap-1 text-[10px] tracking-wider text-gray-400 font-semibold">
-                            <svg class="w-3 h-3 accent" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M13 2L3 14h7v8l10-12h-7z" />
-                            </svg>
-                            POWER
-                        </div>
-                        <div class="font-bold text-lg">640 HP</div>
-                    </div>
-                    <div class="card rounded-xl p-3 flex flex-col gap-1">
-                        <div class="flex items-center gap-1 text-[10px] tracking-wider text-gray-400 font-semibold">
-                            <svg class="w-3 h-3 accent" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <circle cx="6" cy="18" r="2" />
-                                <circle cx="18" cy="18" r="2" />
-                                <path d="M6 16V6h6l6 6" />
-                            </svg>
-                            ENGINE
-                        </div>
-                        <div class="font-bold text-lg">3.7L H6</div>
-                    </div>
-                    <div class="card rounded-xl p-3 flex flex-col gap-1">
-                        <div class="flex items-center gap-1 text-[10px] tracking-wider text-gray-400 font-semibold">
-                            <svg class="w-3 h-3 accent" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <circle cx="7" cy="17" r="2" />
-                                <circle cx="17" cy="17" r="2" />
-                                <path d="M5 17h-1a1 1 0 01-1-1v-3l2-4h9l4 4h1a1 1 0 011 1v2" />
-                            </svg>
-                            DRIVE
-                        </div>
-                        <div class="font-bold text-lg">AWD</div>
-                    </div>
-                    <div class="card rounded-xl p-3 flex flex-col gap-1">
-                        <div class="flex items-center gap-1 text-[10px] tracking-wider text-gray-400 font-semibold">
-                            <svg class="w-3 h-3 accent" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                            TOP SPEED
-                        </div>
-                        <div class="font-bold text-lg">205 MPH</div>
-                    </div>
-                    <div class="card rounded-xl p-3 flex flex-col gap-1">
-                        <div class="flex items-center gap-1 text-[10px] tracking-wider text-gray-400 font-semibold">
-                            <svg class="w-3 h-3 accent" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="18" rx="2" />
-                                <path stroke-linecap="round" d="M16 2v4M8 2v4M3 10h18" />
-                            </svg>
-                            YEAR
-                        </div>
-                        <div class="font-bold text-lg">2024</div>
-                    </div>
-                </div>
-
-                <!-- Tabs -->
-                <div class="border-b border-[#232323] flex gap-6 text-xs font-semibold tracking-wider overflow-x-auto">
-                    <button data-tab="overview" class="tab-btn tab-active pb-3 whitespace-nowrap">OVERVIEW</button>
-                    <button data-tab="specifications"
-                        class="tab-btn tab-inactive pb-3 whitespace-nowrap">SPECIFICATIONS</button>
-                    <button data-tab="features" class="tab-btn tab-inactive pb-3 whitespace-nowrap">FEATURES</button>
-                    <button data-tab="history" class="tab-btn tab-inactive pb-3 whitespace-nowrap">HISTORY</button>
-                    <button data-tab="reviews" class="tab-btn tab-inactive pb-3 whitespace-nowrap">REVIEWS</button>
-                </div>
-
-                <!-- Tab panels -->
-                <div id="tab-content">
-
-                    <!-- OVERVIEW -->
-                    <div data-panel="overview" class="tab-panel flex flex-col gap-8">
-                        <div>
-                            <h1 class="text-3xl font-bold mb-3">Driving Perfection</h1>
-                            <p class="text-gray-400 leading-relaxed text-sm">
-                                The 2024 Porsche 911 Turbo S represents the absolute pinnacle of daily-drivable
-                                performance.
-                                Finished in the rare Agate Grey Metallic, this particular example has been meticulously
-                                maintained
-                                and features over $30,000 in factory options including Carbon Ceramic Brakes (PCCB) with
-                                Yellow
-                                Calipers and the Front Axle Lift system.
-                            </p>
-                        </div>
-
-                        <div class="border-t border-[#232323] pt-6 grid grid-cols-2 gap-y-6 text-sm">
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Transmission</div>
-                                <div class="font-semibold">8-Speed PDK</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Torque</div>
-                                <div class="font-semibold">590 lb-ft</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Interior</div>
-                                <div class="font-semibold">Black/Iceland Green</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Fuel Economy</div>
-                                <div class="font-semibold">15/20 MPG</div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 class="text-xl font-bold mb-4">Premium Features</h2>
-                            <div class="grid grid-cols-2 gap-y-3 text-sm">
-                                <div class="flex items-center gap-2"><span class="accent">✔</span> Burmester® Surround
-                                    Sound</div>
-                                <div class="flex items-center gap-2"><span class="accent">✔</span> Matrix LED Headlights
-                                </div>
-                                <div class="flex items-center gap-2"><span class="accent">✔</span> Rear-Axle Steering
-                                </div>
-                                <div class="flex items-center gap-2"><span class="accent">✔</span> Heated Sport Seats
-                                    Plus</div>
-                                <div class="flex items-center gap-2"><span class="accent">✔</span> Surround View Cameras
-                                </div>
-                                <div class="flex items-center gap-2"><span class="accent">✔</span> Porsche Active
-                                    Suspension</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SPECIFICATIONS -->
-                    <div data-panel="specifications" class="tab-panel hidden">
-                        <h2 class="text-xl font-bold mb-4">Full Specifications</h2>
-                        <div class="grid grid-cols-2 gap-y-6 text-sm">
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Engine</div>
-                                <div class="font-semibold">3.7L Twin-Turbo H6</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Power</div>
-                                <div class="font-semibold">640 HP</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Torque</div>
-                                <div class="font-semibold">590 lb-ft</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">0-60 MPH</div>
-                                <div class="font-semibold">2.6s</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Top Speed</div>
-                                <div class="font-semibold">205 MPH</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Transmission</div>
-                                <div class="font-semibold">8-Speed PDK</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Drivetrain</div>
-                                <div class="font-semibold">AWD</div>
-                            </div>
-                            <div>
-                                <div class="text-gray-500 text-xs mb-1">Fuel Economy</div>
-                                <div class="font-semibold">15/20 MPG</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FEATURES -->
-                    <div data-panel="features" class="tab-panel hidden">
-                        <h2 class="text-xl font-bold mb-4">Premium Features</h2>
-                        <div class="grid grid-cols-2 gap-y-3 text-sm">
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Burmester® Surround Sound
-                            </div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Matrix LED Headlights
-                            </div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Rear-Axle Steering</div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Heated Sport Seats Plus
-                            </div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Surround View Cameras
-                            </div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Porsche Active Suspension
-                            </div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Carbon Ceramic Brakes
-                                (PCCB)</div>
-                            <div class="flex items-center gap-2"><span class="accent">✔</span> Front Axle Lift System
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- HISTORY -->
-                    <div data-panel="history" class="tab-panel hidden">
-                        <h2 class="text-xl font-bold mb-4">Vehicle History</h2>
-                        <ul class="text-sm text-gray-400 space-y-3">
-                            <li><span class="text-white font-semibold">Owners:</span> 1 (fleet-maintained)</li>
-                            <li><span class="text-white font-semibold">Accidents:</span> None reported</li>
-                            <li><span class="text-white font-semibold">Service records:</span> Full history available,
-                                dealer-maintained</li>
-                            <li><span class="text-white font-semibold">Title status:</span> Clean</li>
-                        </ul>
-                    </div>
-
-                    <!-- REVIEWS -->
-                    <div data-panel="reviews" class="tab-panel hidden">
-                        <h2 class="text-xl font-bold mb-4">Reviews <span
-                                class="text-gray-400 font-normal text-sm">(42)</span></h2>
-                        <div class="space-y-5">
-                            <div class="border-b border-[#232323] pb-4">
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="font-semibold text-sm">Marcus T.</span>
-                                    <span class="accent text-xs">★★★★★</span>
-                                </div>
-                                <p class="text-sm text-gray-400">Absolutely flawless car and even better host. Julian
-                                    was communicative and the pickup was seamless.</p>
-                            </div>
-                            <div class="border-b border-[#232323] pb-4">
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="font-semibold text-sm">Elena R.</span>
-                                    <span class="accent text-xs">★★★★★</span>
-                                </div>
-                                <p class="text-sm text-gray-400">This car turns heads everywhere. Worth every penny for
-                                    a weekend to remember.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
-            <!-- RIGHT COLUMN (booking card) -->
-            <div class="lg:col-span-1">
-                <div class="card rounded-2xl p-6 flex flex-col gap-5 sticky top-6">
-
-                    <div class="flex items-start justify-between">
-                        <div>
-                            <span class="text-3xl font-extrabold">$450</span>
-                            <span class="text-gray-400 text-sm">/day</span>
-                        </div>
-                        <div class="flex items-center gap-1 text-sm">
-                            <span class="accent">★</span>
-                            <span class="font-semibold">4.9</span>
-                            <span class="text-gray-500 text-xs">(42 reviews)</span>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="card rounded-lg p-3">
-                            <div class="text-[10px] text-gray-500 font-semibold tracking-wider mb-1">PICKUP</div>
-                            <div class="text-sm font-semibold">Oct 24, 2024</div>
-                        </div>
-                        <div class="card rounded-lg p-3">
-                            <div class="text-[10px] text-gray-500 font-semibold tracking-wider mb-1">RETURN</div>
-                            <div class="text-sm font-semibold">Oct 26, 2024</div>
-                        </div>
-                    </div>
-
-                    <div class="card rounded-lg p-3 flex items-center justify-between cursor-pointer">
-                        <div>
-                            <div class="text-[10px] text-gray-500 font-semibold tracking-wider mb-1">INSURANCE PACKAGE
-                            </div>
-                            <div class="text-sm font-semibold">Veloce Premium Coverage (+$45/day)</div>
-                        </div>
-                        <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor"
-                            stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-
-                    <div class="flex flex-col gap-2 text-sm border-t border-[#232323] pt-4">
-                        <div class="flex justify-between text-gray-400">
-                            <span>$450 × 2 days</span>
-                            <span>$900.00</span>
-                        </div>
-                        <div class="flex justify-between text-gray-400">
-                            <span>Premium Insurance</span>
-                            <span>$90.00</span>
-                        </div>
-                        <div class="flex justify-between text-gray-400">
-                            <span>Service Fee</span>
-                            <span>$45.00</span>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-between items-center border-t border-[#232323] pt-4">
-                        <span class="font-bold">Total</span>
-                        <span class="accent font-bold text-lg">$1,035.00</span>
-                    </div>
-
-                    <button id="rent-now-btn"
-                        class="accent-bg text-black font-bold py-3 rounded-full hover:brightness-110 transition">Rent
-                        now</button>
-                    <div class="text-center text-xs text-gray-500 -mt-2">You won't be charged yet</div>
-
-                    <div class="flex items-center gap-3 border-t border-[#232323] pt-4">
-                        <div
-                            class="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-xs font-bold">
-                            JV</div>
-                        <div class="flex-1">
-                            <div class="text-sm font-semibold">Julian Veloce</div>
-                            <div class="text-xs text-gray-500">Elite Host • 500+ Trips</div>
-                        </div>
-                        <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.86 9.86 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                        </svg>
-                    </div>
-
-                </div>
+            <div class="text-[#baff19]
+                        text-[36px] md:text-[42px]
+                        font-bold whitespace-nowrap">
+              $425,000
             </div>
+
+          </div>
+
+
+          <!-- DESCRIPTION -->
+          <p class="mt-7 max-w-[720px]
+                    text-[16px] md:text-[17px]
+                    leading-7 text-[#92948a]">
+
+            Experience ultimate grand touring with this meticulously
+            maintained DBS. Featuring a twin-turbo V12 engine and
+            handcrafted leather interior, it...
+
+          </p>
+
+
+          <!-- BOTTOM -->
+          <div class="mt-10 pt-5
+                      border-t border-[#252627]
+                      flex flex-col lg:flex-row
+                      lg:items-center
+                      lg:justify-between gap-6">
+
+            <!-- SPECS -->
+            <div class="flex flex-wrap gap-x-8 gap-y-4
+                        text-[#c5c6bb] text-[15px]">
+
+              <span class="flex items-center gap-2">
+                <b class="text-xl text-[#ddd]">ϟ</b>
+                715 hp
+              </span>
+
+              <span class="flex items-center gap-2">
+                <b class="text-xl text-[#ddd]">◷</b>
+                3.4s
+              </span>
+
+              <span class="flex items-center gap-2">
+                <b class="text-xl text-[#ddd]">⛽</b>
+                V12 Petrol
+              </span>
+
+            </div>
+
+
+            <!-- BUTTON -->
+            <button
+              id="dbsInquire"
+              type="button"
+              class="h-[50px] px-8
+                     rounded-md
+                     bg-white text-[#26340e]
+                     font-bold text-[16px]
+                     hover:bg-[#baff19]
+                     active:scale-[.98]
+                     transition duration-200
+                     lg:min-w-[171px]"
+            >
+              Inquire Now
+            </button>
+
+          </div>
 
         </div>
 
-        <!-- LOGIN VIEW -->
-        <div id="login-view" class="hidden max-w-md mx-auto">
-            <div class="card rounded-2xl p-8 flex flex-col gap-5">
-                <button id="back-to-listing"
-                    class="flex items-center gap-1 text-xs text-gray-400 hover:text-white transition self-start">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                    </svg>
-                    Back
-                </button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div
+    id="dbsModal"
+    class="fixed inset-0 z-[999]
+           hidden items-center justify-center
+           bg-black/75 backdrop-blur-sm
+           px-4"
+  >
+
+    <div
+      id="dbsModalBox"
+      class="relative w-full max-w-[420px]
+             rounded-2xl
+             border border-[#303233]
+             bg-[#18191a]
+             p-6 md:p-8
+             shadow-[0_20px_80px_rgba(0,0,0,.5)]
+             scale-95 opacity-0
+             transition duration-200"
+    >
+
+      <!-- CLOSE -->
+      <button
+        id="dbsClose"
+        type="button"
+        class="absolute right-5 top-4
+               text-[#777] text-2xl
+               hover:text-white transition"
+      >
+        ×
+      </button>
+
+
+      <!-- LOGIN FORM -->
+      <div id="dbsForm">
+
+        <div class="mb-7">
+
+          <div class="w-12 h-12 mb-4
+                      flex items-center justify-center
+                      rounded-xl
+                      bg-[#baff19]/10
+                      text-[#baff19]
+                      text-2xl">
+            ◉
+          </div>
+
+          <h3 class="text-2xl font-semibold">
+            Sign in
+          </h3>
+
+          <p class="mt-2 text-sm text-[#85877f]">
+            Enter your login and password to continue.
+          </p>
+
+        </div>
+
+
+        <!-- LOGIN -->
+        <label class="block mb-2
+                      text-xs font-semibold
+                      tracking-wide text-[#aaa]">
+          LOGIN
+        </label>
+
+        <input
+          id="dbsLogin"
+          type="text"
+          autocomplete="username"
+          placeholder="Enter your login"
+          class="w-full h-[48px] mb-5
+                 rounded-lg
+                 bg-[#272829]
+                 border border-[#333536]
+                 px-4 text-white
+                 outline-none
+                 placeholder:text-[#666]
+                 focus:border-[#baff19]
+                 transition"
+        >
+
+        <!-- PASSWORD -->
+        <label class="block mb-2
+                      text-xs font-semibold
+                      tracking-wide text-[#aaa]">
+          PASSWORD
+        </label>
+
+        <div class="relative">
+
+          <input
+            id="dbsPassword"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter your password"
+            class="w-full h-[48px]
+                   rounded-lg
+                   bg-[#272829]
+                   border border-[#333536]
+                   px-4 pr-12 text-white
+                   outline-none
+                   placeholder:text-[#666]
+                   focus:border-[#baff19]
+                   transition"
+          >
+
+          <button
+            id="dbsShowPass"
+            type="button"
+            class="absolute right-3 top-1/2
+                   -translate-y-1/2
+                   text-[#777] hover:text-white"
+          >
+            ◉
+          </button>
+
+        </div>
+
+
+        <!-- ERROR -->
+        <p
+          id="dbsError"
+          class="hidden mt-3
+                 text-sm text-red-400"
+        ></p>
+
+
+        <!-- SUBMIT -->
+        <button
+          id="dbsSubmit"
+          type="button"
+          class="w-full h-[50px]
+                 mt-6
+                 rounded-lg
+                 bg-[#baff19]
+                 text-[#111]
+                 font-bold
+                 hover:bg-[#c8ff4a]
+                 active:scale-[.99]
+                 transition"
+        >
+          Sign in
+        </button>
+
+      </div>
+
+
+      <!-- SUCCESS -->
+      <div
+        id="dbsSuccess"
+        class="hidden min-h-[260px]
+               flex-col items-center
+               justify-center text-center"
+      >
+
+        <div
+          class="w-20 h-20
+                 flex items-center justify-center
+                 rounded-full
+                 bg-[#baff19]
+                 text-[#111]
+                 text-5xl font-bold
+                 shadow-[0_0_35px_rgba(186,255,25,.25)]
+                 animate-pulse"
+        >
+          ✓
+        </div>
+
+        <h3 class="mt-6 text-2xl font-semibold">
+          Siz ro‘yxatdan o‘tdingiz!
+        </h3>
+
+        <p class="mt-2 text-sm text-[#888]">
+          Muvaffaqiyatli tasdiqlandi.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JS ================= -->
+
+  <script>
+    (() => {
+
+      const openBtn = document.getElementById("dbsInquire");
+      const modal = document.getElementById("dbsModal");
+      const box = document.getElementById("dbsModalBox");
+      const closeBtn = document.getElementById("dbsClose");
+
+      const form = document.getElementById("dbsForm");
+      const success = document.getElementById("dbsSuccess");
+
+      const login = document.getElementById("dbsLogin");
+      const password = document.getElementById("dbsPassword");
+
+      const submit = document.getElementById("dbsSubmit");
+      const error = document.getElementById("dbsError");
+
+      const showPass = document.getElementById("dbsShowPass");
+
+      let closeTimer;
+
+
+      /* OPEN */
+
+      function openModal() {
+
+        clearTimeout(closeTimer);
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+
+        requestAnimationFrame(() => {
+          box.classList.remove("scale-95", "opacity-0");
+          box.classList.add("scale-100", "opacity-100");
+        });
+
+        login.focus();
+      }
+
+
+      /* CLOSE */
+
+      function closeModal() {
+
+        box.classList.remove("scale-100", "opacity-100");
+        box.classList.add("scale-95", "opacity-0");
+
+        setTimeout(() => {
+
+          modal.classList.remove("flex");
+          modal.classList.add("hidden");
+
+          resetForm();
+
+        }, 200);
+      }
+
+
+      /* RESET */
+
+      function resetForm() {
+
+        form.classList.remove("hidden");
+
+        success.classList.add("hidden");
+        success.classList.remove("flex");
+
+        login.value = "";
+        password.value = "";
+
+        error.textContent = "";
+        error.classList.add("hidden");
+
+        password.type = "password";
+      }
+
+
+      /* OPEN BUTTON */
+
+      openBtn.addEventListener("click", openModal);
+
+
+      /* CLOSE BUTTON */
+
+      closeBtn.addEventListener("click", closeModal);
+
+
+      /* CLICK OUTSIDE */
+
+      modal.addEventListener("click", (e) => {
+
+        if (e.target === modal) {
+          closeModal();
+        }
+
+      });
+
+
+      /* ESC */
+
+      document.addEventListener("keydown", (e) => {
+
+        if (
+          e.key === "Escape" &&
+          !modal.classList.contains("hidden")
+        ) {
+          closeModal();
+        }
+
+        if (
+          e.key === "Enter" &&
+          !modal.classList.contains("hidden") &&
+          document.activeElement !== submit
+        ) {
+          submit.click();
+        }
+
+      });
+
+
+      /* SHOW PASSWORD */
+
+      showPass.addEventListener("click", () => {
+
+        if (password.type === "password") {
+
+          password.type = "text";
+          showPass.textContent = "◉";
+
+        } else {
+
+          password.type = "password";
+          showPass.textContent = "◉";
+
+        }
+
+      });
+
+
+      /* SIGN IN */
+
+      submit.addEventListener("click", () => {
+
+        const user = login.value.trim();
+        const pass = password.value.trim();
+
+
+        if (!user || !pass) {
+
+          error.textContent =
+            "Iltimos, login va parolni kiriting.";
+
+          error.classList.remove("hidden");
+
+          if (!user) {
+            login.focus();
+          } else {
+            password.focus();
+          }
+
+          return;
+        }
+
+
+        if (pass.length < 4) {
+
+          error.textContent =
+            "Parol kamida 4 ta belgidan iborat bo‘lishi kerak.";
+
+          error.classList.remove("hidden");
+
+          password.focus();
+
+          return;
+        }
+
+
+        /* SUCCESS */
+
+        error.classList.add("hidden");
+
+        form.classList.add("hidden");
+
+        success.classList.remove("hidden");
+        success.classList.add("flex");
+
+
+        /* 2 SECOND AFTER AUTO CLOSE */
+
+        closeTimer = setTimeout(() => {
+          closeModal();
+        }, 2000);
+
+      });
+
+    })();
+  </script>
+
+</section>
+
+<section id="vfPaginationSection" class="w-full bg-[#101112] py-10 px-4">
+
+  <div class="max-w-[1280px] mx-auto">
+
+    <!-- TOP -->
+    <div class="flex flex-col sm:flex-row
+                justify-between items-start sm:items-center
+                gap-4 mb-6">
+
+      <div>
+        <p class="text-[#777] text-xs tracking-[1.5px] uppercase">
+          Premium collection
+        </p>
+
+        <h2 class="text-white text-2xl md:text-3xl
+                   font-semibold mt-1">
+          Featured Vehicles
+        </h2>
+      </div>
+
+      <!-- SEARCH + SORT -->
+      <div class="flex flex-wrap gap-2">
+
+        <div class="relative">
+
+          <span class="absolute left-3 top-1/2
+                       -translate-y-1/2 text-[#777]">
+            ⌕
+          </span>
+
+          <input
+            id="vfCardSearch"
+            type="text"
+            placeholder="Search..."
+            class="w-[170px] h-[38px]
+                   bg-[#1b1c1d]
+                   border border-[#28292a]
+                   rounded-lg
+                   pl-9 pr-3
+                   text-sm text-white
+                   outline-none
+                   focus:border-[#baff19]
+                   placeholder:text-[#666]"
+          >
+
+        </div>
+
+        <select
+          id="vfCardSort"
+          class="h-[38px]
+                 bg-[#1b1c1d]
+                 border border-[#28292a]
+                 rounded-lg
+                 px-3
+                 text-sm text-[#aaa]
+                 outline-none
+                 focus:border-[#baff19]"
+        >
+          <option value="new">Newest</option>
+          <option value="low">Price: Low</option>
+          <option value="high">Price: High</option>
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <!-- SKELETON -->
+    <div
+      id="vfSkeleton"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+    >
+
+      <div class="vf-skeleton-card">
+        <div class="vf-sk-img"></div>
+        <div class="vf-sk-line w-[65%]"></div>
+        <div class="vf-sk-line w-[42%]"></div>
+
+        <div class="flex gap-2 mt-4">
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+        </div>
+      </div>
+
+      <div class="vf-skeleton-card">
+        <div class="vf-sk-img"></div>
+        <div class="vf-sk-line w-[65%]"></div>
+        <div class="vf-sk-line w-[42%]"></div>
+
+        <div class="flex gap-2 mt-4">
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+        </div>
+      </div>
+
+      <div class="vf-skeleton-card">
+        <div class="vf-sk-img"></div>
+        <div class="vf-sk-line w-[65%]"></div>
+        <div class="vf-sk-line w-[42%]"></div>
+
+        <div class="flex gap-2 mt-4">
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+          <div class="vf-sk-small"></div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- CARDS -->
+    <div
+      id="vfCardGrid"
+      class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+    ></div>
+
+
+    <!-- EMPTY -->
+    <div
+      id="vfEmpty"
+      class="hidden py-20 text-center"
+    >
+      <div class="text-4xl mb-3">⌕</div>
+
+      <h3 class="text-white text-lg font-semibold">
+        No vehicles found
+      </h3>
+
+      <p class="text-[#777] text-sm mt-2">
+        Try another search.
+      </p>
+    </div>
+
+
+    <!-- PAGINATION -->
+    <div
+      id="vfPagination"
+      class="flex justify-center items-center
+             gap-1.5 mt-12"
+    ></div>
+
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+
+  <div
+    id="vfDetailsModal"
+    class="fixed inset-0 z-[999]
+           hidden items-center justify-center
+           bg-black/75 backdrop-blur-sm
+           px-4"
+  >
+
+    <div
+      id="vfDetailsBox"
+      class="relative
+             w-full max-w-[650px]
+             bg-[#191a1b]
+             border border-[#303132]
+             rounded-2xl
+             overflow-hidden
+             shadow-[0_30px_100px_rgba(0,0,0,.6)]
+             scale-95 opacity-0
+             transition duration-200"
+    >
+
+      <button
+        id="vfModalClose"
+        class="absolute z-10 right-4 top-3
+               w-9 h-9
+               rounded-full
+               bg-black/50
+               text-white text-2xl
+               hover:bg-[#baff19]
+               hover:text-black
+               transition"
+      >
+        ×
+      </button>
+
+      <img
+        id="vfModalImage"
+        class="w-full h-[260px] object-cover"
+        src=""
+        alt=""
+      >
+
+      <div class="p-6">
+
+        <div class="flex justify-between gap-4">
+
+          <div>
+            <h3
+              id="vfModalName"
+              class="text-2xl font-semibold text-white"
+            ></h3>
+
+            <p
+              id="vfModalMeta"
+              class="text-[#92948b] mt-2"
+            ></p>
+          </div>
+
+          <strong
+            id="vfModalPrice"
+            class="text-[#baff19] text-2xl whitespace-nowrap"
+          ></strong>
+
+        </div>
+
+        <div
+          id="vfModalSpecs"
+          class="grid grid-cols-3 gap-3
+                 mt-7 pt-5
+                 border-t border-[#292a2b]
+                 text-[#aaa] text-sm"
+        ></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <style>
+
+    /* ================= SKELETON ================= */
+
+    .vf-skeleton-card{
+      height:278px;
+      padding:12px;
+      border-radius:10px;
+      background:#191a1b;
+      border:1px solid #202122;
+    }
+
+    .vf-sk-img{
+      width:100%;
+      height:165px;
+      border-radius:6px;
+      background:
+        linear-gradient(
+          90deg,
+          #202122 0%,
+          #292a2b 50%,
+          #202122 100%
+        );
+      background-size:200% 100%;
+      animation:vfShimmer 1.5s infinite;
+    }
+
+    .vf-sk-line{
+      height:10px;
+      border-radius:5px;
+      background:#222324;
+      margin-top:13px;
+      animation:vfPulse 1.3s infinite;
+    }
+
+    .vf-sk-small{
+      width:52px;
+      height:22px;
+      border-radius:4px;
+      background:#222324;
+      animation:vfPulse 1.3s infinite;
+    }
+
+    @keyframes vfShimmer{
+      0%{background-position:200% 0}
+      100%{background-position:-200% 0}
+    }
+
+    @keyframes vfPulse{
+      0%,100%{opacity:.5}
+      50%{opacity:1}
+    }
+
+
+    /* ================= PAGINATION ================= */
+
+    .vf-page{
+      width:30px;
+      height:30px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:4px;
+      color:#aaa;
+      font-size:12px;
+      cursor:pointer;
+      transition:.15s;
+    }
+
+    .vf-page:hover{
+      background:#242526;
+      color:white;
+    }
+
+    .vf-page.active{
+      background:#baff19;
+      color:#111;
+      font-weight:700;
+    }
+
+    .vf-page.arrow{
+      border:1px solid #292a2b;
+      background:#171819;
+      color:#999;
+      font-size:16px;
+    }
+
+    .vf-page.arrow:hover{
+      border-color:#baff19;
+      color:#baff19;
+    }
+
+    .vf-page.disabled{
+      opacity:.3;
+      pointer-events:none;
+    }
+
+
+    /* ================= CARD ================= */
+
+    .vf-car-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:10px;
+      background:#1b1c1d;
+      border:1px solid #242526;
+      transition:
+        transform .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+    }
+
+    .vf-car-card:hover{
+      transform:translateY(-3px);
+      border-color:#383a3b;
+      box-shadow:0 15px 40px rgba(0,0,0,.22);
+    }
+
+    .vf-card-image{
+      position:relative;
+      height:165px;
+      overflow:hidden;
+    }
+
+    .vf-card-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .35s ease;
+    }
+
+    .vf-car-card:hover .vf-card-image img{
+      transform:scale(1.035);
+    }
+
+    .vf-heart{
+      position:absolute;
+      right:10px;
+      top:10px;
+      width:31px;
+      height:31px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:rgba(0,0,0,.45);
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+      transition:.15s;
+    }
+
+    .vf-heart:hover{
+      background:#baff19;
+      color:#111;
+    }
+
+    .vf-heart.liked{
+      background:#baff19;
+      color:#111;
+    }
+
+  </style>
+
+
+  <script>
+  (() => {
+
+    /* ================= DATA ================= */
+
+    const cars = [
+
+      {
+        name:"DBS Volante",
+        year:2023,
+        miles:"1,200 mi",
+        color:"Tungsten Silver",
+        price:425000,
+        hp:715,
+        time:"3.4s",
+        engine:"V12 Petrol",
+        image:"https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"911 GT3 RS",
+        year:2024,
+        miles:"2,400 mi",
+        color:"Silver",
+        price:345000,
+        hp:518,
+        time:"3.2s",
+        engine:"Flat-6",
+        image:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"SF90 Stradale",
+        year:2023,
+        miles:"500 mi",
+        color:"Black",
+        price:789000,
+        hp:986,
+        time:"2.5s",
+        engine:"V8 Hybrid",
+        image:"https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Revuelto",
+        year:2024,
+        miles:"New",
+        color:"Purple",
+        price:920000,
+        hp:1001,
+        time:"2.5s",
+        engine:"V12 Hybrid",
+        image:"https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"DB12",
+        year:2024,
+        miles:"600 mi",
+        color:"Emerald Black",
+        price:285000,
+        hp:671,
+        time:"3.6s",
+        engine:"V8 Twin Turbo",
+        image:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"718 Cayman",
+        year:2024,
+        miles:"1,200 mi",
+        color:"White",
+        price:128000,
+        hp:394,
+        time:"4.3s",
+        engine:"Flat-4",
+        image:"https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Vantage",
+        year:2024,
+        miles:"900 mi",
+        color:"Midnight Blue",
+        price:210000,
+        hp:656,
+        time:"3.5s",
+        engine:"V8 Twin Turbo",
+        image:"https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"812 Superfast",
+        year:2023,
+        miles:"1,100 mi",
+        color:"Rosso Corsa",
+        price:490000,
+        hp:789,
+        time:"2.9s",
+        engine:"V12 Petrol",
+        image:"https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Huracan STO",
+        year:2024,
+        miles:"600 mi",
+        color:"Grey",
+        price:335000,
+        hp:631,
+        time:"3.0s",
+        engine:"V10 Petrol",
+        image:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Panamera Turbo",
+        year:2024,
+        miles:"700 mi",
+        color:"Black",
+        price:197000,
+        hp:620,
+        time:"3.1s",
+        engine:"V8 Hybrid",
+        image:"https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"Roma Spider",
+        year:2024,
+        miles:"400 mi",
+        color:"Red",
+        price:285000,
+        hp:612,
+        time:"3.4s",
+        engine:"V8 Twin Turbo",
+        image:"https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=75"
+      },
+
+      {
+        name:"DBS Superleggera",
+        year:2023,
+        miles:"900 mi",
+        color:"Black",
+        price:315000,
+        hp:715,
+        time:"3.4s",
+        engine:"V12 Petrol",
+        image:"https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=75"
+      }
+
+    ];
+
+
+    /* ================= STATE ================= */
+
+    let currentPage = 1;
+
+    const perPage = 3;
+
+
+    /* ================= ELEMENTS ================= */
+
+    const grid =
+      document.getElementById("vfCardGrid");
+
+    const skeleton =
+      document.getElementById("vfSkeleton");
+
+    const pagination =
+      document.getElementById("vfPagination");
+
+    const empty =
+      document.getElementById("vfEmpty");
+
+    const search =
+      document.getElementById("vfCardSearch");
+
+    const sort =
+      document.getElementById("vfCardSort");
+
+    const modal =
+      document.getElementById("vfDetailsModal");
+
+    const modalBox =
+      document.getElementById("vfDetailsBox");
+
+
+    /* ================= RENDER ================= */
+
+    function render(){
+
+      let result = [...cars];
+
+      const query =
+        search.value.trim().toLowerCase();
+
+
+      /* SEARCH */
+
+      if(query){
+
+        result = result.filter(car =>
+          `${car.name} ${car.color} ${car.engine}`
+            .toLowerCase()
+            .includes(query)
+        );
+
+      }
+
+
+      /* SORT */
+
+      if(sort.value === "low"){
+
+        result.sort(
+          (a,b) => a.price - b.price
+        );
+
+      }
+
+      if(sort.value === "high"){
+
+        result.sort(
+          (a,b) => b.price - a.price
+        );
+
+      }
+
+      if(sort.value === "new"){
+
+        result.sort(
+          (a,b) => b.year - a.year
+        );
+
+      }
+
+
+      const totalPages =
+        Math.max(
+          1,
+          Math.ceil(result.length / perPage)
+        );
+
+
+      if(currentPage > totalPages)
+        currentPage = totalPages;
+
+
+      const start =
+        (currentPage - 1) * perPage;
+
+      const pageCars =
+        result.slice(
+          start,
+          start + perPage
+        );
+
+
+      /* EMPTY */
+
+      if(!pageCars.length){
+
+        grid.classList.add("hidden");
+        empty.classList.remove("hidden");
+        pagination.innerHTML="";
+
+        return;
+
+      }
+
+
+      empty.classList.add("hidden");
+      grid.classList.remove("hidden");
+
+
+      /* CARDS */
+
+      grid.innerHTML =
+        pageCars.map((car,index)=>`
+
+          <article
+            class="vf-car-card"
+            data-index="${cars.indexOf(car)}"
+          >
+
+            <div class="vf-card-image">
+
+              <img
+                src="${car.image}"
+                alt="${car.name}"
+                loading="lazy"
+              >
+
+              <button
+                class="vf-heart"
+                data-heart="${cars.indexOf(car)}"
+                aria-label="Favorite"
+              >
+                ♡
+              </button>
+
+            </div>
+
+
+            <div class="p-4">
+
+              <div class="flex justify-between
+                          items-start gap-2">
 
                 <div>
-                    <h2 class="text-2xl font-bold mb-1">Log in to continue</h2>
-                    <p class="text-sm text-gray-400">Sign in to complete your booking for the Porsche 911 Turbo S.</p>
+
+                  <h3
+                    class="text-white
+                           text-[18px]
+                           font-semibold"
+                  >
+                    ${car.name}
+                  </h3>
+
+                  <p class="text-[#8f9089]
+                            text-xs mt-1">
+                    ${car.year} • ${car.miles}
+                  </p>
+
                 </div>
 
-                <form id="login-form" class="flex flex-col gap-4">
-                    <div class="flex flex-col gap-1">
-                        <label class="text-xs text-gray-500 font-semibold tracking-wider">EMAIL</label>
-                        <input type="email" required placeholder="you@example.com"
-                            class="bg-[#0b0b0b] border border-[#232323] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#c6f135]" />
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <label class="text-xs text-gray-500 font-semibold tracking-wider">PASSWORD</label>
-                        <input type="password" required placeholder="••••••••"
-                            class="bg-[#0b0b0b] border border-[#232323] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#c6f135]" />
-                    </div>
-                    <button type="submit"
-                        class="accent-bg text-black font-bold py-3 rounded-full hover:brightness-110 transition mt-2">Log
-                        in</button>
-                </form>
+                <strong
+                  class="text-[#baff19]
+                         text-[17px]
+                         whitespace-nowrap"
+                >
+                  $${car.price.toLocaleString()}
+                </strong>
 
-                <div class="text-center text-xs text-gray-500">
-                    Don't have an account? <a href="#" class="accent font-semibold">Sign up</a>
-                </div>
+              </div>
+
+
+              <div
+                class="grid grid-cols-3
+                       gap-2 mt-5
+                       pt-4
+                       border-t border-[#292a2b]"
+              >
+
+                <span class="text-xs text-[#aaa]">
+                  ϟ ${car.hp}<br>
+                  <small>hp</small>
+                </span>
+
+                <span class="text-xs text-[#aaa]">
+                  ◷ ${car.time}<br>
+                  <small>0-60</small>
+                </span>
+
+                <span class="text-xs text-[#aaa]">
+                  ⚙ ${car.engine}
+                </span>
+
+              </div>
+
+
+              <button
+                data-details="${cars.indexOf(car)}"
+                class="vf-details
+                       w-full h-9 mt-4
+                       rounded-md
+                       bg-[#252627]
+                       hover:bg-[#baff19]
+                       hover:text-[#111]
+                       text-[#ccc]
+                       text-xs font-semibold
+                       transition"
+              >
+                View Details
+              </button>
+
             </div>
+
+          </article>
+
+        `).join("");
+
+
+      renderPagination(totalPages);
+
+      attachCardEvents();
+
+    }
+
+
+    /* ================= PAGINATION ================= */
+
+    function renderPagination(total){
+
+      if(total <= 1){
+
+        pagination.innerHTML="";
+
+        return;
+
+      }
+
+
+      let html = `
+
+        <button
+          class="vf-page arrow
+                 ${currentPage===1 ? "disabled":""}"
+          data-page="${currentPage-1}"
+        >
+          ‹
+        </button>
+
+      `;
+
+
+      const pages=[];
+
+
+      if(total <= 7){
+
+        for(let i=1;i<=total;i++)
+          pages.push(i);
+
+      }else{
+
+        pages.push(1,2,3);
+
+        if(currentPage > 5)
+          pages.push("...");
+
+        const from =
+          Math.max(4,currentPage-1);
+
+        const to =
+          Math.min(total-1,currentPage+1);
+
+        for(let i=from;i<=to;i++){
+
+          if(!pages.includes(i))
+            pages.push(i);
+
+        }
+
+        if(currentPage < total-4)
+          pages.push("...");
+
+        pages.push(total);
+
+      }
+
+
+      html += pages.map(page => {
+
+        if(page==="...")
+          return `
+            <span class="vf-page">
+              ...
+            </span>
+          `;
+
+        return `
+          <button
+            class="vf-page
+                   ${page===currentPage ? "active":""}"
+            data-page="${page}"
+          >
+            ${page}
+          </button>
+        `;
+
+      }).join("");
+
+
+      html += `
+
+        <button
+          class="vf-page arrow
+                 ${currentPage===total ? "disabled":""}"
+          data-page="${currentPage+1}"
+        >
+          ›
+        </button>
+
+      `;
+
+
+      pagination.innerHTML=html;
+
+
+      pagination
+        .querySelectorAll("[data-page]")
+        .forEach(btn=>{
+
+          btn.addEventListener("click",()=>{
+
+            currentPage =
+              Number(btn.dataset.page);
+
+            render();
+
+            document
+              .getElementById("vfPaginationSection")
+              .scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+              });
+
+          });
+
+        });
+
+    }
+
+
+    /* ================= CARD EVENTS ================= */
+
+    function attachCardEvents(){
+
+      /* FAVORITE */
+
+      grid
+        .querySelectorAll("[data-heart]")
+        .forEach(btn=>{
+
+          btn.addEventListener("click",(e)=>{
+
+            e.stopPropagation();
+
+            btn.classList.toggle("liked");
+
+            btn.textContent =
+              btn.classList.contains("liked")
+              ? "♥"
+              : "♡";
+
+          });
+
+        });
+
+
+      /* DETAILS */
+
+      grid
+        .querySelectorAll("[data-details]")
+        .forEach(btn=>{
+
+          btn.addEventListener("click",()=>{
+
+            const car =
+              cars[
+                Number(btn.dataset.details)
+              ];
+
+            openModal(car);
+
+          });
+
+        });
+
+    }
+
+
+    /* ================= MODAL ================= */
+
+    function openModal(car){
+
+      document.getElementById("vfModalImage").src =
+        car.image;
+
+      document.getElementById("vfModalName")
+        .textContent = car.name;
+
+      document.getElementById("vfModalMeta")
+        .textContent =
+          `${car.year} • ${car.miles} • ${car.color}`;
+
+      document.getElementById("vfModalPrice")
+        .textContent =
+          `$${car.price.toLocaleString()}`;
+
+      document.getElementById("vfModalSpecs")
+        .innerHTML = `
+
+          <span>ϟ ${car.hp} hp</span>
+          <span>◷ ${car.time}</span>
+          <span>⚙ ${car.engine}</span>
+
+        `;
+
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      requestAnimationFrame(()=>{
+
+        modalBox.classList.remove(
+          "scale-95",
+          "opacity-0"
+        );
+
+        modalBox.classList.add(
+          "scale-100",
+          "opacity-100"
+        );
+
+      });
+
+    }
+
+
+    function closeModal(){
+
+      modalBox.classList.remove(
+        "scale-100",
+        "opacity-100"
+      );
+
+      modalBox.classList.add(
+        "scale-95",
+        "opacity-0"
+      );
+
+      setTimeout(()=>{
+
+        modal.classList.remove("flex");
+        modal.classList.add("hidden");
+
+      },180);
+
+    }
+
+
+    document
+      .getElementById("vfModalClose")
+      .addEventListener("click",closeModal);
+
+
+    modal.addEventListener("click",e=>{
+
+      if(e.target===modal)
+        closeModal();
+
+    });
+
+
+    document.addEventListener("keydown",e=>{
+
+      if(
+        e.key==="Escape" &&
+        !modal.classList.contains("hidden")
+      ){
+        closeModal();
+      }
+
+    });
+
+
+    /* ================= SEARCH ================= */
+
+    search.addEventListener("input",()=>{
+
+      currentPage=1;
+
+      render();
+
+    });
+
+
+    /* ================= SORT ================= */
+
+    sort.addEventListener("change",()=>{
+
+      currentPage=1;
+
+      render();
+
+    });
+
+
+    /* ================= INITIAL LOAD ================= */
+
+    setTimeout(()=>{
+
+      skeleton.classList.add("hidden");
+      grid.classList.remove("hidden");
+
+      render();
+
+    },650);
+
+  })();
+  </script>
+
+</section>
+<section class="w-full bg-[#0d0f10] px-5 py-12">
+    <div class="w-full max-w-[1280px] mx-auto">
+
+        <!-- Button -->
+        <div class="w-full flex justify-center">
+            <a
+                href="./sell.html"
+                class="w-full max-w-[1000px] h-[70px]
+                       flex items-center justify-center
+                       rounded-xl
+                       bg-[#b6ff00]
+                       border border-[#d7ff70]
+                       text-black
+                       text-lg font-bold
+                       tracking-wide
+                       shadow-[0_5px_0_#719900]
+                       transition-all duration-300 ease-out
+                       hover:-translate-y-2
+                       hover:shadow-[gray-400]
+                       active:translate-y-1
+                       active:shadow-[0_3px_0_#719900]"
+            >
+                Buy Now
+            </a>
         </div>
 
-        <script>
-            (function () {
-                const scope = document.currentScript.closest('section');
-                const buttons = scope.querySelectorAll('.tab-btn');
-                const panels = scope.querySelectorAll('.tab-panel');
-                buttons.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        buttons.forEach(b => { b.classList.remove('tab-active'); b.classList.add('tab-inactive'); });
-                        btn.classList.remove('tab-inactive');
-                        btn.classList.add('tab-active');
-                        const target = btn.dataset.tab;
-                        panels.forEach(p => {
-                            p.classList.toggle('hidden', p.dataset.panel !== target);
-                        });
-                    });
-                });
+    </div>
+</section>
 
-                const listingView = scope.querySelector('#listing-view');
-                const loginView = scope.querySelector('#login-view');
-                const rentBtn = scope.querySelector('#rent-now-btn');
-                const backBtn = scope.querySelector('#back-to-listing');
-                const loginForm = scope.querySelector('#login-form');
+</main>
 
-                rentBtn.addEventListener('click', () => {
-                    listingView.classList.add('hidden');
-                    loginView.classList.remove('hidden');
-                });
 
-                backBtn.addEventListener('click', () => {
-                    loginView.classList.add('hidden');
-                    listingView.classList.remove('hidden');
-                });
 
-                loginForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    alert('Logged in! Continuing to booking...');
-                });
-            })();
-        </script>
-    </section>
 
-    <section class="w-full bg-[#101112] py-12 sm:py-14 lg:py-16 text-white">
 
-        <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
 
-            <!-- HEADER -->
-            <div class="flex items-center justify-between mb-7">
 
-                <h2 class="text-2xl sm:text-[26px] font-semibold">
-                    Similar Enthusiast Rides
-                </h2>
+<footer class="w-full bg-[#0d0e0f] text-white border-t border-[#181a1b]">
 
-                <div class="flex gap-2">
+  <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
 
-                    <button id="carsPrev" class="w-10 h-10 rounded-full border border-[#292b2d]
-                 flex items-center justify-center
-                 text-[#aaa] hover:text-white
-                 hover:bg-[#1b1d1e] transition">
-
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.8">
-
-                            <path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round" />
-
-                        </svg>
-
-                    </button>
-
-
-                    <button id="carsNext" class="w-10 h-10 rounded-full border border-[#292b2d]
-                 flex items-center justify-center
-                 text-[#aaa] hover:text-white
-                 hover:bg-[#1b1d1e] transition">
-
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.8">
-
-                            <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round" />
-
-                        </svg>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!--
-      CAROUSEL
-      DESKTOPDA:
-      366 + 20 + 366 + 20 + 366 = 1138px
-
-      SHUNING UCHUN 4-CARD UMUMAN KO'RINMAYDI
-    -->
-
-            <div id="carsViewport" class="overflow-hidden mx-auto w-full xl:max-w-[1138px]">
-
-                <div id="carsTrack" class="flex gap-5  select-none">
-
-
-                    <!-- CARD 1 -->
-                    <article class="car-card shrink-0
-                 w-full
-                 sm:w-[366px]
-                 max-w-[366px]
-                 rounded-[15px]
-                 overflow-hidden
-                 border border-[#252729]
-                 bg-[#111213]">
-
-                        <div class="relative w-full h-[218px] bg-[#181a1b] overflow-hidden">
-
-                            <!-- FAQAT SRC NI O'ZGARTIRASIZ -->
-                            <img src="./buy.images/owl-card-1.jpg" alt="Lamborghini Huracán Tecnica"
-                                class="w-full h-full object-cover block" loading="lazy" decoding="async">
-
-                            <span class="absolute top-3 right-3
-                     px-2.5 py-1
-                     rounded-full
-                     bg-black/80
-                     text-[8px]
-                     font-bold
-                     tracking-widest">
-
-                                NEW
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="p-5">
-
-                            <h3 class="text-[16px] font-medium truncate">
-                                Lamborghini Huracán Tecnica
-                            </h3>
-
-                            <div class="flex gap-4 mt-2.5 text-[12px] text-[#a4a59f]">
-
-                                <span>⚡ 631 HP</span>
-                                <span>◉ 2.8s</span>
-
-                            </div>
-
-
-                            <div class="flex items-center justify-between mt-5">
-
-                                <p class="text-[14px] font-semibold">
-
-                                    $580
-
-                                    <span class="text-xs font-normal text-[#989994]">
-                                        / day
-                                    </span>
-
-                                </p>
-
-                                <button class="text-[9px] font-bold
-                       tracking-wider text-[#b7e52c]">
-
-                                    VIEW DETAILS
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- CARD 2 -->
-                    <article class="car-card shrink-0
-                 w-full
-                 sm:w-[366px]
-                 max-w-[366px]
-                 rounded-[15px]
-                 overflow-hidden
-                 border border-[#252729]
-                 bg-[#111213]">
-
-                        <div class="relative w-full h-[218px] bg-[#181a1b] overflow-hidden">
-
-                            <img src="./buy.images/owl-cerd-2.jpg" alt="Ferrari 296 GTB"
-                                class="w-full h-full object-cover block" loading="lazy" decoding="async">
-
-                        </div>
-
-
-                        <div class="p-5">
-
-                            <h3 class="text-[16px] font-medium truncate">
-                                Ferrari 296 GTB
-                            </h3>
-
-                            <div class="flex gap-4 mt-2.5 text-[12px] text-[#a4a59f]">
-
-                                <span>⚡ 818 HP</span>
-                                <span>◉ 2.9s</span>
-
-                            </div>
-
-
-                            <div class="flex items-center justify-between mt-5">
-
-                                <p class="text-[14px] font-semibold">
-
-                                    $620
-
-                                    <span class="text-xs font-normal text-[#989994]">
-                                        / day
-                                    </span>
-
-                                </p>
-
-                                <button class="text-[9px] font-bold
-                       tracking-wider text-[#b7e52c]">
-
-                                    VIEW DETAILS
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- CARD 3 -->
-                    <article class="car-card shrink-0
-                 w-full
-                 sm:w-[366px]
-                 max-w-[366px]
-                 rounded-[15px]
-                 overflow-hidden
-                 border border-[#252729]
-                 bg-[#111213]">
-
-                        <div class="relative w-full h-[218px] bg-[#181a1b] overflow-hidden">
-
-                            <img src="./buy.images/owl-card-3.jpg" alt="McLaren Artura"
-                                class="w-full h-full object-cover block" loading="lazy" decoding="async">
-
-                        </div>
-
-
-                        <div class="p-5">
-
-                            <h3 class="text-[16px] font-medium truncate">
-                                McLaren Artura
-                            </h3>
-
-                            <div class="flex gap-4 mt-2.5 text-[12px] text-[#a4a59f]">
-
-                                <span>⚡ 671 HP</span>
-                                <span>◉ 3.0s</span>
-
-                            </div>
-
-
-                            <div class="flex items-center justify-between mt-5">
-
-                                <p class="text-[14px] font-semibold">
-
-                                    $495
-
-                                    <span class="text-xs font-normal text-[#989994]">
-                                        / day
-                                    </span>
-
-                                </p>
-
-                                <button class="text-[9px] font-bold
-                       tracking-wider text-[#b7e52c]">
-
-                                    VIEW DETAILS
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <script>
-
-            const carsTrack =
-                document.getElementById("carsTrack");
-
-            const carsPrev =
-                document.getElementById("carsPrev");
-
-            const carsNext =
-                document.getElementById("carsNext");
-
-            const originalCars =
-                Array.from(
-                    carsTrack.querySelectorAll(".car-card")
-                );
-
-            const carCount =
-                originalCars.length;
-
-
-            /*
-              CHEKSIZLIK UCHUN
-              CARDLARNI KLONLASH
-            */
-
-            originalCars.forEach(card => {
-
-                carsTrack.appendChild(
-                    card.cloneNode(true)
-                );
-
-            });
-
-
-            let carIndex = 0;
-            let carMoving = false;
-
-
-            /*
-              CARD + GAP
-            */
-
-            function carStep() {
-
-                const card =
-                    carsTrack.querySelector(".car-card");
-
-                return card.getBoundingClientRect().width + 20;
-
-            }
-
-
-            /*
-              HARAKAT
-            */
-
-            function moveCars(animated = true) {
-
-                carsTrack.style.transition =
-                    animated
-                        ? "transform 500ms ease"
-                        : "none";
-
-                carsTrack.style.transform =
-                    `translateX(-${carIndex * carStep()}px)`;
-
-            }
-
-
-            /*
-              NEXT
-            */
-
-            carsNext.addEventListener("click", () => {
-
-                if (carMoving) return;
-
-                carMoving = true;
-
-                carIndex++;
-
-                moveCars(true);
-
-            });
-
-
-            /*
-              PREVIOUS
-            */
-
-            carsPrev.addEventListener("click", () => {
-
-                if (carMoving) return;
-
-                carMoving = true;
-
-
-                if (carIndex === 0) {
-
-                    carIndex = carCount;
-
-                    moveCars(false);
-
-                    requestAnimationFrame(() => {
-
-                        requestAnimationFrame(() => {
-
-                            carIndex--;
-
-                            moveCars(true);
-
-                        });
-
-                    });
-
-                } else {
-
-                    carIndex--;
-
-                    moveCars(true);
-
-                }
-
-            });
-
-
-            /*
-              OXIRIGA YETGANDA
-              SEZILMASDAN BOSHIGA
-            */
-
-            carsTrack.addEventListener(
-                "transitionend",
-                () => {
-
-                    if (carIndex >= carCount) {
-
-                        carIndex = 0;
-
-                        moveCars(false);
-
-                    }
-
-                    carMoving = false;
-
-                }
-            );
-
-
-            /*
-              RESPONSIVE
-            */
-
-            window.addEventListener(
-                "resize",
-                () => {
-
-                    moveCars(false);
-
-                }
-            );
-
-
-            /*
-              MOBILE SWIPE
-            */
-
-            let touchStart = 0;
-
-            carsTrack.addEventListener(
-                "touchstart",
-                e => {
-
-                    touchStart =
-                        e.changedTouches[0].screenX;
-
-                },
-                { passive: true }
-            );
-
-
-            carsTrack.addEventListener(
-                "touchend",
-                e => {
-
-                    const touchEnd =
-                        e.changedTouches[0].screenX;
-
-                    const distance =
-                        touchStart - touchEnd;
-
-
-                    if (Math.abs(distance) < 50) return;
-
-
-                    if (distance > 0) {
-
-                        carsNext.click();
-
-                    } else {
-
-                        carsPrev.click();
-
-                    }
-
-                },
-                { passive: true }
-            );
-
-
-            moveCars(false);
-
-        </script>
-
-    </section>
-
-    <footer class="w-full bg-[#0d0e0f] text-white border-t border-[#181a1b]">
-
-        <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
-
-            <!-- FOOTER CONTENT -->
-            <div class="grid grid-cols-2
+    <!-- FOOTER CONTENT -->
+    <div
+      class="grid grid-cols-2
              lg:grid-cols-[1.35fr_1fr_1fr_1fr]
              gap-x-8 gap-y-10
              sm:gap-x-12
@@ -1986,10 +2820,12 @@ img[loading="lazy"] { content-visibility: auto; }
              lg:py-[68px]">
 
 
-                <!-- BRAND -->
-                <div class="col-span-2 lg:col-span-1">
+      <!-- BRAND -->
+      <div class="col-span-2 lg:col-span-1">
 
-                    <a href="#" class="inline-block
+        <a
+          href="#"
+          class="inline-block
                  text-[29px]
                  sm:text-[31px]
                  lg:text-[32px]
@@ -1997,247 +2833,278 @@ img[loading="lazy"] { content-visibility: auto; }
                  tracking-[-1.5px]
                  text-[#f2f2f2]">
 
-                        VELOCE
+          VELOCE
 
-                    </a>
+        </a>
 
 
-                    <p class="mt-4
+        <p
+          class="mt-4
                  max-w-[310px]
                  text-[13px]
                  sm:text-[14px]
                  leading-[1.65]
                  text-[#aaa99c]">
 
-                        Elevating the luxury car rental
-                        experience with a curated fleet of
-                        the world's most exceptional
-                        automobiles.
+          Elevating the luxury car rental
+          experience with a curated fleet of
+          the world's most exceptional
+          automobiles.
 
-                    </p>
+        </p>
 
-                </div>
+      </div>
 
 
-                <!-- FLEET -->
-                <div>
+      <!-- FLEET -->
+      <div>
 
-                    <h3 class="mb-4
+        <h3
+          class="mb-4
                  text-[13px]
                  sm:text-[14px]
                  font-medium
                  text-[#e1e1dc]">
 
-                        Fleet
+          Fleet
 
-                    </h3>
+        </h3>
 
 
-                    <ul class="space-y-2.5">
+        <ul class="space-y-2.5">
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Hypercars
+              Hypercars
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Supercars
+              Supercars
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Luxury SUVs
+              Luxury SUVs
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Classics
+              Classics
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                    </ul>
+        </ul>
 
-                </div>
+      </div>
 
 
-                <!-- COMPANY -->
-                <div>
+      <!-- COMPANY -->
+      <div>
 
-                    <h3 class="mb-4
+        <h3
+          class="mb-4
                  text-[13px]
                  sm:text-[14px]
                  font-medium
                  text-[#e1e1dc]">
 
-                        Company
+          Company
 
-                    </h3>
+        </h3>
 
 
-                    <ul class="space-y-2.5">
+        <ul class="space-y-2.5">
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                About Us
+              About Us
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Journal
+              Journal
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Careers
+              Careers
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Contact
+              Contact
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                    </ul>
+        </ul>
 
-                </div>
+      </div>
 
 
-                <!-- LEGAL -->
-                <div class="col-span-2 lg:col-span-1">
+      <!-- LEGAL -->
+      <div class="col-span-2 lg:col-span-1">
 
-                    <h3 class="mb-4
+        <h3
+          class="mb-4
                  text-[13px]
                  sm:text-[14px]
                  font-medium
                  text-[#e1e1dc]">
 
-                        Legal
+          Legal
 
-                    </h3>
+        </h3>
 
 
-                    <ul class="grid grid-cols-2
+        <ul
+          class="grid grid-cols-2
                  gap-x-6
                  gap-y-2.5
                  lg:block
                  lg:space-y-2.5">
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Privacy Policy
+              Privacy Policy
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Terms of Service
+              Terms of Service
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                Rental Agreement
+              Rental Agreement
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                        <li>
-                            <a href="#" class="text-[13px]
+          <li>
+            <a
+              href="#"
+              class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-                                FAQ
+              FAQ
 
-                            </a>
-                        </li>
+            </a>
+          </li>
 
-                    </ul>
+        </ul>
 
-                </div>
+      </div>
 
-            </div>
+    </div>
 
 
-            <!-- COPYRIGHT -->
-            <div class="border-t border-[#181a1b]
+    <!-- COPYRIGHT -->
+    <div
+      class="border-t border-[#181a1b]
              py-5
              sm:py-6">
 
-                <p class="text-[8px]
+      <p
+        class="text-[8px]
                sm:text-[9px]
                font-semibold
                tracking-[0.16em]
@@ -2245,43 +3112,15 @@ img[loading="lazy"] { content-visibility: auto; }
                leading-relaxed
                text-[#70716b]">
 
-                    © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
+        © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
 
-                </p>
+      </p>
 
-            </div>
+    </div>
 
-        </div>
+  </div>
 
-    </footer>
-
-    <script>
-        function switchTab(event, targetId) {
-            const panels = document.querySelectorAll('.tab-panel');
-            panels.forEach(panel => {
-                panel.classList.add('hidden');
-                panel.classList.remove('block');
-            });
-
-            const targetPanel = document.querySelector(targetId);
-            if (targetPanel) {
-                targetPanel.classList.remove('hidden');
-                targetPanel.classList.add('block');
-            }
-
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => {
-                btn.classList.remove('border-[#C1F432]', 'opacity-100');
-                btn.classList.add('border-transparent', 'opacity-60');
-                btn.setAttribute('aria-selected', 'false');
-            });
-
-            const currentBtn = event.currentTarget;
-            currentBtn.classList.remove('border-transparent', 'opacity-60');
-            currentBtn.classList.add('border-[#C1F432]', 'opacity-100');
-            currentBtn.setAttribute('aria-selected', 'true');
-        }
-    </script>
+</footer>
 
 
 
@@ -2289,38 +3128,6 @@ img[loading="lazy"] { content-visibility: auto; }
 
 
 
-
-
-
-    <script>
-        document.querySelectorAll('#default-tab button').forEach(button => {
-            button.addEventListener('click', () => {
-                // Barcha kontentlarni yashirish
-                document.querySelectorAll('#default-tab-content > div').forEach(content => {
-                    content.classList.add('hidden');
-                    content.classList.remove('block');
-                });
-
-                // Barcha tugmalarni nofaol holatga keltirish
-                document.querySelectorAll('#default-tab button').forEach(btn => {
-                    btn.classList.replace('border-brand', 'border-transparent');
-                    btn.classList.replace('opacity-100', 'opacity-60');
-                    btn.setAttribute('aria-selected', 'false');
-                });
-
-                // Bosilgan tugmani faollashtirish
-                const targetId = button.getAttribute('data-target');
-                const targetContent = document.querySelector(targetId);
-
-                targetContent.classList.remove('hidden');
-                targetContent.classList.add('block');
-
-                button.classList.replace('border-transparent', 'border-brand');
-                button.classList.replace('opacity-60', 'opacity-100');
-                button.setAttribute('aria-selected', 'true');
-            });
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <script src='https://cdn.jotfor.ms/agent/embedjs/019f8d4e1708700088b66f9a2c31e4a95d69/embed.js'>
     </script>
@@ -2363,5 +3170,4 @@ img[loading="lazy"] { content-visibility: auto; }
     })();
 </script>
 </body>
-
 </html>

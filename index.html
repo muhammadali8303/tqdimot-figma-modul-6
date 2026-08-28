@@ -2,237 +2,254 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent</title>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./sctipt.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./sctipt.js">
 
 
 
 
-<style id="performance-only">
-/* PERFORMANCE ONLY — visual values intentionally untouched. */
-html { overflow-x: hidden; }
-img { content-visibility: auto; }
-section, footer { contain: layout paint; }
-</style>
+  <style id="performance-only">
+    /* PERFORMANCE ONLY — visual values intentionally untouched. */
+    html {
+      overflow-x: hidden;
+    }
+
+    img {
+      content-visibility: auto;
+    }
+
+    section,
+    footer {
+      contain: layout paint;
+    }
+  </style>
 
 
-<style id="mobile-responsive-fixes">
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
+  <style id="mobile-responsive-fixes">
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
     }
 
     @media (max-width: 696px) {
-        /* Keep header controls together and prevent accidental overflow. */
-        header > div {
-            min-width: 0;
-        }
 
-        header > div > div:first-child {
-            min-width: 0;
-        }
+      /* Keep header controls together and prevent accidental overflow. */
+      header>div {
+        min-width: 0;
+      }
 
-        /* Search widget stays inside the viewport. */
-        section {
-            max-width: 100%;
-        }
+      header>div>div:first-child {
+        min-width: 0;
+      }
 
-        /* Prevent long card/content rows from forcing horizontal scrolling. */
-        .owl-carousel,
-        .cards {
-            max-width: 100%;
-        }
+      /* Search widget stays inside the viewport. */
+      section {
+        max-width: 100%;
+      }
 
-        input,
-        select,
-        button {
-            max-width: 100%;
-        }
+      /* Prevent long card/content rows from forcing horizontal scrolling. */
+      .owl-carousel,
+      .cards {
+        max-width: 100%;
+      }
+
+      input,
+      select,
+      button {
+        max-width: 100%;
+      }
     }
 
     @media (max-width: 420px) {
-        /* Very small phones: keep VELOCE + controls comfortably inside 100%. */
-        header {
-            padding-left: 12px !important;
-            padding-right: 12px !important;
-        }
 
-        header > div {
-            gap: 6px !important;
-        }
+      /* Very small phones: keep VELOCE + controls comfortably inside 100%. */
+      header {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+      }
 
-        header > div > div:last-child {
-            gap: 6px !important;
-        }
+      header>div {
+        gap: 6px !important;
+      }
 
-        /* The List your car button must never be wider than its available space. */
-        header button[data-modal-target="default-modal"] {
-            min-width: 0;
-            flex-shrink: 1;
-        }
+      header>div>div:last-child {
+        gap: 6px !important;
+      }
 
-        /* Search controls stack cleanly on narrow screens. */
-        #default-modal input,
-        #default-modal select {
-            width: 100%;
-        }
+      /* The List your car button must never be wider than its available space. */
+      header button[data-modal-target="default-modal"] {
+        min-width: 0;
+        flex-shrink: 1;
+      }
+
+      /* Search controls stack cleanly on narrow screens. */
+      #default-modal input,
+      #default-modal select {
+        width: 100%;
+      }
     }
-</style>
+  </style>
+
 
 </head>
 
 <body class="bg-[#121315]">
-    <header class="bg-[#121315] py-[19px] px-[30px] max-[696px]:px-[16px] max-[420px]:px-[12px]">
-        <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center gap-3">
-            <div class="flex gap-[32px] items-center min-w-0">
-                <a class="text-[28px] text-[white] font-[700] max-[420px]:text-[24px] shrink-0" href="./index.html">VELOCE</a>
-                <ul class="flex gap-[16px] mt-[10px] max-[696px]:!hidden ">
-                    <li class="inline-block group relative"><a
-                            class="group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
-                            href="./index.html">Rent</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-                        </span>
-                    </li>
-                    <li class="inline-block group relative"><a
-                            class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF] duration-[0.3s]"
-                            href="./buy.html">Buy</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-                        </span>
-                    </li>
-                    <li class="inline-block group relative"><a
-                            class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="./sell.html">Sell</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-                        </span>
-                    </li>
-                    <li class="inline-block group relative"><a
-                            class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="./brands.html">Brands</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-                        </span>
-                    </li>
-                    <li class="inline-block group relative"><a
-                            class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
-                            href="">Journal</a>
-                        <span
-                            class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-                        </span>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="flex items-center gap-[40px] max-[696px]:gap-[8px] shrink-0">
 
-                <div class=" ">
-                    <div class="flex gap-[8px] max-[696px]:hidden ">
-                        <img class="pt-[12px]" src="./headericon-1.svg" alt="">
-                        <img class="pt-[12px]" src="./headericon-2.svg" alt="">
-                        <img class="pt-[12px]" src="./headericon-3.svg" alt="">
-                    </div>
+  <header class="bg-[#121315] py-[19px] px-[30px] max-[696px]:px-[16px] max-[420px]:px-[12px]">
+    <div class="max-w-[1280px] mx-auto w-full flex justify-between items-center gap-3">
+      <div class="flex gap-[32px] items-center min-w-0">
+        <a class="text-[28px] text-[white] font-[700] max-[420px]:text-[24px] shrink-0" href="">VELOCE</a>
+        <ul class="flex gap-[16px] mt-[10px] max-[696px]:!hidden ">
+          <li class="inline-block group relative"><a
+              class="group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s] group-hover:mb-[15px]"
+              href="./index.html">Rent</a>
+            <span
+              class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-                </div>
-                <!-- Modal toggle -->
-              
+            </span>
+          </li>
+          <li class="inline-block group relative"><a
+              class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF] duration-[0.3s]"
+              href="./buy.html">katalog</a>
+            <span
+              class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-<!-- Mobile Menu Button -->
-<button
-    id="mobile-menu-btn"
-    type="button"
-    aria-label="Open menu"
-    class="hidden max-[696px]:flex items-center justify-center w-[42px] h-[42px] shrink-0 rounded-[8px] border border-[#303332] text-white hover:bg-[#1f2022] transition">
-    <svg xmlns="http://www.w3.org/2000/svg"
-        width="22" height="22" viewBox="0 0 24 24"
-        fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-</button>
+            </span>
+          </li>
+          <li class="inline-block group relative"><a
+              class="group-hover:font-[700]  text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+              href="">Sell</a>
+            <span
+              class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-<!-- Modal toggle -->
-<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none whitespace-nowrap max-[696px]:px-[16px] max-[696px]:py-[9px] max-[420px]:px-[12px] max-[420px]:text-[12px]" type="button">
-  List your car
-</button>
+            </span>
+          </li>
+          <li class="inline-block group relative"><a
+              class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+              href="">Brands</a>
+            <span
+              class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
 
-<!-- Main modal -->
-<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full  md:inset-0 h-[calc(100%-1rem)] max-h-[1000px]">
-    <div class="relative object-cover overflow-hidden p-4 w-full max-w-[700px] max-h-[700px]">
-        <!-- Modal content -->
-        <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
-            <!-- Modal header -->
-            <div class="flex items-center text-white bg-black justify-between border-b border-default pb-4 md:pb-5">
+            </span>
+          </li>
+          <li class="inline-block group relative"><a
+              class=" group-hover:font-[700] text-[#C4C9AE] group-hover:text-[#FFFFFF]  duration-[0.3s]"
+              href="">Journal</a>
+            <span
+              class="inline-block absolute top-[30px] left-[0] h-[2px] bg-[#C1F432] duration-[0.3s] w-[0px] group-hover:w-full">
+
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-[40px] max-[696px]:gap-[8px] shrink-0">
+
+        <div class=" ">
+          <div class="flex gap-[8px] max-[696px]:hidden ">
+            <img class="pt-[12px]" src="./headericon-1.svg" alt="">
+            <img class="pt-[12px]" src="./headericon-2.svg" alt="">
+            <img class="pt-[12px]" src="./headericon-3.svg" alt="">
+          </div>
+
+        </div>
+        <!-- Modal toggle -->
+
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Open menu"
+          class="hidden max-[696px]:flex items-center justify-center w-[42px] h-[42px] shrink-0 rounded-[8px] border border-[#303332] text-white hover:bg-[#1f2022] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Modal toggle -->
+        <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+          class="text-black bg-[#C1F432] box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-[24px] py-[10px] rounded-[8px] focus:outline-none whitespace-nowrap max-[696px]:px-[16px] max-[696px]:py-[9px] max-[420px]:px-[12px] max-[420px]:text-[12px]"
+          type="button">
+          List your car
+        </button>
+
+        <!-- Main modal -->
+        <div id="default-modal" tabindex="-1" aria-hidden="true"
+          class="hidden  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full  md:inset-0 h-[calc(100%-1rem)] max-h-[1000px]">
+          <div class="relative object-cover overflow-hidden p-4 w-full max-w-[700px] max-h-[700px]">
+            <!-- Modal content -->
+            <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+              <!-- Modal header -->
+              <div class="flex items-center text-white bg-black justify-between border-b border-default pb-4 md:pb-5">
                 <h3 class="text-lg font-medium text-heading">
-                    VELOCE
+                  VELOCE
                 </h3>
-                <button type="button" class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
-                    <span class="sr-only">Close modal</span>
+                <button type="button"
+                  class="text-body bg-transparent hover:bg-neutral-tertiary hover:text-heading rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                  data-modal-hide="default-modal">
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M6 18 17.94 6M18 18 6.06 6" />
+                  </svg>
+                  <span class="sr-only">Close modal</span>
                 </button>
-            </div>
-            <!-- Modal body -->
-             <div class="min-h-screen w-full bg-[#101112] flex items-center justify-center px-5">
+              </div>
+              <!-- Modal body -->
+              <div class="min-h-screen w-full bg-[#101112] flex items-center justify-center px-5">
 
-  <div
-    class="w-full max-w-[420px]
+                <div class="w-full max-w-[420px]
            rounded-2xl
            border border-[#292b2d]
            bg-[#151617]
            p-6 sm:p-8
            shadow-2xl">
 
-    <!-- TITLE -->
-    <div class="mb-7">
+                  <!-- TITLE -->
+                  <div class="mb-7">
 
-      <h1 class="text-2xl font-semibold text-white">
-        Sign In
-      </h1>
+                    <h1 class="text-2xl font-semibold text-white">
+                      Sign In
+                    </h1>
 
-      <p class="mt-2 text-sm text-[#8f918d]">
-        Welcome back! Please enter your details.
-      </p>
+                    <p class="mt-2 text-sm text-[#8f918d]">
+                      Welcome back! Please enter your details.
+                    </p>
 
-    </div>
+                  </div>
 
 
-    <!-- FORM -->
-    <form class="space-y-5">
+                  <!-- FORM -->
+                  <form class="space-y-5">
 
-      <!-- EMAIL -->
-      <div>
+                    <!-- EMAIL -->
+                    <div>
 
-        <label
-          for="email"
-          class="mb-2 block text-sm font-medium text-[#d8d9d5]">
+                      <label for="email" class="mb-2 block text-sm font-medium text-[#d8d9d5]">
 
-          Email
+                        Email
 
-        </label>
+                      </label>
 
-        <input
-          id="email"
-          type="email"
-          placeholder="you@example.com"
-          class="w-full rounded-lg
+                      <input id="email" type="email" placeholder="you@example.com" class="w-full rounded-lg
                  border border-[#303234]
                  bg-[#101112]
                  px-4 py-3
@@ -244,40 +261,32 @@ section, footer { contain: layout paint; }
                  focus:ring-1
                  focus:ring-[#b7e52c]">
 
-      </div>
+                    </div>
 
 
-      <!-- PASSWORD -->
-      <div>
+                    <!-- PASSWORD -->
+                    <div>
 
-        <div class="mb-2 flex items-center justify-between">
+                      <div class="mb-2 flex items-center justify-between">
 
-          <label
-            for="password"
-            class="text-sm font-medium text-[#d8d9d5]">
+                        <label for="password" class="text-sm font-medium text-[#d8d9d5]">
 
-            Password
+                          Password
 
-          </label>
+                        </label>
 
-          <a
-            href="#"
-            class="text-xs text-[#b7e52c]
+                        <a href="#" class="text-xs text-[#b7e52c]
                    hover:text-[#d5ff61]
                    transition">
 
-            Forgot password?
+                          Forgot password?
 
-          </a>
+                        </a>
 
-        </div>
+                      </div>
 
 
-        <input
-          id="password"
-          type="password"
-          placeholder="••••••••"
-          class="w-full rounded-lg
+                      <input id="password" type="password" placeholder="••••••••" class="w-full rounded-lg
                  border border-[#303234]
                  bg-[#101112]
                  px-4 py-3
@@ -289,36 +298,29 @@ section, footer { contain: layout paint; }
                  focus:ring-1
                  focus:ring-[#b7e52c]">
 
-      </div>
+                    </div>
 
 
-      <!-- REMEMBER -->
-      <div class="flex items-center gap-2">
+                    <!-- REMEMBER -->
+                    <div class="flex items-center gap-2">
 
-        <input
-          id="remember"
-          type="checkbox"
-          class="h-4 w-4
+                      <input id="remember" type="checkbox" class="h-4 w-4
                  rounded
                  border-[#383a3c]
                  bg-[#101112]
                  accent-[#b7e52c]">
 
-        <label
-          for="remember"
-          class="text-sm text-[#999b96]">
+                      <label for="remember" class="text-sm text-[#999b96]">
 
-          Remember me
+                        Remember me
 
-        </label>
+                      </label>
 
-      </div>
+                    </div>
 
 
-      <!-- SIGN IN BUTTON -->
-      <button
-        type="submit"
-        class="w-full rounded-lg
+                    <!-- SIGN IN BUTTON -->
+                    <button type="submit" class="w-full rounded-lg
                bg-[#b7e52c]
                py-3
                text-sm font-bold
@@ -327,44 +329,42 @@ section, footer { contain: layout paint; }
                hover:bg-[#d0fa54]
                active:scale-[0.98]">
 
-        Sign In
+                      Sign In
 
-      </button>
+                    </button>
 
-    </form>
+                  </form>
 
 
-    <!-- SIGN UP -->
-    <p class="mt-7 text-center text-sm text-[#858783]">
+                  <!-- SIGN UP -->
+                  <p class="mt-7 text-center text-sm text-[#858783]">
 
-      Don't have an account?
+                    Don't have an account?
 
-      <a
-        href="#"
-        class="ml-1 font-medium
+                    <a href="#" class="ml-1 font-medium
                text-[#b7e52c]
                hover:text-[#d5ff61]">
 
-        Sign Up
+                      Sign Up
 
-      </a>
+                    </a>
 
-    </p>
+                  </p>
 
-  </div>
+                </div>
 
-</div>
-             
-          
-        </div>
-    </div>
-</div>
-
-
-
+              </div>
 
 
             </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
 
 
 
@@ -372,182 +372,170 @@ section, footer { contain: layout paint; }
 
 
 
-        
-    </header>
+
+  </header>
 
 
-<!-- MOBILE SIDE MENU -->
-<div id="mobile-menu-overlay"
+  <!-- MOBILE SIDE MENU -->
+  <div id="mobile-menu-overlay"
     class="fixed inset-0 z-[60] bg-black/50 opacity-0 invisible transition-all duration-300 max-[696px]:block hidden">
-</div>
+  </div>
 
-<aside id="mobile-side-menu"
+  <aside id="mobile-side-menu"
     class="fixed top-0 left-0 z-[70] h-screen w-[300px] max-w-[85%] bg-[#121315] border-r border-[#292b2d] shadow-2xl -translate-x-full transition-transform duration-300 ease-in-out">
 
     <div class="flex h-full flex-col">
 
-        <!-- Drawer Header -->
-        <div class="flex items-center justify-between px-[24px] py-[22px] border-b border-[#292b2d]">
-            <a href="./index.html" class="text-[26px] text-white font-[700]">
-                VELOCE
-            </a>
+      <!-- Drawer Header -->
+      <div class="flex items-center justify-between px-[24px] py-[22px] border-b border-[#292b2d]">
+        <a href="./index.html" class="text-[26px] text-white font-[700]">
+          VELOCE
+        </a>
 
-            <button
-                id="mobile-menu-close"
-                type="button"
-                aria-label="Close menu"
-                class="flex items-center justify-center w-[40px] h-[40px] rounded-[8px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    width="22" height="22" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 6l12 12M18 6L6 18"/>
-                </svg>
-            </button>
-        </div>
+        <button id="mobile-menu-close" type="button" aria-label="Close menu"
+          class="flex items-center justify-center w-[40px] h-[40px] rounded-[8px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
 
-        <!-- Drawer Navigation -->
-        <nav class="flex flex-col px-[18px] py-[24px] gap-[6px]">
+      <!-- Drawer Navigation -->
+      <nav class="flex flex-col px-[18px] py-[24px] gap-[6px]">
 
-            <a href="./index.html"
-                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
-                <span>Rent</span>
-                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
-            </a>
+        <a href="./index.html"
+          class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+          <span>Rent</span>
+          <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+        </a>
 
-            <a href="./buy.html"
-                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
-                <span>Buy</span>
-                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
-            </a>
+        <a href="./buy.html"
+          class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+          <span>Buy</span>
+          <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+        </a>
 
-            <a href="./sell.html"
-                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
-                <span>Sell</span>
-                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
-            </a>
+        <a href="./sell.html"
+          class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+          <span>Sell</span>
+          <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+        </a>
 
-            <a href="./brands.html"
-                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
-                <span>Brands</span>
-                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
-            </a>
+        <a href="./brands.html"
+          class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+          <span>Brands</span>
+          <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+        </a>
 
-            <a href=""
-                class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
-                <span>Journal</span>
-                <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
-            </a>
+        <a href=""
+          class="group flex items-center justify-between px-[16px] py-[15px] rounded-[10px] text-[17px] text-[#C4C9AE] hover:bg-[#1f2022] hover:text-white transition">
+          <span>Journal</span>
+          <span class="text-[#C1F432] opacity-0 group-hover:opacity-100 transition">→</span>
+        </a>
 
-        </nav>
+      </nav>
 
-        <!-- Drawer Bottom -->
-        <div class="mt-auto px-[24px] py-[24px] border-t border-[#292b2d]">
-            <p class="text-[10px] tracking-[0.18em] text-[#70716b]">
-                VELOCE LUXURY AUTOMOTIVE
-            </p>
-        </div>
-
-    </div>
-</aside>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <main>
- <section class="w-full bg-[#101112] text-white overflow-hidden">
-
-  <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9 py-10 sm:py-14">
-
-    <!-- TITLE -->
-    <div class="text-center">
-
-      <h1
-        class="text-[38px] sm:text-[50px] lg:text-[58px]
-               leading-[1.02] font-bold tracking-[-2px]">
-
-        <span class="text-[#e8e8e8]">
-          Drive the extraordinary.
-        </span>
-
-        <br>
-
-        <span class="text-[#b7ff1c]">
-          Rent it. Or own it.
-        </span>
-
-      </h1>
-
-
-      <!-- STATS -->
-      <div
-        class="mt-6 flex justify-center
-               divide-x divide-[#292b2b]">
-
-        <div class="px-5 sm:px-9 text-center">
-          <p class="text-sm">1,200+</p>
-          <p class="mt-1 text-[10px] text-[#aaa99c]">
-            FLEET SIZE
-          </p>
-        </div>
-
-        <div class="px-5 sm:px-9 text-center">
-          <p class="text-sm">24h</p>
-          <p class="mt-1 text-[10px] text-[#aaa99c]">
-            FAST DELIVERY
-          </p>
-        </div>
-
-        <div class="px-5 sm:px-9 text-center">
-          <p class="text-sm">150k+</p>
-          <p class="mt-1 text-[10px] text-[#aaa99c]">
-            HAPPY CLIENTS
-          </p>
-        </div>
-
+      <!-- Drawer Bottom -->
+      <div class="mt-auto px-[24px] py-[24px] border-t border-[#292b2d]">
+        <p class="text-[10px] tracking-[0.18em] text-[#70716b]">
+          VELOCE LUXURY AUTOMOTIVE
+        </p>
       </div>
 
     </div>
+  </aside>
 
 
-    <!-- CAR + WIDGET -->
-    <div
-      class="relative w-full max-w-[1024px]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <section class="w-full bg-[#101112] text-white overflow-hidden">
+
+      <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9 py-10 sm:py-14">
+
+        <!-- TITLE -->
+        <div class="text-center">
+
+          <h1 class="text-[38px] sm:text-[50px] lg:text-[58px]
+               leading-[1.02] font-bold tracking-[-2px]">
+
+            <span class="text-[#e8e8e8]">
+              Drive the extraordinary.
+            </span>
+
+            <br>
+
+            <span class="text-[#b7ff1c]">
+              Rent it. Or own it.
+            </span>
+
+          </h1>
+
+
+          <!-- STATS -->
+          <div class="mt-6 flex justify-center
+               divide-x divide-[#292b2b]">
+
+            <div class="px-5 sm:px-9 text-center">
+              <p class="text-sm">1,200+</p>
+              <p class="mt-1 text-[10px] text-[#aaa99c]">
+                FLEET SIZE
+              </p>
+            </div>
+
+            <div class="px-5 sm:px-9 text-center">
+              <p class="text-sm">24h</p>
+              <p class="mt-1 text-[10px] text-[#aaa99c]">
+                FAST DELIVERY
+              </p>
+            </div>
+
+            <div class="px-5 sm:px-9 text-center">
+              <p class="text-sm">150k+</p>
+              <p class="mt-1 text-[10px] text-[#aaa99c]">
+                HAPPY CLIENTS
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- CAR + WIDGET -->
+        <div class="relative w-full max-w-[1024px]
              mx-auto mt-9 sm:mt-11">
 
-      <!-- 3D HOVER AREA -->
-      <div
-        id="carScene"
-        class="relative
+          <!-- 3D HOVER AREA -->
+          <div id="carScene" class="relative
                w-full
                h-[270px]
                sm:h-[390px]
                lg:h-[500px]
                [perspective:1200px]">
 
-        <!-- 3D CARD -->
-        <div
-          id="carCard"
-          class="absolute inset-0
+            <!-- 3D CARD -->
+            <div id="carCard" class="absolute inset-0
                  overflow-hidden
                  rounded-xl
                  will-change-transform
@@ -555,35 +543,29 @@ section, footer { contain: layout paint; }
                  duration-150
                  ease-out">
 
-          <!-- CAR -->
-          <img
-            src="./hero/hero img.svg"
-            alt="Porsche 911 Turbo S"
-            draggable="false"
-            class="w-full h-full
+              <!-- CAR -->
+              <img src="./hero/hero img.svg" alt="Porsche 911 Turbo S" draggable="false" class="w-full h-full
                    object-cover
                    block
                    select-none
                    pointer-events-none">
 
-          <!-- DARK OVERLAY -->
-          <div
-            class="absolute inset-0
+              <!-- DARK OVERLAY -->
+              <div class="absolute inset-0
                    bg-gradient-to-b
                    from-black/10
                    via-transparent
                    to-[#101112]/30
                    pointer-events-none">
+              </div>
+
+            </div>
+
           </div>
 
-        </div>
 
-      </div>
-
-
-      <!-- SEARCH WIDGET -->
-      <div
-        class="relative
+          <!-- SEARCH WIDGET -->
+          <div class="relative
                lg:absolute
                lg:left-1/2
                lg:-translate-x-1/2
@@ -601,71 +583,62 @@ section, footer { contain: layout paint; }
                p-3 sm:p-4">
 
 
-        <!-- TABS -->
-        <div class="flex items-center gap-1 mb-4">
+            <!-- TABS -->
+            <div class="flex items-center gap-1 mb-4">
 
-          <button
-            type="button"
-            class="car-tab active-car-tab
+              <button type="button" class="car-tab active-car-tab
                    px-5 py-2 rounded-lg
                    text-[12px] font-semibold
                    bg-[#b7ff1c] text-[#111]">
 
-            <a href="./index.html">Rent</a>
+                <a href="./index.html">Rent</a>
 
-          </button>
+              </button>
 
 
-          <button
-            type="button"
-            class="car-tab
+              <button type="button" class="car-tab
                    px-5 py-2 rounded-lg
                    text-[12px] font-semibold
                    text-[#aaa99c]
                    hover:text-white transition">
 
-            <a href="./buy.html">Buy</a>
+                <a href="./buy.html">Buy</a>
 
-          </button>
+              </button>
 
 
-          <button
-            type="button"
-            class="car-tab
+              <button type="button" class="car-tab
                    px-5 py-2 rounded-lg
                    text-[12px] font-semibold
                    text-[#aaa99c]
                    hover:text-white transition">
 
-            <a href="./sell.html">Sell</a>
+                <a href="./sell.html">Sell</a>
 
-          </button>
+              </button>
 
-        </div>
+            </div>
 
 
-        <!-- FIELDS -->
-        <div
-          class="grid
+            <!-- FIELDS -->
+            <div class="grid
                  grid-cols-1
                  sm:grid-cols-2
                  lg:grid-cols-[1fr_1fr_1fr_auto]
                  gap-3">
 
 
-          <!-- LOCATION -->
-          <div class="min-w-0">
+              <!-- LOCATION -->
+              <div class="min-w-0">
 
-            <label
-              class="block mb-1.5 text-[10px]
+                <label class="block mb-1.5 text-[10px]
                      uppercase text-[#aaa99c]">
 
-              Location
+                  Location
 
-            </label>
+                </label>
 
-            <select
-              class="w-full h-[42px]
+                <select class="w-full h-[42px]
                      appearance-none
                      rounded-lg
                      border border-[#2b2d2e]
@@ -677,31 +650,28 @@ section, footer { contain: layout paint; }
                      focus:border-[#b7ff1c]
                      cursor-pointer">
 
-              <option>Beverly Hills, CA</option>
-              <option>Los Angeles, CA</option>
-              <option>Miami, FL</option>
-              <option>New York, NY</option>
-              <option>Dubai, UAE</option>
+                  <option>Sergeli</option>
+                  <option>Chilonzor</option>
+                  <option>Olmaliq</option>
+                  <option>Rohat</option>
+                  <option>Bektemir</option>
 
-            </select>
+                </select>
 
-          </div>
+              </div>
 
 
-          <!-- DATE -->
-          <div class="min-w-0">
+              <!-- DATE -->
+              <div class="min-w-0">
 
-            <label
-              class="block mb-1.5 text-[10px]
+                <label class="block mb-1.5 text-[10px]
                      uppercase text-[#aaa99c]">
 
-              Date Range
+                  Date Range
 
-            </label>
+                </label>
 
-            <input
-              type="date"
-              class="w-full h-[42px]
+                <input type="date" class="w-full h-[42px]
                      rounded-lg
                      border border-[#2b2d2e]
                      bg-[#141617]
@@ -712,22 +682,20 @@ section, footer { contain: layout paint; }
                      focus:border-[#b7ff1c]
                      cursor-pointer">
 
-          </div>
+              </div>
 
 
-          <!-- BRAND -->
-          <div class="min-w-0">
+              <!-- BRAND -->
+              <div class="min-w-0">
 
-            <label
-              class="block mb-1.5 text-[10px]
+                <label class="block mb-1.5 text-[10px]
                      uppercase text-[#aaa99c]">
 
-              Car Brand
+                  Car Brand
 
-            </label>
+                </label>
 
-            <select
-              class="w-full h-[42px]
+                <select class="w-full h-[42px]
                      appearance-none
                      rounded-lg
                      border border-[#2b2d2e]
@@ -739,23 +707,21 @@ section, footer { contain: layout paint; }
                      focus:border-[#b7ff1c]
                      cursor-pointer">
 
-              <option>Porsche</option>
-              <option>Ferrari</option>
-              <option>Lamborghini</option>
-              <option>McLaren</option>
-              <option>BMW</option>
-              <option>Mercedes-Benz</option>
-              <option>Aston Martin</option>
+                  <option>Porsche</option>
+                  <option>Ferrari</option>
+                  <option>Lamborghini</option>
+                  <option>McLaren</option>
+                  <option>BMW</option>
+                  <option>Mercedes-Benz</option>
+                  <option>Aston Martin</option>
 
-            </select>
+                </select>
 
-          </div>
+              </div>
 
 
-          <!-- SEARCH -->
-          <button
-            type="button"
-            class="h-[42px]
+              <!-- SEARCH -->
+              <button type="button" class="h-[42px]
                    w-full
                    lg:w-auto
                    self-end
@@ -772,630 +738,766 @@ section, footer { contain: layout paint; }
                    active:scale-[0.98]
                    transition">
 
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
 
-              <circle cx="11" cy="11" r="7"/>
-              <path d="m20 20-4-4"/>
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m20 20-4-4" />
 
-            </svg>
+                </svg>
 
-            Search
+                Search
 
-          </button>
+              </button>
+
+            </div>
+
+          </div>
 
         </div>
 
+
+        <!-- SMALL SPACE -->
+        <div class="h-[40px] sm:h-[48px]"></div>
+
       </div>
 
-    </div>
 
+      <!-- 3D HOVER + TABS -->
+      <script>
 
-    <!-- SMALL SPACE -->
-    <div class="h-[40px] sm:h-[48px]"></div>
+        const scene = document.getElementById("carScene");
+        const card = document.getElementById("carCard");
 
-  </div>
+        /* DESKTOP 3D HOVER */
 
+        if (window.matchMedia("(hover: hover)").matches) {
 
-  <!-- 3D HOVER + TABS -->
-  <script>
+          scene.addEventListener("mousemove", (e) => {
 
-    const scene = document.getElementById("carScene");
-    const card = document.getElementById("carCard");
+            const rect = scene.getBoundingClientRect();
 
-    /* DESKTOP 3D HOVER */
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
 
-    if (window.matchMedia("(hover: hover)").matches) {
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
 
-      scene.addEventListener("mousemove", (e) => {
+            const rotateY =
+              ((x - centerX) / centerX) * 9;
 
-        const rect = scene.getBoundingClientRect();
+            const rotateX =
+              ((centerY - y) / centerY) * 7;
 
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const rotateY =
-          ((x - centerX) / centerX) * 9;
-
-        const rotateX =
-          ((centerY - y) / centerY) * 7;
-
-        card.style.transform =
-          `rotateX(${rotateX}deg)
+            card.style.transform =
+              `rotateX(${rotateX}deg)
            rotateY(${rotateY}deg)
            scale3d(1.015,1.015,1.015)`;
 
-      });
+          });
 
 
-      scene.addEventListener("mouseleave", () => {
+          scene.addEventListener("mouseleave", () => {
 
-        card.style.transform =
-          "rotateX(0deg) rotateY(0deg) scale3d(1,1,1)";
+            card.style.transform =
+              "rotateX(0deg) rotateY(0deg) scale3d(1,1,1)";
 
-      });
+          });
 
-    }
+        }
 
 
-    /* TABS */
+        /* TABS */
 
-    const carTabs =
-      document.querySelectorAll(".car-tab");
+        const carTabs =
+          document.querySelectorAll(".car-tab");
 
-    carTabs.forEach(tab => {
+        carTabs.forEach(tab => {
 
-      tab.addEventListener("click", () => {
+          tab.addEventListener("click", () => {
 
-        carTabs.forEach(item => {
+            carTabs.forEach(item => {
 
-          item.classList.remove(
-            "active-car-tab",
-            "bg-[#b7ff1c]",
-            "text-[#111]"
-          );
+              item.classList.remove(
+                "active-car-tab",
+                "bg-[#b7ff1c]",
+                "text-[#111]"
+              );
 
-          item.classList.add(
-            "text-[#aaa99c]"
-          );
+              item.classList.add(
+                "text-[#aaa99c]"
+              );
+
+            });
+
+
+            tab.classList.add(
+              "active-car-tab",
+              "bg-[#b7ff1c]",
+              "text-[#111]"
+            );
+
+
+            tab.classList.remove(
+              "text-[#aaa99c]"
+            );
+
+          });
 
         });
 
+      </script>
 
-        tab.classList.add(
-          "active-car-tab",
-          "bg-[#b7ff1c]",
-          "text-[#111]"
-        );
+    </section>
 
+    <section class="bg-[#161719]">
+      <div class="max-w-[1280px] w-full mx-auto">
+        <div
+          class="flex flex-wrap justify-center sm:justify-between items-center gap-x-8 gap-y-2 px-6 sm:px-10 lg:px-16 py-10 lg:py-[60px]">
 
-        tab.classList.remove(
-          "text-[#aaa99c]"
-        );
+          <div class="inline-block group relative">
+            <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
+              Mercedes-Benz
+            </p>
+            <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
+          </div>
 
-      });
+          <div class="inline-block group relative">
+            <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
+              BMW
+            </p>
+            <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
+          </div>
 
-    });
+          <div class="inline-block group relative">
+            <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
+              PORSCHE
+            </p>
+            <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
+          </div>
 
-  </script>
+          <div class="inline-block group relative">
+            <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
+              Audi
+            </p>
+            <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
+          </div>
 
-</section>
+          <div class="inline-block group relative">
+            <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
+              LAMBORGHINI
+            </p>
+            <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
+          </div>
 
-        <section class="bg-[#161719]">
-  <div class="max-w-[1280px] w-full mx-auto">
-    <div class="flex flex-wrap justify-center sm:justify-between items-center gap-x-8 gap-y-2 px-6 sm:px-10 lg:px-16 py-10 lg:py-[60px]">
-
-      <div class="inline-block group relative">
-        <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
-          Mercedes-Benz
-        </p>
-        <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
+        </div>
       </div>
-
-      <div class="inline-block group relative">
-        <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
-          BMW
-        </p>
-        <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
-      </div>
-
-      <div class="inline-block group relative">
-        <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
-          PORSCHE
-        </p>
-        <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
-      </div>
-
-      <div class="inline-block group relative">
-        <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
-          Audi
-        </p>
-        <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
-      </div>
-
-      <div class="inline-block group relative">
-        <p class="text-base font-normal text-[#7A7A7D] hover:text-[#C1F432] text-center py-4 transition-colors">
-          LAMBORGHINI
-        </p>
-        <span class="absolute bottom-0 left-0 h-[2px] bg-[#C1F432] duration-300 w-0 group-hover:w-full"></span>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
-        <!-- section tegiga overflow-hidden klassi qo'shildi -->
-        <section class="bg-[#121315] py-[140px] md:py-[50px] px-[16px] md:px-0 overflow-hidden">
-            <div class="max-w-[1280px] w-full mx-auto">
-                <div>
-                    <p class="text-[14px] md:text-[16px] font-[400] text-[#C1F432] tracking-wider">CATEGORIES</p>
-                    <p class="text-[20px] md:text-[24px] font-[400] text-[#ffffff] pb-5 mt-1">Browse by Category</p>
+    <!-- section tegiga overflow-hidden klassi qo'shildi -->
+    <section class="bg-[#121315] py-[140px] md:py-[50px] px-[16px] md:px-0 overflow-hidden">
+      <div class="max-w-[1280px] w-full mx-auto">
+        <div>
+          <p class="text-[14px] md:text-[16px] font-[400] text-[#C1F432] tracking-wider">CATEGORIES</p>
+          <p class="text-[20px] md:text-[24px] font-[400] text-[#ffffff] pb-5 mt-1">Browse by Category</p>
 
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div
-                                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/katigora-card-bg.svg)] bg-no-repeat bg-center bg-cover mx-auto">
-                                <div class="w-full" id="kategora-card-1">
-                                    <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">sport</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">42 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div
-                                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-2.svg)] bg-no-repeat bg-center bg-cover mx-auto">
-                                <div class="w-full" id="kategora-card-2">
-                                    <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">SUV</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">38 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div
-                                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-3.svg)] bg-no-repeat bg-center bg-cover mx-auto">
-                                <div class="w-full" id="kategora-card-3">
-                                    <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">Sedan</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">24 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div
-                                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-4.svg)] bg-no-repeat bg-center bg-cover mx-auto">
-                                <div class="w-full" id="kategora-card-4">
-                                    <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">Electric</p>
-                                    <p class="text-[16px] font-[400] text-[#C4C9AE]">18 Vehicles Available</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div
+                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/katigora-card-bg.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                <div class="w-full" id="kategora-card-1">
+                  <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">sport</p>
+                  <p class="text-[16px] font-[400] text-[#C4C9AE]">42 Vehicles Available</p>
                 </div>
+              </div>
             </div>
-        </section>
-
-
-        <section class="bg-[#151618] py-10">
-  <div class="max-w-[1280px] w-full mx-auto px-4 sm:px-6 lg:px-8">
-
-    <!-- Sarlavha va tablar -->
-    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-8">
-      <div>
-        <p class="text-[16px] font-[400] text-[#C1F432] mb-[8px]">EXQUISITE SELECTION</p>
-        <p class="text-[16px] font-[400] text-white">The Premium Fleet</p>
-      </div>
-
-      <ul class="flex flex-wrap gap-2 text-white text-sm font-medium"
-          id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-        <li role="presentation">
-          <button
-            class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
-            id="profile-tab" data-tabs-target="#profile" type="button" role="tab"
-            aria-controls="profile" aria-selected="true">All</button>
-        </li>
-        <li role="presentation">
-          <button
-            class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
-            id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
-            aria-controls="dashboard" aria-selected="false">Hypercars</button>
-        </li>
-        <li role="presentation">
-          <button
-            class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
-            id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
-            aria-controls="settings" aria-selected="false">Convertibles</button>
-        </li>
-        <li role="presentation">
-          <button
-            class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
-            id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab"
-            aria-controls="contacts" aria-selected="false">Daily Luxury</button>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Tab kontent -->
-    <div id="default-tab-content">
-
-      <!-- ALL -->
-      <div class="hidden rounded-base" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" src="./teb-cards/porsche-card1.svg" alt="Porsche 911 Turbo S">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Porsche 911 Turbo S</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <img src="./teb-cards/mini1.svg" alt="">
-              <img src="./teb-cards/mini2.svg" alt="">
-            </div>
-                       <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">auto</p>
-
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$950<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://www.slashgear.com/img/gallery/10-best-hypercars-of-all-time/l-intro-1670272058.jpg" alt="Ferrari LaFerrari">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Ferrari LaFerrari</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">350+km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">963hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$1.5K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://hips.hearstapps.com/hmg-prod/images/2025-ford-mustang-60th-anniversary-exterior-66227932bb88e.jpg?crop=0.7287272727272727xw:1xh;center,top" alt="Ford Mustang GT">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Ford Mustang GT</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">280km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">486hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$870<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://www.topgear.com/sites/default/files/news-listicle/image/row09068.jpg" alt="Bentley Continental GT">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Bentley Continental GT</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">333km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">635hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$990<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- HYPERCARS -->
-      <div class="hidden rounded-base" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://www.slashgear.com/img/gallery/10-best-hypercars-of-all-time/l-intro-1670272058.jpg" alt="Ferrari LaFerrari">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Ferrari LaFerrari</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">350+km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">963hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$950<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIKRMkjuf97ReFURnxrCdkLFzFC4wWJP2fZyzcsIlLimKx-Fpesrw2wLY&s=10" alt="Bugatti Divo">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Bugatti Divo</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">380km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">1500hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$1.5B<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://static.overfuel.com/dealers/hypercars/image/2024McLaren.webp?w=1080&q=80" alt="McLaren 720S">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">McLaren 720S</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">341km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">720hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$330K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://static.wixstatic.com/media/0f600c_c32dc7f6cd1c4578a268e1e31d83434f~mv2.jpg/v1/fill/w_568,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0f600c_c32dc7f6cd1c4578a268e1e31d83434f~mv2.jpg" alt="Bugatti Chiron">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Bugatti Chiron</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">440km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">1600hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$6.5B<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- CONVERTIBLES -->
-      <div class="hidden rounded-base" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://hips.hearstapps.com/hmg-prod/images/2025-ford-mustang-60th-anniversary-exterior-66227932bb88e.jpg?crop=0.7287272727272727xw:1xh;center,top" alt="Ford Mustang GT">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Ford Mustang GT</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">280km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">486hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$950<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://us-west-2.graphassets.com/ALxjZdtQIQOudrzeO6hSgz/sc0bMNscS0qM7zxdM5CY" alt="911 Carrera">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">911 Carrera</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">305km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">450hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$170K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Euy6SOuYqdorZG84zvV4QHgAwA3tw25VJlX5nxw6QHpXdaJ9DPm5xy3J&s=10" alt="Bentley Continental GTC">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Bentley Continental GTC</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">308km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">782hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$950<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-stingray-convertible-3lt-z51-298-1665496970.jpg?crop=0.590xw:0.497xh;0.0816xw,0.487xh" alt="Chevrolet Corvette">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Chevrolet Corvette</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">312km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">495hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$95K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- DAILY LUXURY -->
-      <div class="hidden rounded-base" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://www.topgear.com/sites/default/files/news-listicle/image/row09068.jpg" alt="Bentley Continental GT">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Bentley Continental GT</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">333km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">635hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$990<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://cdn.prod.website-files.com/655b8b39a148405721d506a6/68e785f7df7f12f4a1f93070_optimized_68e7843caf800.CGT-Speed.jpeg" alt="Bentley GT">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Bentley GT</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">335km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">782hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$365K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://www.whatcar.com/sites/whatcar/files/styles/webp/public/image/mercedes-g-class-front-right-driving-main.jpg.webp?itok=WPEu-FiI" alt="G-Class G500">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">G-Class G500</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">210km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">330hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$160K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-          <div class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
-            <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
-                 src="https://www.stratstone.com/-/media/stratstone/blog/2021/best-luxury-cars/mercedes-maybach-gls-1920x774px.jpg?rev=47acbfb625ef448b9ba7833c59900aba" alt="Maybach GLS 600">
-            <div class="flex justify-between items-center">
-              <p class="text-lg font-normal text-white">Maybach GLS 600</p>
-              <img src="./Icon (11).svg" alt="">
-            </div>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">250km/h</p>
-              <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">550hp</p>
-            </div>
-            <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2"><img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD</p>
-            <div class="mt-auto pt-8 flex items-center justify-between gap-3">
-              <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$240K<span class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
-              <a href="./brands.html" class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent now</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-        <section class="py-[120px]">
-            <div class="max-w-[1280px] mx-auto w-full">
-                <div class="flex h-[565px] max-[1194px]:block">
-                    <div class="p-[64px] bg-[#343537] max-w-[640px]">
-                        <p class="t3ext-[16px] font-[400] text-[#C1F432]">SELL YOUR CAR</p>
-                        <p class="text-[16px] font-[400] text-[#FFFFFF] mt-[16px]">Sell your car in 24 hours.</p>
-                        <div class="mt-[32px] flex gap-[16px] ">
-                            <p
-                                class="text-[16px] font-[700] text-[#C1F432] py-[7px] px-[15px] rounded-[9999px] border border-2 border-[#C1F432] max-w-[40px] h-[40px]">
-                                1</p>
-                            <div>
-                                <p class="text-[16px] font-[700] text-[#FFFFFF]">Get an Instant Quote</p>
-                                <p class="text-[14px] font-[400] text-[#C4C9AE]">Input your car details and get a
-                                    market-based valuation in seconds.</p>
-                            </div>
-                        </div>
-                        <div class="mt-[32px] flex gap-[16px] ">
-                            <p
-                                class="text-[16px] font-[700] text-[#C1F432] py-[7px] px-[15px] rounded-[9999px] border border-2 border-[#C1F432] max-w-[40px] h-[40px]">
-                                2</p>
-                            <div>
-                                <p class="text-[16px] font-[700] text-[#FFFFFF]">Free Inspection</p>
-                                <p class="text-[14px] font-[400] text-[#C4C9AE]">We come to you. Our specialists conduct
-                                    a rapid 20-point <br>
-                                    diagnostic.</p>
-                            </div>
-                        </div>
-                        <div class="mt-[32px] mb-[48px] flex gap-[16px] ">
-                            <p
-                                class="text-[16px] font-[700] text-[#C1F432] py-[7px] px-[15px] rounded-[9999px] border border-2 border-[#C1F432] max-w-[40px] h-[40px]">
-                                3</p>
-                            <div>
-                                <p class="text-[16px] font-[700] text-[#FFFFFF]">Immediate Payment</p>
-                                <p class="text-[14px] font-[400] text-[#C4C9AE]">Walk away with cash or bank transfer
-                                    once the keys are handed <br>
-                                    over.</p>
-                            </div>
-                        </div>
-                        <button class="py-[16px] px-[32px] rounded-[12px] bg-[#FFFFFF]">
-                            <a class="text-[16px] font-[700] text-[#121315]" href="">Start Appraisal</a>
-                        </button>
-                    </div>
-                    <img class=" max-[655px]:max-w-[360px]" src="./kalit.svg" alt="">
+            <div class="item">
+              <div
+                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-2.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                <div class="w-full" id="kategora-card-2">
+                  <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">SUV</p>
+                  <p class="text-[16px] font-[400] text-[#C4C9AE]">38 Vehicles Available</p>
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="item">
+              <div
+                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-3.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                <div class="w-full" id="kategora-card-3">
+                  <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">Sedan</p>
+                  <p class="text-[16px] font-[400] text-[#C4C9AE]">24 Vehicles Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div
+                class="h-[360px] pl-[20px] rounded-[24px] w-full bg-[url(./sec-catigora/card-4.svg)] bg-no-repeat bg-center bg-cover mx-auto">
+                <div class="w-full" id="kategora-card-4">
+                  <p class="text-[16px] pt-[295px] font-[400] text-[#ffffff]">Electric</p>
+                  <p class="text-[16px] font-[400] text-[#C4C9AE]">18 Vehicles Available</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   
 
-           <section class="deals-section" id="deals-section" aria-labelledby="deals-heading">
+    <section class="bg-[#151618] py-10">
+      <div class="max-w-[1280px] w-full mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Sarlavha va tablar -->
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-8">
+          <div>
+            <p class="text-[16px] font-[400] text-[#C1F432] mb-[8px]">EXQUISITE SELECTION</p>
+            <p class="text-[16px] font-[400] text-white">The Premium Fleet</p>
+          </div>
+
+          <ul class="flex flex-wrap gap-2 text-white text-sm font-medium" id="default-tab"
+            data-tabs-toggle="#default-tab-content" role="tablist">
+            <li role="presentation">
+              <button
+                class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
+                id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
+                aria-selected="true">All</button>
+            </li>
+            <li role="presentation">
+              <button
+                class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
+                id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+                aria-selected="false">Hypercars</button>
+            </li>
+            <li role="presentation">
+              <button
+                class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
+                id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
+                aria-selected="false">Convertibles</button>
+            </li>
+            <li role="presentation">
+              <button
+                class="px-6 py-2 rounded-full border-2 border-transparent focus:border-[#C1F432] focus:outline-none text-xs sm:text-sm hover:text-[#C1F432] transition-colors"
+                id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts"
+                aria-selected="false">Daily Luxury</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab kontent -->
+        <div id="default-tab-content">
+
+          <!-- ALL -->
+          <div class="hidden rounded-base" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" src="./teb-cards/porsche-card1.svg"
+                  alt="Porsche 911 Turbo S">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Porsche 911 Turbo S</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <img src="./teb-cards/mini1.svg" alt="">
+                  <img src="./teb-cards/mini2.svg" alt="">
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">auto
+                </p>
+
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$950<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://www.slashgear.com/img/gallery/10-best-hypercars-of-all-time/l-intro-1670272058.jpg"
+                  alt="Ferrari LaFerrari">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Ferrari LaFerrari</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">350+km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">963hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$1.5K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://hips.hearstapps.com/hmg-prod/images/2025-ford-mustang-60th-anniversary-exterior-66227932bb88e.jpg?crop=0.7287272727272727xw:1xh;center,top"
+                  alt="Ford Mustang GT">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Ford Mustang GT</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">280km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">486hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$870<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://www.topgear.com/sites/default/files/news-listicle/image/row09068.jpg"
+                  alt="Bentley Continental GT">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Bentley Continental GT</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">333km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">635hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$990<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- HYPERCARS -->
+          <div class="hidden rounded-base" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://www.slashgear.com/img/gallery/10-best-hypercars-of-all-time/l-intro-1670272058.jpg"
+                  alt="Ferrari LaFerrari">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Ferrari LaFerrari</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">350+km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">963hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$950<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIKRMkjuf97ReFURnxrCdkLFzFC4wWJP2fZyzcsIlLimKx-Fpesrw2wLY&s=10"
+                  alt="Bugatti Divo">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Bugatti Divo</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">380km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">1500hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$1.5B<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://static.overfuel.com/dealers/hypercars/image/2024McLaren.webp?w=1080&q=80"
+                  alt="McLaren 720S">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">McLaren 720S</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">341km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">720hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$330K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://static.wixstatic.com/media/0f600c_c32dc7f6cd1c4578a268e1e31d83434f~mv2.jpg/v1/fill/w_568,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0f600c_c32dc7f6cd1c4578a268e1e31d83434f~mv2.jpg"
+                  alt="Bugatti Chiron">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Bugatti Chiron</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">440km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">1600hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$6.5B<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CONVERTIBLES -->
+          <div class="hidden rounded-base" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://hips.hearstapps.com/hmg-prod/images/2025-ford-mustang-60th-anniversary-exterior-66227932bb88e.jpg?crop=0.7287272727272727xw:1xh;center,top"
+                  alt="Ford Mustang GT">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Ford Mustang GT</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">280km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">486hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$950<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://us-west-2.graphassets.com/ALxjZdtQIQOudrzeO6hSgz/sc0bMNscS0qM7zxdM5CY" alt="911 Carrera">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">911 Carrera</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">305km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">450hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$170K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Euy6SOuYqdorZG84zvV4QHgAwA3tw25VJlX5nxw6QHpXdaJ9DPm5xy3J&s=10"
+                  alt="Bentley Continental GTC">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Bentley Continental GTC</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">308km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">782hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$950<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-stingray-convertible-3lt-z51-298-1665496970.jpg?crop=0.590xw:0.497xh;0.0816xw,0.487xh"
+                  alt="Chevrolet Corvette">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Chevrolet Corvette</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">312km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">495hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">RWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$95K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- DAILY LUXURY -->
+          <div class="hidden rounded-base" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-items-center">
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://www.topgear.com/sites/default/files/news-listicle/image/row09068.jpg"
+                  alt="Bentley Continental GT">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Bentley Continental GT</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">333km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">635hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-2xl sm:text-3xl font-bold text-[#C1F432]">$990<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://cdn.prod.website-files.com/655b8b39a148405721d506a6/68e785f7df7f12f4a1f93070_optimized_68e7843caf800.CGT-Speed.jpeg"
+                  alt="Bentley GT">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Bentley GT</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">335km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">782hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$365K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://www.whatcar.com/sites/whatcar/files/styles/webp/public/image/mercedes-g-class-front-right-driving-main.jpg.webp?itok=WPEu-FiI"
+                  alt="G-Class G500">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">G-Class G500</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">210km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">330hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$160K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+              <div
+                class="w-full max-w-[270px] flex flex-col border border-[#262826] shadow-md shadow-black/30 bg-[#121315] rounded-[20px] p-4">
+                <img class="w-full h-[177px] object-cover rounded-[16px] mb-3" loading="lazy" decoding="async"
+                  src="https://www.stratstone.com/-/media/stratstone/blog/2021/best-luxury-cars/mercedes-maybach-gls-1920x774px.jpg?rev=47acbfb625ef448b9ba7833c59900aba"
+                  alt="Maybach GLS 600">
+                <div class="flex justify-between items-center">
+                  <p class="text-lg font-normal text-white">Maybach GLS 600</p>
+                  <img src="./Icon (11).svg" alt="">
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./tezlik.svg" class="inline-block pr-1 pb-0.5" alt="">250km/h</p>
+                  <p class="text-xs text-[#C4C9AE] border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md"><img
+                      src="./chaqmoq.svg" class="inline-block pr-1 pb-0.5" alt="">550hp</p>
+                </div>
+                <p class="text-xs text-[#C4C9AE] w-fit border border-[#262826] py-1 px-2 bg-[#1F2022] rounded-md mt-2">
+                  <img src="./position.svg" class="inline-block pr-1 pb-0.5" alt="">AWD
+                </p>
+                <div class="mt-auto pt-8 flex items-center justify-between gap-3">
+                  <p class="text-xl sm:text-2xl font-bold text-[#C1F432]">$240K<span
+                      class="text-sm font-normal text-[#C4C9AE]">/day</span></p>
+                  <a href="./brands.html"
+                    class="bg-[#C1F432] py-2.5 px-5 rounded-xl text-[#151F00] font-bold text-sm whitespace-nowrap">Rent
+                    now</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[120px]">
+      <div class="max-w-[1280px] mx-auto w-full">
+        <div class="flex h-[565px] max-[1194px]:block">
+          <div class="p-[64px] bg-[#343537] max-w-[640px]">
+            <p class="t3ext-[16px] font-[400] text-[#C1F432]">SELL YOUR CAR</p>
+            <p class="text-[16px] font-[400] text-[#FFFFFF] mt-[16px]">Sell your car in 24 hours.</p>
+            <div class="mt-[32px] flex gap-[16px] ">
+              <p
+                class="text-[16px] font-[700] text-[#C1F432] py-[7px] px-[15px] rounded-[9999px] border border-2 border-[#C1F432] max-w-[40px] h-[40px]">
+                1</p>
+              <div>
+                <p class="text-[16px] font-[700] text-[#FFFFFF]">Get an Instant Quote</p>
+                <p class="text-[14px] font-[400] text-[#C4C9AE]">Input your car details and get a
+                  market-based valuation in seconds.</p>
+              </div>
+            </div>
+            <div class="mt-[32px] flex gap-[16px] ">
+              <p
+                class="text-[16px] font-[700] text-[#C1F432] py-[7px] px-[15px] rounded-[9999px] border border-2 border-[#C1F432] max-w-[40px] h-[40px]">
+                2</p>
+              <div>
+                <p class="text-[16px] font-[700] text-[#FFFFFF]">Free Inspection</p>
+                <p class="text-[14px] font-[400] text-[#C4C9AE]">We come to you. Our specialists conduct
+                  a rapid 20-point <br>
+                  diagnostic.</p>
+              </div>
+            </div>
+            <div class="mt-[32px] mb-[48px] flex gap-[16px] ">
+              <p
+                class="text-[16px] font-[700] text-[#C1F432] py-[7px] px-[15px] rounded-[9999px] border border-2 border-[#C1F432] max-w-[40px] h-[40px]">
+                3</p>
+              <div>
+                <p class="text-[16px] font-[700] text-[#FFFFFF]">Immediate Payment</p>
+                <p class="text-[14px] font-[400] text-[#C4C9AE]">Walk away with cash or bank transfer
+                  once the keys are handed <br>
+                  over.</p>
+              </div>
+            </div>
+            <button class="py-[16px] px-[32px] rounded-[12px] bg-[#FFFFFF]">
+              <a class="text-[16px] font-[700] text-[#121315]" href="">Start Appraisal</a>
+            </button>
+          </div>
+          <img class=" max-[655px]:max-w-[360px]" src="./kalit.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="deals-section" id="deals-section" aria-labelledby="deals-heading">
   <style>
     #deals-section {
       --bg-void: #0b0d0d;
@@ -1408,11 +1510,10 @@ section, footer { contain: layout paint; }
       --text-mid: #aeb5ad;
       --text-lo: #707872;
       --ember: #c1f432;
-
-      font-family: 'DS-Body', 'Inter', system-ui, -apple-system, sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       background:
-        radial-gradient(ellipse 900px 500px at 12% -10%, rgba(193,244,50,0.08), transparent 60%),
-        radial-gradient(ellipse 700px 500px at 100% 10%, rgba(193,244,50,0.045), transparent 55%),
+        radial-gradient(ellipse 900px 500px at 12% -10%, rgba(193, 244, 50, 0.08), transparent 60%),
+        radial-gradient(ellipse 700px 500px at 100% 10%, rgba(193, 244, 50, 0.045), transparent 55%),
         var(--bg-void);
       color: var(--text-hi);
       padding: clamp(48px, 7vw, 96px) clamp(20px, 4vw, 48px);
@@ -1421,30 +1522,26 @@ section, footer { contain: layout paint; }
       position: relative;
       overflow: hidden;
     }
-
-    #deals-section *, #deals-section *::before, #deals-section *::after { box-sizing: border-box; }
-
-    @font-face {
-      font-family: 'DS-Display';
-      src: local('Georgia');
+    #deals-section *,
+    #deals-section *::before,
+    #deals-section *::after {
+      box-sizing: border-box;
     }
-
     #deals-section .ds-inner {
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
       z-index: 2;
     }
-
-    /* faint grille texture line across the top, automotive nod */
     #deals-section .ds-inner::before {
       content: '';
       position: absolute;
-      top: -24px; left: 0; right: 0;
+      top: -24px;
+      left: 0;
+      right: 0;
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--hairline) 20%, var(--hairline) 80%, transparent);
     }
-
     #deals-section .ds-header {
       display: flex;
       flex-wrap: wrap;
@@ -1453,7 +1550,6 @@ section, footer { contain: layout paint; }
       gap: 24px;
       margin-bottom: clamp(32px, 5vw, 56px);
     }
-
     #deals-section .ds-eyebrow {
       display: flex;
       align-items: center;
@@ -1465,7 +1561,6 @@ section, footer { contain: layout paint; }
       font-weight: 600;
       margin-bottom: 14px;
     }
-
     #deals-section .ds-eyebrow::before {
       content: '';
       width: 22px;
@@ -1473,18 +1568,15 @@ section, footer { contain: layout paint; }
       background: var(--gold);
       display: inline-block;
     }
-
     #deals-section h2#deals-heading {
-      font-family: 'DS-Display', Georgia, 'Times New Roman', serif;
-      font-weight: 500;
-      font-style: italic;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-weight: 700;
       font-size: clamp(34px, 4.6vw, 56px);
       line-height: 1.02;
       margin: 0 0 10px 0;
       letter-spacing: -0.01em;
       color: var(--text-hi);
     }
-
     #deals-section .ds-sub {
       color: var(--text-mid);
       font-size: 15px;
@@ -1492,7 +1584,6 @@ section, footer { contain: layout paint; }
       line-height: 1.5;
       margin: 0;
     }
-
     #deals-section .ds-countdown-master {
       display: inline-flex;
       align-items: center;
@@ -1503,27 +1594,25 @@ section, footer { contain: layout paint; }
       border-radius: 999px;
       white-space: nowrap;
     }
-
     #deals-section .ds-countdown-master .ds-dot {
-      width: 7px; height: 7px; border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
       background: var(--ember);
-      box-shadow: 0 0 0 0 rgba(193,244,50,0.45);
+      box-shadow: 0 0 0 0 rgba(193, 244, 50, 0.45);
       animation: ds-pulse 1.6s ease-out infinite;
     }
-
     @keyframes ds-pulse {
-      0% { box-shadow: 0 0 0 0 rgba(193,244,50,0.45); }
-      70% { box-shadow: 0 0 0 8px rgba(193,244,50,0); }
-      100% { box-shadow: 0 0 0 0 rgba(193,244,50,0); }
+      0% { box-shadow: 0 0 0 0 rgba(193, 244, 50, 0.45); }
+      70% { box-shadow: 0 0 0 8px rgba(193, 244, 50, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(193, 244, 50, 0); }
     }
-
     #deals-section .ds-countdown-master .ds-label {
       font-size: 11px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--text-mid);
     }
-
     #deals-section .ds-countdown-master .ds-time {
       font-variant-numeric: tabular-nums;
       font-weight: 700;
@@ -1531,21 +1620,17 @@ section, footer { contain: layout paint; }
       color: var(--gold-hi);
       letter-spacing: 0.03em;
     }
-
-    /* grid */
     #deals-section .ds-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: clamp(16px, 2vw, 24px);
     }
-
     @media (max-width: 980px) {
       #deals-section .ds-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 560px) {
       #deals-section .ds-grid { grid-template-columns: 1fr; }
     }
-
     #deals-section .ds-card {
       background: linear-gradient(180deg, var(--bg-card-hi) 0%, var(--bg-card) 100%);
       border: 1px solid var(--hairline);
@@ -1553,52 +1638,46 @@ section, footer { contain: layout paint; }
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 0.45s cubic-bezier(.16,.8,.24,1), border-color 0.45s ease, box-shadow 0.45s ease;
+      transition: transform 0.45s cubic-bezier(.16, .8, .24, 1), border-color 0.45s ease, box-shadow 0.45s ease;
     }
-
     #deals-section .ds-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(193,244,50,0.45);
-      box-shadow: 0 24px 48px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(193,244,50,0.08);
+      border-color: rgba(193, 244, 50, 0.45);
+      box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(193, 244, 50, 0.08);
     }
-
     #deals-section .ds-media {
       position: relative;
       aspect-ratio: 4 / 3;
       overflow: hidden;
       background: #000;
     }
-
     #deals-section .ds-media img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.7s cubic-bezier(.16,.8,.24,1), filter 0.7s ease;
+      transition: transform 0.7s cubic-bezier(.16, .8, .24, 1), filter 0.7s ease;
       filter: saturate(1.02) contrast(1.03);
     }
-
-    #deals-section .ds-card:hover .ds-media img {
-      transform: scale(1.08);
-    }
-
+    #deals-section .ds-card:hover .ds-media img { transform: scale(1.08); }
     #deals-section .ds-media::after {
       content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0.05) 40%, rgba(10,9,8,0.85) 100%);
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 40%, rgba(10, 9, 8, 0.85) 100%);
       pointer-events: none;
     }
-
     #deals-section .ds-badge-timer {
       position: absolute;
-      top: 12px; left: 12px;
+      top: 12px;
+      left: 12px;
       z-index: 3;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(10,9,8,0.72);
+      background: rgba(10, 9, 8, 0.72);
       backdrop-filter: blur(6px);
-      border: 1px solid rgba(193,244,50,0.35);
+      border: 1px solid rgba(193, 244, 50, 0.35);
       color: var(--gold-hi);
       font-size: 11.5px;
       font-weight: 700;
@@ -1607,12 +1686,11 @@ section, footer { contain: layout paint; }
       padding: 6px 10px;
       border-radius: 999px;
     }
-
     #deals-section .ds-badge-timer svg { width: 12px; height: 12px; flex-shrink: 0; }
-
     #deals-section .ds-badge-off {
       position: absolute;
-      top: 12px; right: 12px;
+      top: 12px;
+      right: 12px;
       z-index: 3;
       background: var(--ember);
       color: #0b0d0d;
@@ -1622,7 +1700,6 @@ section, footer { contain: layout paint; }
       border-radius: 999px;
       letter-spacing: 0.02em;
     }
-
     #deals-section .ds-body {
       padding: 18px 18px 20px;
       display: flex;
@@ -1630,23 +1707,15 @@ section, footer { contain: layout paint; }
       gap: 12px;
       flex: 1;
     }
-
     #deals-section .ds-name {
-      font-family: 'DS-Display', Georgia, serif;
-      font-style: italic;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-weight: 700;
       font-size: 19px;
-      font-weight: 500;
       color: var(--text-hi);
       margin: 0;
       line-height: 1.2;
     }
-
-    #deals-section .ds-specs {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
+    #deals-section .ds-specs { display: flex; gap: 6px; flex-wrap: wrap; }
     #deals-section .ds-chip {
       font-size: 10.5px;
       color: var(--text-mid);
@@ -1655,7 +1724,6 @@ section, footer { contain: layout paint; }
       border-radius: 6px;
       letter-spacing: 0.02em;
     }
-
     #deals-section .ds-price-row {
       display: flex;
       align-items: baseline;
@@ -1663,26 +1731,9 @@ section, footer { contain: layout paint; }
       margin-top: auto;
       padding-top: 6px;
     }
-
-    #deals-section .ds-price-old {
-      color: var(--text-lo);
-      font-size: 13px;
-      text-decoration: line-through;
-    }
-
-    #deals-section .ds-price {
-      font-size: 26px;
-      font-weight: 800;
-      color: var(--gold-hi);
-      letter-spacing: -0.01em;
-    }
-
-    #deals-section .ds-price-unit {
-      font-size: 12px;
-      color: var(--text-mid);
-      font-weight: 500;
-    }
-
+    #deals-section .ds-price-old { color: var(--text-lo); font-size: 13px; text-decoration: line-through; }
+    #deals-section .ds-price { font-size: 26px; font-weight: 800; color: var(--gold-hi); letter-spacing: -0.01em; }
+    #deals-section .ds-price-unit { font-size: 12px; color: var(--text-mid); font-weight: 500; }
     #deals-section .ds-cta {
       appearance: none;
       border: none;
@@ -1697,7 +1748,6 @@ section, footer { contain: layout paint; }
       letter-spacing: 0.02em;
       transition: background 0.25s ease, transform 0.2s ease;
     }
-
     #deals-section .ds-cta:hover { background: #fff; }
     #deals-section .ds-cta:active { transform: scale(0.98); }
     #deals-section .ds-cta:focus-visible,
@@ -1706,12 +1756,10 @@ section, footer { contain: layout paint; }
       outline: 2px solid var(--gold-hi);
       outline-offset: 2px;
     }
-
-    /* modal */
     #deals-section .ds-modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(6,5,4,0.72);
+      background: rgba(6, 5, 4, 0.72);
       backdrop-filter: blur(4px);
       display: flex;
       align-items: center;
@@ -1722,12 +1770,7 @@ section, footer { contain: layout paint; }
       transition: opacity 0.3s ease;
       padding: 20px;
     }
-
-    #deals-section .ds-modal-overlay.is-open {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
+    #deals-section .ds-modal-overlay.is-open { opacity: 1; pointer-events: auto; }
     #deals-section .ds-modal {
       width: 100%;
       max-width: 380px;
@@ -1737,29 +1780,28 @@ section, footer { contain: layout paint; }
       padding: 28px 26px 26px;
       position: relative;
       transform: translateY(14px) scale(0.98);
-      transition: transform 0.35s cubic-bezier(.16,.8,.24,1);
-      box-shadow: 0 30px 70px -20px rgba(0,0,0,0.7);
+      transition: transform 0.35s cubic-bezier(.16, .8, .24, 1);
+      box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.7);
     }
-
-    #deals-section .ds-modal-overlay.is-open .ds-modal {
-      transform: translateY(0) scale(1);
-    }
-
+    #deals-section .ds-modal-overlay.is-open .ds-modal { transform: translateY(0) scale(1); }
     #deals-section .ds-close {
       position: absolute;
-      top: 14px; right: 14px;
-      width: 30px; height: 30px;
+      top: 14px;
+      right: 14px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       border: 1px solid var(--hairline);
       background: transparent;
       color: var(--text-mid);
       cursor: pointer;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 15px;
       line-height: 1;
     }
     #deals-section .ds-close:hover { color: var(--text-hi); border-color: var(--gold); }
-
     #deals-section .ds-modal-eyebrow {
       font-size: 10.5px;
       letter-spacing: 0.22em;
@@ -1768,27 +1810,15 @@ section, footer { contain: layout paint; }
       font-weight: 700;
       margin-bottom: 8px;
     }
-
     #deals-section .ds-modal h3 {
-      font-family: 'DS-Display', Georgia, serif;
-      font-style: italic;
-      font-weight: 500;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-weight: 700;
       font-size: 26px;
       margin: 0 0 6px;
       color: var(--text-hi);
     }
-
-    #deals-section .ds-modal p.ds-modal-sub {
-      color: var(--text-mid);
-      font-size: 13px;
-      margin: 0 0 22px;
-      line-height: 1.5;
-    }
-
-    #deals-section .ds-field {
-      margin-bottom: 14px;
-    }
-
+    #deals-section .ds-modal p.ds-modal-sub { color: var(--text-mid); font-size: 13px; margin: 0 0 22px; line-height: 1.5; }
+    #deals-section .ds-field { margin-bottom: 14px; }
     #deals-section .ds-field label {
       display: block;
       font-size: 11px;
@@ -1797,10 +1827,9 @@ section, footer { contain: layout paint; }
       color: var(--text-mid);
       margin-bottom: 6px;
     }
-
     #deals-section .ds-field input {
       width: 100%;
-      background: rgba(0,0,0,0.28);
+      background: rgba(0, 0, 0, 0.28);
       border: 1px solid var(--hairline);
       border-radius: 9px;
       padding: 12px 13px;
@@ -1809,12 +1838,7 @@ section, footer { contain: layout paint; }
       font-family: inherit;
       transition: border-color 0.2s ease;
     }
-
-    #deals-section .ds-field input:focus {
-      outline: none;
-      border-color: var(--gold);
-    }
-
+    #deals-section .ds-field input:focus { outline: none; border-color: var(--gold); }
     #deals-section .ds-modal-submit {
       width: 100%;
       appearance: none;
@@ -1830,18 +1854,13 @@ section, footer { contain: layout paint; }
       transition: background 0.25s ease;
     }
     #deals-section .ds-modal-submit:hover { background: #fff; }
-
-    #deals-section .ds-modal-foot {
-      text-align: center;
-      font-size: 12.5px;
-      color: var(--text-lo);
-      margin-top: 16px;
-    }
+    #deals-section .ds-modal-foot { text-align: center; font-size: 12.5px; color: var(--text-lo); margin-top: 16px; }
     #deals-section .ds-modal-foot a { color: var(--gold); text-decoration: none; }
     #deals-section .ds-modal-foot a:hover { text-decoration: underline; }
-
     @media (prefers-reduced-motion: reduce) {
-      #deals-section *, #deals-section *::before, #deals-section *::after {
+      #deals-section *,
+      #deals-section *::before,
+      #deals-section *::after {
         animation-duration: 0.001ms !important;
         transition-duration: 0.001ms !important;
       }
@@ -1853,7 +1872,8 @@ section, footer { contain: layout paint; }
       <div>
         <div class="ds-eyebrow">Limited rotation</div>
         <h2 id="deals-heading">Deals of the&nbsp;Week</h2>
-        <p class="ds-sub">Four cars pulled from the fleet at a rate that won't hold past the timer. Once it's gone, it's back to standard pricing.</p>
+        <p class="ds-sub">Four cars pulled from the fleet at a rate that won't hold past the timer. Once it's gone,
+          it's back to standard pricing.</p>
       </div>
       <div class="ds-countdown-master">
         <span class="ds-dot" aria-hidden="true"></span>
@@ -1863,15 +1883,19 @@ section, footer { contain: layout paint; }
     </div>
 
     <div class="ds-grid">
-
       <article class="ds-card">
         <div class="ds-media">
           <span class="ds-badge-timer" data-timer data-duration="86393">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="13" r="8" />
+              <path d="M12 9v4l3 2" />
+              <path d="M9 2h6" />
+            </svg>
             <span data-time>23:59:53</span>
           </span>
           <span class="ds-badge-off">-22%</span>
-          <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/huracan/evo/2022/10_06/over/hura_evo_over_01_m.jpg" alt="Lamborghini Huracán EVO parked outside a modern villa at dusk" loading="lazy">
+          <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/huracan/evo/2022/10_06/over/hura_evo_over_01_m.jpg"
+            alt="Lamborghini Huracán EVO parked outside a modern villa at dusk" loading="lazy">
         </div>
         <div class="ds-body">
           <h3 class="ds-name">Lamborghini Huracán EVO</h3>
@@ -1885,18 +1909,25 @@ section, footer { contain: layout paint; }
             <span class="ds-price">$2,125</span>
             <span class="ds-price-unit">/ day</span>
           </div>
-          <button type="button" class="ds-cta" data-open-modal data-car="Lamborghini Huracán EVO">Claim Offer</button>
+          <button type="button" class="ds-cta" data-car="Lamborghini Huracán EVO">
+            <a href="./buy.html">Claim Offer</a>
+          </button>
         </div>
       </article>
 
       <article class="ds-card">
         <div class="ds-media">
           <span class="ds-badge-timer" data-timer data-duration="41050">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="13" r="8" />
+              <path d="M12 9v4l3 2" />
+              <path d="M9 2h6" />
+            </svg>
             <span data-time>11:24:10</span>
           </span>
           <span class="ds-badge-off">-18%</span>
-          <img src="https://hips.hearstapps.com/hmg-prod/images/2026-rolls-royce-phantom-pr-123-690cd211484fb.jpg?crop=0.553xw:0.554xh;0.106xw,0.344xh&resize=1200:*" alt="Rolls-Royce Phantom driving through a European cobblestone street" loading="lazy">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/2026-rolls-royce-phantom-pr-123-690cd211484fb.jpg?crop=0.553xw:0.554xh;0.106xw,0.344xh&resize=1200:*"
+            alt="Rolls-Royce Phantom driving through a European cobblestone street" loading="lazy">
         </div>
         <div class="ds-body">
           <h3 class="ds-name">Rolls-Royce Phantom</h3>
@@ -1910,18 +1941,25 @@ section, footer { contain: layout paint; }
             <span class="ds-price">$2,450</span>
             <span class="ds-price-unit">/ day</span>
           </div>
-          <button type="button" class="ds-cta" data-open-modal data-car="Rolls-Royce Phantom">Claim Offer</button>
+          <button type="button" class="ds-cta" data-car="Rolls-Royce Phantom">
+            <a href="./buy.html">Claim Offer</a>
+          </button>
         </div>
       </article>
 
       <article class="ds-card">
         <div class="ds-media">
           <span class="ds-badge-timer" data-timer data-duration="28113">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="13" r="8" />
+              <path d="M12 9v4l3 2" />
+              <path d="M9 2h6" />
+            </svg>
             <span data-time>07:48:33</span>
           </span>
           <span class="ds-badge-off">-15%</span>
-          <img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/15q3/660572/2016-ferrari-488-spider-first-drive-review-car-and-driver-photo-662386-s-original.jpg?fill=1:1&resize=1200:*" alt="Ferrari 488 Spider on a coastal road" loading="lazy">
+          <img src="https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/15q3/660572/2016-ferrari-488-spider-first-drive-review-car-and-driver-photo-662386-s-original.jpg?fill=1:1&resize=1200:*"
+            alt="Ferrari 488 Spider on a coastal road" loading="lazy">
         </div>
         <div class="ds-body">
           <h3 class="ds-name">Ferrari 488 Spider</h3>
@@ -1935,18 +1973,25 @@ section, footer { contain: layout paint; }
             <span class="ds-price">$2,890</span>
             <span class="ds-price-unit">/ day</span>
           </div>
-          <button type="button" class="ds-cta" data-open-modal data-car="Ferrari 488 Spider">Claim Offer</button>
+          <button type="button" class="ds-cta" data-car="Ferrari 488 Spider">
+            <a href="./buy.html">Claim Offer</a>
+          </button>
         </div>
       </article>
 
       <article class="ds-card">
         <div class="ds-media">
           <span class="ds-badge-timer" data-timer data-duration="54139">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M9 2h6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="13" r="8" />
+              <path d="M12 9v4l3 2" />
+              <path d="M9 2h6" />
+            </svg>
             <span data-time>15:02:19</span>
           </span>
           <span class="ds-badge-off">-20%</span>
-          <img src="https://www.bentleymotors.com/content/dam/bm/websites/bmcom/bentleymotors-com/models/27my/Main%20Homepage%20GT%20Speed.jpg/_jcr_content/renditions/original.image_file.1286.551.file/Main%20Homepage%20GT%20Speed.jpg" alt="Bentley Continental GT parked in front of a city skyline" loading="lazy">
+          <img src="https://www.bentleymotors.com/content/dam/bm/websites/bmcom/bentleymotors-com/models/27my/Main%20Homepage%20GT%20Speed.jpg/_jcr_content/renditions/original.image_file.1286.551.file/Main%20Homepage%20GT%20Speed.jpg"
+            alt="Bentley Continental GT parked in front of a city skyline" loading="lazy">
         </div>
         <div class="ds-body">
           <h3 class="ds-name">Bentley Continental GT</h3>
@@ -1960,10 +2005,11 @@ section, footer { contain: layout paint; }
             <span class="ds-price">$1,780</span>
             <span class="ds-price-unit">/ day</span>
           </div>
-          <button type="button" class="ds-cta" data-open-modal data-car="Bentley Continental GT">Claim Offer</button>
+          <button type="button" class="ds-cta" data-car="Bentley Continental GT">
+            <a href="./buy.html">Claim Offer</a>
+          </button>
         </div>
       </article>
-
     </div>
   </div>
 
@@ -1993,7 +2039,6 @@ section, footer { contain: layout paint; }
     (function () {
       var root = document.getElementById('deals-section');
       if (!root) return;
-
       function fmt(totalSeconds) {
         totalSeconds = Math.max(0, Math.floor(totalSeconds));
         var h = Math.floor(totalSeconds / 3600);
@@ -2002,41 +2047,31 @@ section, footer { contain: layout paint; }
         function pad(n) { return String(n).padStart(2, '0'); }
         return pad(h) + ':' + pad(m) + ':' + pad(s);
       }
-
       var now = Date.now();
-
       var masterEl = root.querySelector('[data-master-timer]');
       var masterEnd = now + parseInt(masterEl.getAttribute('data-duration'), 10) * 1000;
-
       var timers = Array.prototype.map.call(root.querySelectorAll('[data-timer]'), function (el) {
         var duration = parseInt(el.getAttribute('data-duration'), 10);
         return { el: el, timeEl: el.querySelector('[data-time]'), duration: duration, end: now + duration * 1000 };
       });
-
       function tick() {
         var t = Date.now();
-
         var masterRemaining = (masterEnd - t) / 1000;
         if (masterRemaining <= 0) { masterEnd = t + 86400 * 1000; masterRemaining = 86400; }
         masterEl.textContent = fmt(masterRemaining);
-
         timers.forEach(function (item) {
           var remaining = (item.end - t) / 1000;
           if (remaining <= 0) { item.end = t + item.duration * 1000; remaining = item.duration; }
           item.timeEl.textContent = fmt(remaining);
         });
       }
-
       tick();
       setInterval(tick, 1000);
-
-      // modal
       var overlay = root.querySelector('[data-modal-overlay]');
       var closeBtn = root.querySelector('[data-close-modal]');
       var subEl = root.querySelector('[data-modal-sub]');
       var form = root.querySelector('[data-modal-form]');
       var lastFocused = null;
-
       function openModal(carName) {
         lastFocused = document.activeElement;
         if (carName) {
@@ -2047,34 +2082,27 @@ section, footer { contain: layout paint; }
         if (emailInput) emailInput.focus();
         document.addEventListener('keydown', onKeydown);
       }
-
       function closeModal() {
         overlay.classList.remove('is-open');
         document.removeEventListener('keydown', onKeydown);
         if (lastFocused) lastFocused.focus();
       }
-
       function onKeydown(e) {
         if (e.key === 'Escape') closeModal();
       }
-
       Array.prototype.forEach.call(root.querySelectorAll('[data-open-modal]'), function (btn) {
         btn.addEventListener('click', function () {
           openModal(btn.getAttribute('data-car'));
         });
       });
-
       closeBtn.addEventListener('click', closeModal);
-
       overlay.addEventListener('click', function (e) {
         if (e.target === overlay) closeModal();
       });
-
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         closeModal();
       });
-
       Array.prototype.forEach.call(root.querySelectorAll('[data-noop]'), function (a) {
         a.addEventListener('click', function (e) { e.preventDefault(); });
       });
@@ -2082,192 +2110,197 @@ section, footer { contain: layout paint; }
   </script>
 </section>
 
-        <section class="py-16 sm:py-20 lg:py-[120px]">
-  <div class="max-w-[1280px] mx-auto w-full px-6 sm:px-8 lg:px-4">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
+    <section class="py-16 sm:py-20 lg:py-[120px]">
+      <div class="max-w-[1280px] mx-auto w-full px-6 sm:px-8 lg:px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 justify-items-center">
 
-      <div class="max-w-[270px] w-full py-4">
-        <img src="./coments/card-1.svg" class="max-w-[64px] mx-auto" alt="">
-        <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">Total Assurance</p>
-        <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
-          Comprehensive insurance and 24/7 roadside assistance included with every rental.
-        </p>
-      </div>
+          <div class="max-w-[270px] w-full py-4">
+            <img src="./coments/card-1.svg" class="max-w-[64px] mx-auto" alt="">
+            <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">Total Assurance</p>
+            <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
+              Comprehensive insurance and 24/7 roadside assistance included with every rental.
+            </p>
+          </div>
 
-      <div class="max-w-[270px] w-full py-4">
-        <img src="./coments/card-2.svg" class="max-w-[64px] mx-auto" alt="">
-        <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">Pristine Fleet</p>
-        <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
-          Every vehicle undergoes a 150-point inspection and professional detailing before delivery.
-        </p>
-      </div>
+          <div class="max-w-[270px] w-full py-4">
+            <img src="./coments/card-2.svg" class="max-w-[64px] mx-auto" alt="">
+            <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">Pristine Fleet</p>
+            <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
+              Every vehicle undergoes a 150-point inspection and professional detailing before delivery.
+            </p>
+          </div>
 
-      <div class="max-w-[270px] w-full py-4">
-        <img src="./coments/card-3.svg" class="max-w-[64px] mx-auto" alt="">
-        <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">Doorstep Delivery</p>
-        <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
-          We deliver and collect the vehicle anywhere within our service radius for zero friction.
-        </p>
-      </div>
+          <div class="max-w-[270px] w-full py-4">
+            <img src="./coments/card-3.svg" class="max-w-[64px] mx-auto" alt="">
+            <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">Doorstep Delivery</p>
+            <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
+              We deliver and collect the vehicle anywhere within our service radius for zero friction.
+            </p>
+          </div>
 
-      <div class="max-w-[270px] w-full py-4">
-        <img src="./coments/card-4.svg" class="max-w-[64px] mx-auto" alt="">
-        <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">No Hidden Fees</p>
-        <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
-          Transparent pricing. What you see is exactly what you pay. No surprises at checkout.
-        </p>
-      </div>
+          <div class="max-w-[270px] w-full py-4">
+            <img src="./coments/card-4.svg" class="max-w-[64px] mx-auto" alt="">
+            <p class="text-xl sm:text-[22px] font-normal text-center text-white py-4">No Hidden Fees</p>
+            <p class="max-w-[270px] mx-auto text-center text-sm font-normal text-[#C4C9AE]">
+              Transparent pricing. What you see is exactly what you pay. No surprises at checkout.
+            </p>
+          </div>
 
-    </div>
-  </div>
-</section>
-
-       <section class="bg-[#1B1C1E] py-16 sm:py-20 lg:py-[120px]">
-  <div class="max-w-[1280px] mx-auto w-full px-6 sm:px-8 lg:px-4">
-
-    <!-- STATISTIKA -->
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 lg:gap-x-8 justify-items-center">
-      <div class="w-full max-w-[270px] text-center">
-        <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">98%</p>
-        <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Retention Rate</p>
-      </div>
-      <div class="w-full max-w-[270px] text-center">
-        <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">12K+</p>
-        <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Annual Bookings</p>
-      </div>
-      <div class="w-full max-w-[270px] text-center">
-        <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">5.0</p>
-        <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Trustpilot Score</p>
-      </div>
-      <div class="w-full max-w-[270px] text-center">
-        <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">24h</p>
-        <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Customer Support</p>
-      </div>
-    </div>
-
-    <!-- TESTIMONIALS -->
-    <div class="py-16 sm:py-20 grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center">
-
-      <div class="card bg-[#121315] w-full max-w-[368px] rounded-[24px] p-6 sm:p-8">
-        <div class="flex justify-between items-center gap-4">
-          <p class="text-base sm:text-lg">⭐⭐⭐⭐⭐</p>
-          <p class="text-[#35401B] font-bold text-2xl sm:text-[25px]">99</p>
         </div>
-        <p class="text-white text-sm sm:text-base font-normal mt-4">
-          "Veloce completely redefined my expectations for luxury rentals. The delivery was seamless, and the car was in showroom condition. Unbeatable service."
-        </p>
-        <div class="flex gap-4 items-center mt-4 pt-4">
-          <img class="w-12 h-12 shrink-0 object-cover rounded-full bg-gray-500"
-               src="https://www.mckinsey.com/~/media/mckinsey/our%20people/michel%20van%20hoey/michel_van_hoey_896x1080_fc.png?mw=726&car=1:1&cpy=0"
-               alt="" loading="lazy" decoding="async">
-          <div>
-            <p class="text-base font-bold text-white">Julian Thorne</p>
-            <p class="text-[#C4C9AE] font-normal text-xs">Hedge Fund Manager</p>
+      </div>
+    </section>
+
+    <section class="bg-[#1B1C1E] py-16 sm:py-20 lg:py-[120px]">
+      <div class="max-w-[1280px] mx-auto w-full px-6 sm:px-8 lg:px-4">
+
+        <!-- STATISTIKA -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 lg:gap-x-8 justify-items-center">
+          <div class="w-full max-w-[270px] text-center">
+            <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">98%</p>
+            <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Retention Rate</p>
+          </div>
+          <div class="w-full max-w-[270px] text-center">
+            <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">12K+</p>
+            <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Annual Bookings</p>
+          </div>
+          <div class="w-full max-w-[270px] text-center">
+            <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">5.0</p>
+            <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Trustpilot Score</p>
+          </div>
+          <div class="w-full max-w-[270px] text-center">
+            <p class="text-white text-4xl sm:text-5xl lg:text-[56px] font-normal">24h</p>
+            <p class="text-sm sm:text-base font-normal text-[#C4C9AE] mt-2">Customer Support</p>
           </div>
         </div>
-      </div>
 
-      <div class="card bg-[#121315] w-full max-w-[368px] rounded-[24px] p-6 sm:p-8">
-        <div class="flex justify-between items-center gap-4">
-          <p class="text-base sm:text-lg">⭐⭐⭐⭐⭐</p>
-          <p class="text-[#35401B] font-bold text-2xl sm:text-[25px]">99</p>
-        </div>
-        <p class="text-white text-sm sm:text-base font-normal mt-4">
-          "Selling my Ferrari was painless. I received a fair market quote and the payment was in my account before the transport truck left my driveway."
-        </p>
-        <div class="flex gap-4 items-center mt-4 pt-4">
-          <img class="w-12 h-12 shrink-0 object-cover rounded-full bg-gray-500"
-               src="https://worldpodcasts.com/wp-content/uploads/2019/05/WhatsApp-Image-2019-05-20-at-8.25.09-PM.jpeg"
-               alt="" loading="lazy" decoding="async">
-          <div>
-            <p class="text-base font-bold text-white">Sarah Williams</p>
-            <p class="text-[#C4C9AE] font-normal text-xs">Private Collector</p>
+        <!-- TESTIMONIALS -->
+        <div class="py-16 sm:py-20 grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center">
+
+          <div class="card bg-[#121315] w-full max-w-[368px] rounded-[24px] p-6 sm:p-8">
+            <div class="flex justify-between items-center gap-4">
+              <p class="text-base sm:text-lg">⭐⭐⭐⭐⭐</p>
+              <p class="text-[#35401B] font-bold text-2xl sm:text-[25px]">99</p>
+            </div>
+            <p class="text-white text-sm sm:text-base font-normal mt-4">
+              "Veloce completely redefined my expectations for luxury rentals. The delivery was seamless, and the car
+              was in showroom condition. Unbeatable service."
+            </p>
+            <div class="flex gap-4 items-center mt-4 pt-4">
+              <img class="w-12 h-12 shrink-0 object-cover rounded-full bg-gray-500"
+                src="https://www.mckinsey.com/~/media/mckinsey/our%20people/michel%20van%20hoey/michel_van_hoey_896x1080_fc.png?mw=726&car=1:1&cpy=0"
+                alt="" loading="lazy" decoding="async">
+              <div>
+                <p class="text-base font-bold text-white">Julian Thorne</p>
+                <p class="text-[#C4C9AE] font-normal text-xs">Hedge Fund Manager</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="card bg-[#121315] w-full max-w-[368px] rounded-[24px] p-6 sm:p-8">
-        <div class="flex justify-between items-center gap-4">
-          <p class="text-base sm:text-lg">⭐⭐⭐⭐⭐</p>
-          <p class="text-[#35401B] font-bold text-2xl sm:text-[25px]">99</p>
-        </div>
-        <p class="text-white text-sm sm:text-base font-normal mt-4">
-          "The curation of the fleet is what sets them apart. They don't just have luxury cars; they have the absolute best specifications of those cars."
-        </p>
-        <div class="flex gap-4 items-center mt-4 pt-4">
-          <img class="w-12 h-12 shrink-0 object-cover rounded-full bg-gray-500"
-               src="https://www.mckinsey.com/~/media/mckinsey/our%20people/julian%20kirchherr/julian-kirchherr-896x1080-fc.png?mw=726&car=1:1&cpy=0"
-               alt="" loading="lazy" decoding="async">
-          <div>
-            <p class="text-base font-bold text-white">Michael Chen</p>
-            <p class="text-[#C4C9AE] font-normal text-xs">Architect</p>
+          <div class="card bg-[#121315] w-full max-w-[368px] rounded-[24px] p-6 sm:p-8">
+            <div class="flex justify-between items-center gap-4">
+              <p class="text-base sm:text-lg">⭐⭐⭐⭐⭐</p>
+              <p class="text-[#35401B] font-bold text-2xl sm:text-[25px]">99</p>
+            </div>
+            <p class="text-white text-sm sm:text-base font-normal mt-4">
+              "Selling my Ferrari was painless. I received a fair market quote and the payment was in my account before
+              the transport truck left my driveway."
+            </p>
+            <div class="flex gap-4 items-center mt-4 pt-4">
+              <img class="w-12 h-12 shrink-0 object-cover rounded-full bg-gray-500"
+                src="https://worldpodcasts.com/wp-content/uploads/2019/05/WhatsApp-Image-2019-05-20-at-8.25.09-PM.jpeg"
+                alt="" loading="lazy" decoding="async">
+              <div>
+                <p class="text-base font-bold text-white">Sarah Williams</p>
+                <p class="text-[#C4C9AE] font-normal text-xs">Private Collector</p>
+              </div>
+            </div>
           </div>
+
+          <div class="card bg-[#121315] w-full max-w-[368px] rounded-[24px] p-6 sm:p-8">
+            <div class="flex justify-between items-center gap-4">
+              <p class="text-base sm:text-lg">⭐⭐⭐⭐⭐</p>
+              <p class="text-[#35401B] font-bold text-2xl sm:text-[25px]">99</p>
+            </div>
+            <p class="text-white text-sm sm:text-base font-normal mt-4">
+              "The curation of the fleet is what sets them apart. They don't just have luxury cars; they have the
+              absolute best specifications of those cars."
+            </p>
+            <div class="flex gap-4 items-center mt-4 pt-4">
+              <img class="w-12 h-12 shrink-0 object-cover rounded-full bg-gray-500"
+                src="https://www.mckinsey.com/~/media/mckinsey/our%20people/julian%20kirchherr/julian-kirchherr-896x1080-fc.png?mw=726&car=1:1&cpy=0"
+                alt="" loading="lazy" decoding="async">
+              <div>
+                <p class="text-base font-bold text-white">Michael Chen</p>
+                <p class="text-[#C4C9AE] font-normal text-xs">Architect</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-20 lg:py-[120px]">
+      <div class="max-w-[1280px] mx-auto w-full px-6 sm:px-8 lg:px-4">
+
+        <p class="text-[#C1F432] font-normal text-base">THE JOURNAL</p>
+
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 mt-2">
+          <p class="text-base font-normal text-white">Editorial Insights</p>
+          <p class="text-base font-bold text-[#C1F432] cursor-pointer hover:underline">View All Articles</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-5 justify-items-center mt-12">
+
+          <div class="card w-full max-w-[368px]">
+            <img src="./journal/card-1.jpg" class="w-full aspect-[368/220] object-cover rounded-[24px]" alt=""
+              loading="lazy" decoding="async">
+            <p class="text-base text-[#C4C9AE] font-normal mt-4 mb-2">MARCH 12, 2024</p>
+            <p class="text-2xl font-normal text-white mb-2">The Best Coastal Drives in Southern Europe</p>
+            <p class="text-sm font-normal text-[#C4C9AE]">
+              Discover the hidden gems and winding roads of the Amalfi Coast behind the wheel of a convertible...
+            </p>
+          </div>
+
+          <div class="card w-full max-w-[368px]">
+            <img src="./journal/card-2.jpg" class="w-full aspect-[368/220] object-cover rounded-[24px]" alt=""
+              loading="lazy" decoding="async">
+            <p class="text-base text-[#C4C9AE] font-normal mt-4 mb-2">FEBRUARY 28, 2024</p>
+            <p class="text-2xl font-normal text-white mb-2">The Evolution of Hybrid Performance</p>
+            <p class="text-sm font-normal text-[#C4C9AE]">
+              Exploring how electric assistance is pushing the boundaries of traditional internal combustion engines...
+            </p>
+          </div>
+
+          <div class="card w-full max-w-[368px]">
+            <img src="./journal/card-3.jpg" class="w-full aspect-[368/220] object-cover rounded-[24px]" alt=""
+              loading="lazy" decoding="async">
+            <p class="text-base text-[#C4C9AE] font-normal mt-4 mb-2">FEBRUARY 15, 2024</p>
+            <p class="text-2xl font-normal text-white mb-2">Investing in Classic Automotive Icons</p>
+            <p class="text-sm font-normal text-[#C4C9AE]">
+              A guide for collectors on which vintage models are currently showing the strongest market performance...
+            </p>
+          </div>
+
         </div>
       </div>
-
-    </div>
-
-  </div>
-</section>
-
-       <section class="py-16 sm:py-20 lg:py-[120px]">
-  <div class="max-w-[1280px] mx-auto w-full px-6 sm:px-8 lg:px-4">
-
-    <p class="text-[#C1F432] font-normal text-base">THE JOURNAL</p>
-
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-4 mt-2">
-      <p class="text-base font-normal text-white">Editorial Insights</p>
-      <p class="text-base font-bold text-[#C1F432] cursor-pointer hover:underline">View All Articles</p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-5 justify-items-center mt-12">
-
-      <div class="card w-full max-w-[368px]">
-        <img src="./journal/card-1.jpg" class="w-full aspect-[368/220] object-cover rounded-[24px]" alt="" loading="lazy" decoding="async">
-        <p class="text-base text-[#C4C9AE] font-normal mt-4 mb-2">MARCH 12, 2024</p>
-        <p class="text-2xl font-normal text-white mb-2">The Best Coastal Drives in Southern Europe</p>
-        <p class="text-sm font-normal text-[#C4C9AE]">
-          Discover the hidden gems and winding roads of the Amalfi Coast behind the wheel of a convertible...
-        </p>
-      </div>
-
-      <div class="card w-full max-w-[368px]">
-        <img src="./journal/card-2.jpg" class="w-full aspect-[368/220] object-cover rounded-[24px]" alt="" loading="lazy" decoding="async">
-        <p class="text-base text-[#C4C9AE] font-normal mt-4 mb-2">FEBRUARY 28, 2024</p>
-        <p class="text-2xl font-normal text-white mb-2">The Evolution of Hybrid Performance</p>
-        <p class="text-sm font-normal text-[#C4C9AE]">
-          Exploring how electric assistance is pushing the boundaries of traditional internal combustion engines...
-        </p>
-      </div>
-
-      <div class="card w-full max-w-[368px]">
-        <img src="./journal/card-3.jpg" class="w-full aspect-[368/220] object-cover rounded-[24px]" alt="" loading="lazy" decoding="async">
-        <p class="text-base text-[#C4C9AE] font-normal mt-4 mb-2">FEBRUARY 15, 2024</p>
-        <p class="text-2xl font-normal text-white mb-2">Investing in Classic Automotive Icons</p>
-        <p class="text-sm font-normal text-[#C4C9AE]">
-          A guide for collectors on which vintage models are currently showing the strongest market performance...
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
-    </main>
-
-
-    
+  </main>
 
 
 
-<footer class="w-full bg-[#0d0e0f] text-white border-t border-[#181a1b]">
 
-  <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
 
-    <!-- FOOTER CONTENT -->
-    <div
-      class="grid grid-cols-2
+
+  <footer class="w-full bg-[#0d0e0f] text-white border-t border-[#181a1b]">
+
+    <div class="max-w-[1280px] mx-auto px-5 sm:px-7 lg:px-9">
+
+      <!-- FOOTER CONTENT -->
+      <div class="grid grid-cols-2
              lg:grid-cols-[1.35fr_1fr_1fr_1fr]
              gap-x-8 gap-y-10
              sm:gap-x-12
@@ -2277,12 +2310,10 @@ section, footer { contain: layout paint; }
              lg:py-[68px]">
 
 
-      <!-- BRAND -->
-      <div class="col-span-2 lg:col-span-1">
+        <!-- BRAND -->
+        <div class="col-span-2 lg:col-span-1">
 
-        <a
-          href="#"
-          class="inline-block
+          <a href="#" class="inline-block
                  text-[29px]
                  sm:text-[31px]
                  lg:text-[32px]
@@ -2290,278 +2321,247 @@ section, footer { contain: layout paint; }
                  tracking-[-1.5px]
                  text-[#f2f2f2]">
 
-          VELOCE
+            VELOCE
 
-        </a>
+          </a>
 
 
-        <p
-          class="mt-4
+          <p class="mt-4
                  max-w-[310px]
                  text-[13px]
                  sm:text-[14px]
                  leading-[1.65]
                  text-[#aaa99c]">
 
-          Elevating the luxury car rental
-          experience with a curated fleet of
-          the world's most exceptional
-          automobiles.
+            Elevating the luxury car rental
+            experience with a curated fleet of
+            the world's most exceptional
+            automobiles.
 
-        </p>
+          </p>
 
-      </div>
+        </div>
 
 
-      <!-- FLEET -->
-      <div>
+        <!-- FLEET -->
+        <div>
 
-        <h3
-          class="mb-4
+          <h3 class="mb-4
                  text-[13px]
                  sm:text-[14px]
                  font-medium
                  text-[#e1e1dc]">
 
-          Fleet
+            Fleet
 
-        </h3>
+          </h3>
 
 
-        <ul class="space-y-2.5">
+          <ul class="space-y-2.5">
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Hypercars
+                Hypercars
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Supercars
+                Supercars
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Luxury SUVs
+                Luxury SUVs
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Classics
+                Classics
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-        </ul>
+          </ul>
 
-      </div>
+        </div>
 
 
-      <!-- COMPANY -->
-      <div>
+        <!-- COMPANY -->
+        <div>
 
-        <h3
-          class="mb-4
+          <h3 class="mb-4
                  text-[13px]
                  sm:text-[14px]
                  font-medium
                  text-[#e1e1dc]">
 
-          Company
+            Company
 
-        </h3>
+          </h3>
 
 
-        <ul class="space-y-2.5">
+          <ul class="space-y-2.5">
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              About Us
+                About Us
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Journal
+                Journal
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Careers
+                Careers
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Contact
+                Contact
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-        </ul>
+          </ul>
 
-      </div>
+        </div>
 
 
-      <!-- LEGAL -->
-      <div class="col-span-2 lg:col-span-1">
+        <!-- LEGAL -->
+        <div class="col-span-2 lg:col-span-1">
 
-        <h3
-          class="mb-4
+          <h3 class="mb-4
                  text-[13px]
                  sm:text-[14px]
                  font-medium
                  text-[#e1e1dc]">
 
-          Legal
+            Legal
 
-        </h3>
+          </h3>
 
 
-        <ul
-          class="grid grid-cols-2
+          <ul class="grid grid-cols-2
                  gap-x-6
                  gap-y-2.5
                  lg:block
                  lg:space-y-2.5">
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Privacy Policy
+                Privacy Policy
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Terms of Service
+                Terms of Service
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              Rental Agreement
+                Rental Agreement
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#"
-              class="text-[13px]
+            <li>
+              <a href="#" class="text-[13px]
                      sm:text-[14px]
                      text-[#aaa99c]
                      transition-colors
                      hover:text-white">
 
-              FAQ
+                FAQ
 
-            </a>
-          </li>
+              </a>
+            </li>
 
-        </ul>
+          </ul>
+
+        </div>
 
       </div>
 
-    </div>
 
-
-    <!-- COPYRIGHT -->
-    <div
-      class="border-t border-[#181a1b]
+      <!-- COPYRIGHT -->
+      <div class="border-t border-[#181a1b]
              py-5
              sm:py-6">
 
-      <p
-        class="text-[8px]
+        <p class="text-[8px]
                sm:text-[9px]
                font-semibold
                tracking-[0.16em]
@@ -2569,15 +2569,15 @@ section, footer { contain: layout paint; }
                leading-relaxed
                text-[#70716b]">
 
-        © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
+          © 2024 VELOCE LUXURY AUTOMOTIVE. ALL RIGHTS RESERVED.
 
-      </p>
+        </p>
+
+      </div>
 
     </div>
 
-  </div>
-
-</footer>
+  </footer>
 
 
 
@@ -2603,130 +2603,132 @@ section, footer { contain: layout paint; }
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-    <script src='https://cdn.jotfor.ms/agent/embedjs/019f8d4e1708700088b66f9a2c31e4a95d69/embed.js'>
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src='https://cdn.jotfor.ms/agent/embedjs/019f8d4e1708700088b66f9a2c31e4a95d69/embed.js'>
+  </script>
 
 
 
-    <script>
-        const drawer = document.getElementById('drawer-navigation');
-        const closeBtn = document.getElementById('close-drawer-btn');
+  <script>
+    const drawer = document.getElementById('drawer-navigation');
+    const closeBtn = document.getElementById('close-drawer-btn');
 
-        // X tugmasi bosilganda menyuni yopish (-translate-x-full klassini qaytaradi)
-        closeBtn.addEventListener('click', () => {
-            drawer.classList.add('-translate-x-full');
-        });
-    </script>
+    // X tugmasi bosilganda menyuni yopish (-translate-x-full klassini qaytaradi)
+    closeBtn.addEventListener('click', () => {
+      drawer.classList.add('-translate-x-full');
+    });
+  </script>
 
 
-    <script>
-        const closeBtn = document.getElementById('close-drawer-btn');
-        const drawer = document.getElementById('drawer-navigation');
+  <script>
+    const closeBtn = document.getElementById('close-drawer-btn');
+    const drawer = document.getElementById('drawer-navigation');
 
-        closeBtn.addEventListener('click', (e) => {
-            e.preventDefault(); // Ogohlantirish chiqishini to'xtatadi
-            drawer.classList.add('-translate-x-full'); // Menyuni yopadi
-        });
-    </script>
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // Ogohlantirish chiqishini to'xtatadi
+      drawer.classList.add('-translate-x-full'); // Menyuni yopadi
+    });
+  </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
 
-                }
-            }
-        })
-    </script>
+        }
+      }
+    })
+  </script>
 
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,           // Cheksiz aylanish
-                autoplay: true,       // Avtomatik aylanish (ixtiyoriy)
-                autoplayTimeout: true,
-                dots: true,           // Pastdagi nuqtachalar ko'rinishi
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,           // Cheksiz aylanish
+        autoplay: true,       // Avtomatik aylanish (ixtiyoriy)
+        autoplayTimeout: true,
+        dots: true,           // Pastdagi nuqtachalar ko'rinishi
 
-                // Mana bu yerda value o'rniga aniq sozlamalar yozildi:
-                responsive: true, {
-                0: {
-                    items: 1,     // Telefonlarda 1 ta karta chiqadi
-                    margin: 10    // Kartalar orasidagi masofa 10px
-                },
-                600: {
-                    items: 2,     // Kichik ekranlarda 2 ta karta chiqadi
-                    margin: 15
-                },
-                1024: {
-                    items: 3,     // Planshet va o'rta ekranlarda 3 ta karta chiqadi
-                    margin: 20
-                },
-                1280: {
-                    items: 4,     // Katta monitorlarda (1280px+) barcha 4 ta karta to'liq chiqadi
-                    margin: 24    // Kartalar orasidagi masofa 24px
-                }
-            }
+        // Mana bu yerda value o'rniga aniq sozlamalar yozildi:
+        responsive: true, {
+        0: {
+          items: 1,     // Telefonlarda 1 ta karta chiqadi
+          margin: 10    // Kartalar orasidagi masofa 10px
+        },
+        600: {
+          items: 2,     // Kichik ekranlarda 2 ta karta chiqadi
+          margin: 15
+        },
+        1024: {
+          items: 3,     // Planshet va o'rta ekranlarda 3 ta karta chiqadi
+          margin: 20
+        },
+        1280: {
+          items: 4,     // Katta monitorlarda (1280px+) barcha 4 ta karta to'liq chiqadi
+          margin: 24    // Kartalar orasidagi masofa 24px
+        }
+      }
             });
         });
 
-    </script>
+  </script>
 
 
 
-<script>
+  <script>
     // VELOCE mobile side menu
     (() => {
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-side-menu');
-        const overlay = document.getElementById('mobile-menu-overlay');
-        const closeBtn = document.getElementById('mobile-menu-close');
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-side-menu');
+      const overlay = document.getElementById('mobile-menu-overlay');
+      const closeBtn = document.getElementById('mobile-menu-close');
 
-        if (!menuBtn || !menu || !overlay || !closeBtn) return;
+      if (!menuBtn || !menu || !overlay || !closeBtn) return;
 
-        const openMenu = () => {
-            menu.classList.remove('-translate-x-full');
-            overlay.classList.remove('opacity-0', 'invisible');
-            document.body.classList.add('overflow-hidden');
-        };
+      const openMenu = () => {
+        menu.classList.remove('-translate-x-full');
+        overlay.classList.remove('opacity-0', 'invisible');
+        document.body.classList.add('overflow-hidden');
+      };
 
-        const closeMenu = () => {
-            menu.classList.add('-translate-x-full');
-            overlay.classList.add('opacity-0', 'invisible');
-            document.body.classList.remove('overflow-hidden');
-        };
+      const closeMenu = () => {
+        menu.classList.add('-translate-x-full');
+        overlay.classList.add('opacity-0', 'invisible');
+        document.body.classList.remove('overflow-hidden');
+      };
 
-        menuBtn.addEventListener('click', openMenu);
-        closeBtn.addEventListener('click', closeMenu);
-        overlay.addEventListener('click', closeMenu);
+      menuBtn.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      overlay.addEventListener('click', closeMenu);
 
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') closeMenu();
-        });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeMenu();
+      });
 
-        // Link bosilganda menyu yopiladi.
-        menu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
+      // Link bosilganda menyu yopiladi.
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
     })();
-</script>
+  </script>
+
+
 
 </body>
 
